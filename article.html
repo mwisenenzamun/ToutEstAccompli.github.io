@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>LE DEVOTIONNEL-Tout Est Accompli © </title>
+    <link rel="icon" type="image/png" sizes="16x16" href="logo.toutestaccompli.png">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        main {
+            margin-left: 30%;
+            margin-top: 60px;
+        }
+
+        body {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .containers {
+            width: 50%;
+            height: 60%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            /*  box-shadow is from materialize css's website */
+            box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
+                0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+        }
+
+        .containers img {
+            width: 100%;
+            z-index: -2;
+
+        }
+
+        button {
+            height: 10%;
+            border: none;
+            outline: none;
+            background: rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            padding: 1em;
+            display: flex;
+        }
+
+        button .arrow {
+            border: solid #fff;
+            border-width: 0 4px 4px 0;
+            display: inline-block;
+            padding: 10px;
+            transition: transform 0.3s ease-out;
+            outline: none;
+        }
+
+        #right-btn {
+            margin: auto 0 auto -2em;
+        }
+
+        #right-btn .arrow {
+            transform: rotate(-45deg);
+        }
+
+        #left-btn {
+            z-index: 0;
+            margin: auto -2em auto 0;
+        }
+
+        #left-btn .arrow {
+            transform: rotate(135deg);
+        }
+
+
+        .copyright {
+            float: right;
+            margin-right: 10%;
+            margin-bottom: 100px;
+        }
+
+        .under {
+            border-top: solid black;
+            border-top-width: thin;
+
+            width: 60%;
+            margin-left: 20%;
+
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar-->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="page-title">
+                <div class="container">
+                    <!--<div id="loader">Loading...</div>-->
+                </div>
+
+
+            </div>
+
+
+            <ul class="nav navbar-nav">
+
+                <div class="titrepage2">
+                    <div class='strow2' style="width: 50px;">
+                        <div class='smoke'></div>
+                        <div class='smoke'></div>
+                        <div class='smoke'></div>
+                        <div class='smoke'></div>
+                        <div class='smoke'></div>
+                        <div class='smoke'></div>
+                        <div class='smoke'></div>
+                        <div class='smoke'></div>
+                        <div class='smoke'></div>
+                        <div class='smoke'></div>
+                        <div class='smoke'></div>
+                        <div class='smoke'></div>
+                        <div class='smoke'></div>
+                        <div class='smoke'></div>
+                        <div class='smoke'></div>
+                        <div class='smoke'></div>
+                        <div class='smoke'></div>
+                        <div class='smoke'></div>
+                        <div class='smoke'></div>
+                        <div class='smoke'></div>
+                        <div class='smoke'></div>
+                        <div class='smoke'></div>
+                        <div class='smoke'></div>
+                        <div class='smoke'></div>
+                        <div class='smoke'></div>
+                    </div>
+                    <!--<img src="logo.toutestaccompli.png">-->
+                    <h1 style="color:black; font-family: 'Updock',cursive;text-transform:lowercase">Tout Est
+                        Accompli </h1>
+                    <h1 style="font-size: 20px; color: black;"> </h1>
+                </div>
+
+
+            </ul>
+            <!-- -->
+
+
+            <!--<div class="droppo">
+            <button class="drop"><a class="hoverable">MENU</a></button>
+            <div class="menu">
+                <a class="hoverable" href="#Le-Dévotionnel">Le Dévotionnel</a>
+                <a class="hoverable" href="#A-propos">A PROPOS</a>
+                <a class="hoverable" href="#temoignage">TEMOIGNAGES</a>
+                <a class="hoverable" href="#resource">RESSOURCES</a>
+                <a class="hoverable" href="#soutenir">comment soutenir L'oeuvre
+                </a>
+            </div>-->
+
+
+
+        </div>
+
+    </nav>
+
+    <main>
+        <h1></h1>
+        <div class="containers">
+            <button id="left-btn"><i class="arrow"></i></button>
+            <img id="carousel" src="" alt="">
+            <button id="right-btn"><i class="arrow"></i></button>
+        </div>
+    </main>
+
+    <div class="under">
+        <p class="copyright" style="color:black;"><a href="" style="font-size: 15px;">Mention légale</a>
+            - ©ToutEstAccompli.com 2022.- Tous droits
+            réservés.</p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
