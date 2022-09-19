@@ -489,6 +489,54 @@ aside{
   max-width: 600px;
   height: 450px;
 }
+
+@media (max-width: 640px) {
+  .Apropos img{
+    max-width:300px ;
+    height: 340px;
+
+  }
+
+  .propos{
+  
+    font-size: medium;
+    margin: 0;
+
+  }
+
+  .propos h2{
+    margin-top: 15%;
+    margin-right: 40px;
+  }
+    .vertical-line{
+      
+      margin: 0 ;
+    }
+
+
+    .Apropos{
+      display: grid;
+      
+      margin-top: 80px;
+      margin-bottom: 80px;
+      
+      margin-left: 0%;
+      margin-right: 0%;
+      
+    }
+
+}
+
+.propos{
+  
+  font-size: medium;
+  margin-left: 5%;
+
+
+}
+
+
+
 .vertical-line{
   border-left: 2px solid #000;
   display: inline-block;
@@ -503,15 +551,7 @@ aside{
   margin: 0 20px;
 }
 
-.propos{
-  
-  
-   
-  font-size: medium;
-  margin-left: 5%;
 
-
-}
 
 .section3{
   background-color:#9c9292 ;
@@ -535,6 +575,19 @@ aside{
   border-color: rgb(139, 125, 125);
 
 }
+
+@media (max-width: 640px) {
+
+  .Témoignage{
+    display: grid;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
 
 .Témoignagetext{
   margin: 10%;
@@ -633,12 +686,35 @@ aside{
   
 }
 
+@media (max-width: 640px) {
+
+  .resources{
+
+    width: 100%;
+    height: 600px;
+    
+    margin-left: 10%;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap
+  }
+
+
+
+
+}
+
+
+
 .resources2{
 
   width: 30px;
   height: 40px;
   overflow: hidden;
-  margin-left: 20%;
+  margin-left: 10%;
   margin-top: 100px;
   margin-bottom: 100px;
 
@@ -650,11 +726,23 @@ aside{
   
 }
 
+.iframe {
+  width:"520" ;
+  height:"315";
+}
 
+@media (max-width: 640px) {
+
+
+  .iframe {
+    width:"220" ;
+    height:"115";
+  }
+}
 
 .resources2:hover{
 
-  width: 70%;
+  width: 80%;
 
   height: 100%;
   
@@ -723,7 +811,7 @@ aside{
  /* background-color: #6977af;*/
   border: solid black 2px;
   opacity: 0.6;
-  width: 420px;
+  width: 400px;
   
 
 }
@@ -837,7 +925,7 @@ p{
    color: black;
    font-size: 20px;
    font-family : 'Nunito', sans-serif;
-   text-align: :right;
+   text-align: left;
 }
 
 .propos{
@@ -845,7 +933,7 @@ p{
   flex-direction:row ;}
 
 .propos h2{
-  margin-top: 15%;
+  margin-top: 25%;
   margin-right: 40px;
   /*font-family: 'Updock',cursive;*/
   font-size: 1.9rem;
@@ -865,6 +953,23 @@ p{
   writing-mode: vertical-rl;
   text-orientation: upright;
 }
+@media (max-width: 640px) {
+
+  .titles2{
+    float: left;
+    width: 200px;
+    font-size: 0.7rem;
+    margin-top: 40px;
+    margin-right: 10px;
+    color: black;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+  }
+
+
+}
+
 .Témoignage p{
   color: black;
   font-size: 20px;
@@ -919,7 +1024,7 @@ p{
 {
   margin:5px auto 0 auto;
   width:100%;
-  height: 60%;
+  height: 100%;
   display:flex;
   
   align-items:space-around;
@@ -961,7 +1066,7 @@ p{
   z-index:0;
   transition: all 0.4s ease-out;
 }
-.tile3 .text
+.tile3 .text3
 {
 /*   z-index:99; */
   position:absolute;
@@ -971,7 +1076,15 @@ p{
   flex-direction: row;
 }
 
-.text .a
+.text3{
+  font-size: 15px; 
+  color: #fff;
+
+}
+
+
+
+.text3 .a
 {
   
   font-size: 0.6rem;
@@ -1002,10 +1115,17 @@ p{
 }
 .animate-text
 {
+
   opacity:0;
   transition: all 0.6s ease-in-out;
-  font-size: 1.5rem;
+  font-size: 10px;
+
 }
+
+
+
+
+
 .tile3:hover
 {
   width:100%;
@@ -1096,7 +1216,7 @@ p{
 .wrap2
 {
   margin:50px auto 0 auto;
-  width:60%;
+  width:50%;
   height: 100%;
   display:flex;
   align-items:space-around;
@@ -1105,10 +1225,51 @@ p{
  
 }
 
+@media(width: 640px){
+
+  .wrap2
+  {
+    margin:50px auto 0 auto;
+    width:80%;
+    height: 100%;
+  }
+
+  .title
+  {
+    width:100%;
+    height:fit-content;
+  }
+
+    .tile2:hover
+  {
+    width:100%;
+    height: 109px;
+
+  /*   background-color:#99aeff; */
+    box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
+    transform:scale(1.05);
+  }
+  .tile2 p 
+  {
+    font-weight:100;
+    font-size: 0px;
+    margin: 5%;
+    line-height: 25px;
+    text-align : left;
+  /*   opacity:0; */
+    transform: translateX(-200px);
+    transition-delay: 0.2s;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .tile2
 {
   width:100%;
-  height:fit-content;
+  height:100px;
   margin:0px;
   background-color:#464853;
   display: flex;
@@ -1123,16 +1284,14 @@ p{
   overflow: hidden;
   color:white;
   
-  
-  
 }
 
 
-.tile2 .text
+.tile2 .text2
 {
   z-index:99; 
   position:absolute;
-  padding:10%;
+  padding:5%;
   height:calc(100% - 60px);
 }
 .tile2 h1
@@ -1151,7 +1310,7 @@ p{
 .tile2 p 
 {
   font-weight:300;
-  font-size: 20px;
+  font-size: 1.2rem;
   margin: 5%;
   line-height: 25px;
   text-align : left;
@@ -1283,6 +1442,21 @@ p{
   
 }
 
+@media (max-width: 640px) {
+
+
+  	.tile
+  {
+    width: 290px;
+    height:290px;
+    margin:0px;
+  }
+  
+
+}
+
+
+
 
 .tile img
 {
@@ -1298,8 +1472,9 @@ p{
 {
 /*   z-index:99; */
   position:absolute;
-  padding:30px;
+  padding:100px;
   height:calc(100% - 60px);
+  
 }
 .tile h1
 {
@@ -1313,15 +1488,17 @@ p{
   margin:20px 0 0 0;
   font-style:italic;
    transform: translateX(200px);
+   font-size: 20px;
 }
 .tile p
 {
-  font-weight:300;
+  font-weight:100;
   margin:20px 0 0 0;
   line-height: 25px;
 /*   opacity:0; */
   transform: translateX(-200px);
   transition-delay: 0.2s;
+  font-size: 20px;
 }
 .animate-text
 {
@@ -1852,21 +2029,16 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 .w3-button{
   position: absolute;
 }
-  
+
+
 /* pour les gsm*/
 
-@media (max-width: 640px) {
+@media (width: 640px) {
 	* {
 		box-sizing: border-box;
 	}
 	
-	/* passer body (et tous les éléments de largeur fixe) en largeur automatique */
 
-	body {
-		
-		margin: 0;
-		padding: 0;
-	}
 	
 	/* fixer une largeur maximale de 100% aux éléments potentiellement problématiques */
 
@@ -1882,7 +2054,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 	object,
 	embed,
 	video {
-		max-width: 100%;
+		width: 100%;
 	}
 	
 	/* conserver le ratio des images */
@@ -1935,3 +2107,15 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 #777;
 	}
 }
+
+@media (max-device-width:768px) and (orientation: landscape) {
+  html {
+   -webkit-text-size-adjust: 100%;
+   -ms-text-size-adjust: 100%;
+  }
+
+
+
+
+/*****/
+
