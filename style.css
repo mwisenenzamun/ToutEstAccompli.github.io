@@ -329,6 +329,7 @@ button a{
    .Contact{
      display: flex;
      flex-direction: row ;
+     flex-wrap:wrap;
      margin-left:100px;
      
    }
@@ -781,7 +782,7 @@ aside{
 
 .resources p{
   color: #000;
-  font-size: 30px;
+  font-size: 25px;
   margin-bottom: 40px;
   margin: 15%;
   font-weight: 400;
@@ -790,7 +791,7 @@ aside{
 }
 
 .resources h3{
-  font-size: 30px;
+  font-size: 28px;
   font-family: 'Nunito', sans-serif;
   margin-bottom:30px ;
   text-decoration: underline 1px;
@@ -898,7 +899,7 @@ h3{
 
   font-family: 'Updock',cursive;
   text-transform : capitalize;
-  font-size: 50px;
+  font-size: 45px;
   font-weight: 100;
   color: black;
 
@@ -923,7 +924,7 @@ p{
 }
 .propos p{
    color: black;
-   font-size: 20px;
+   font-size: 18px;
    font-family : 'Nunito', sans-serif;
    text-align: left;
 }
@@ -972,14 +973,14 @@ p{
 
 .Témoignage p{
   color: black;
-  font-size: 20px;
+  font-size: 18px;
   font-family : 'Nunito', sans-serif;
   text-align: :right;
 }
 
 .soutenir p{
   color: black;
-  font-size: 19px;
+  font-size: 18px;
   font-family : 'Nunito', sans-serif;
   text-align: :right;
 }
@@ -996,8 +997,9 @@ p{
 .card2{
   
   margin-bottom: 20px;
+  margin-left: 20px;
   width: 100%;
-
+  overflow: visible;
 }
 
 
@@ -1010,10 +1012,11 @@ p{
   justify-content: center;
   /*margin-right:60% ;*/
   position: sticky;
-  overflow: hidden;
+  overflow: visible;
   top: 90px;
   z-index: 42;
   width: 100%;
+  
 
 }
 
@@ -1040,8 +1043,8 @@ p{
   margin:5px;
   background-color:#a79d9d #9c9292;
   /*#a79d9d*/
-  display:inline-block;
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
   flex-wrap: nowrap;
   background-size:cover;
   position: relative;
@@ -1142,12 +1145,13 @@ p{
 @media (max-width: 1000px) {
 
   .tile3 .text{
+    display: flex;
     flex-direction: column;
   }
 
   .tile3:hover{
-    width:20%;
-    height: 250px;
+    width:80%;
+    height: 80px;
  }
 
 
@@ -1252,7 +1256,7 @@ p{
   .tile2 p 
   {
     font-weight:100;
-    font-size: 0px;
+    
     margin: 5%;
     line-height: 25px;
     text-align : left;
@@ -1488,7 +1492,7 @@ p{
   margin:20px 0 0 0;
   font-style:italic;
    transform: translateX(200px);
-   font-size: 20px;
+   font-size: 18px;
 }
 .tile p
 {
@@ -1498,8 +1502,11 @@ p{
 /*   opacity:0; */
   transform: translateX(-200px);
   transition-delay: 0.2s;
-  font-size: 20px;
+  font-size: 18px;
 }
+
+
+
 .animate-text
 {
   opacity:0;
@@ -2118,4 +2125,3 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 
 
 /*****/
-
