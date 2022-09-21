@@ -138,6 +138,8 @@
   }
   
   body {
+	  
+    padding: 10%  
     background-color: rgb(230, 216, 216);
     /*rgb(186, 190, 207)*/ /*bleu mauve
     /*rgb(163, 145, 165)*/ /*mauve
