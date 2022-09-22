@@ -1085,7 +1085,7 @@ p{
 .text3 .a
 {
   
-  font-size: 0.6rem;
+  font-size: 10px;
   
 }
 .tile3 h1
@@ -1145,7 +1145,7 @@ p{
   }
 
   .tile3:hover{
-    width:80%;
+    width:90%;
     height: 80px;
  }
 
@@ -1309,7 +1309,7 @@ p{
 .tile2 p 
 {
   font-weight:300;
-  font-size: 1.2rem;
+  font-size: 15px;
   margin: 5%;
   line-height: 25px;
   text-align : left;
@@ -1487,7 +1487,7 @@ p{
   margin:20px 0 0 0;
   font-style:italic;
    transform: translateX(200px);
-   font-size: 18px;
+   font-size: 15px;
 }
 .tile p
 {
@@ -1497,7 +1497,7 @@ p{
 /*   opacity:0; */
   transform: translateX(-200px);
   transition-delay: 0.2s;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 
