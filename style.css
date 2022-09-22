@@ -482,8 +482,8 @@ aside{
 .Apropos img{
 
   box-shadow:4px 3px 2px black;
-  max-width: 300px;
-  height: 250px;
+  max-width: 310px;
+  height: 350px;
 }
 
 @media (max-width: 640px) {
