@@ -628,7 +628,7 @@ aside{
 .titles{
   display: flex;
   flex-direction: row;
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
   text-transform : capitalize;
 }
@@ -639,7 +639,7 @@ aside{
   margin-top:15px ;
   justify-content: center;
   text-align: center;
-  font-size: 20px;
+  font-size: 15px;
   text-transform : capitalize;
 }
 .titles4{  /*comment soutenir l'oeuvre */
@@ -647,7 +647,7 @@ aside{
   margin-top:15px ;
   margin-bottom:25px;
   text-align: center;
-  font-size: 20px;
+  font-size: 15px;
   text-transform : capitalize;
 }
 
@@ -659,7 +659,7 @@ aside{
   margin-top:15px ;
   margin-bottom:25px;
   text-align: center;
-  font-size: 20px;
+  font-size: 15px;
   text-transform : capitalize;
 }
 
