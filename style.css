@@ -1079,7 +1079,7 @@ p{
 {
 /*   z-index:99; */
   position:absolute;
-  padding:10px;
+  padding:8px;
   height:calc(100% - 60px);
   display: flex;
   flex-direction: row;
