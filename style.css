@@ -756,10 +756,18 @@ aside{
   font-weight: 400;
   margin-top: 20px;
   position: absolute;
+  
+  
+  
 }
 
 .fleche:hover{
   display: none;
+}
+
+.arrow-wrapper{
+
+  margin-left: 255px;
 }
 
 .arrow-down {
