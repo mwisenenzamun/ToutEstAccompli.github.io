@@ -1044,7 +1044,7 @@ p{
 
 .tile3
 {
-  width:105px;
+  width:95px;
   height: 60px;
   margin:5px;
   background-color:#a79d9d #9c9292;
@@ -1136,7 +1136,7 @@ p{
 
 .tile3:hover
 {
-  width:100%;
+  width:80%;
   height: 80px;
   /*opacity: 0.5;*/
   
