@@ -259,7 +259,7 @@
 @media screen and (max-width: 1000px) {
   .menu {
     
-    flex-direction: column;
+    flex-direction: row;
     margin-left: 30px;
     font-weight: 1000;
     font-size: 1rem;
