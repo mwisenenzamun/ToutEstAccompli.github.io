@@ -256,7 +256,7 @@
 
 
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1000px) {
   .menu {
     
     flex-direction: column;
@@ -488,7 +488,7 @@ aside{
   height: 350px;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1000px) {
   .Apropos img{
     max-width:300px ;
     height: 340px;
@@ -574,7 +574,7 @@ aside{
 
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1000px) {
 
   .Témoignage{
     display: grid;
@@ -687,7 +687,7 @@ aside{
   
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1000px) {
 
   .resources{
 
@@ -732,7 +732,7 @@ aside{
   height:"315";
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1000px) {
 
 
   .iframe {
@@ -962,7 +962,7 @@ p{
   writing-mode: vertical-rl;
   text-orientation: upright;
 }
-@media (max-width: 640px) {
+@media (max-width: 1000px) {
 
   .titles2{
     float: left;
@@ -1236,7 +1236,7 @@ p{
  
 }
 
-@media(width: 640px){
+@media(width: 1000px){
 
   .wrap2
   {
@@ -1475,7 +1475,7 @@ p{
   
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1000px) {
 
 
   	.tile
@@ -2069,7 +2069,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 
 /* pour les gsm*/
 
-@media (width: 640px) {
+@media (width: 1000px) {
 	* {
 		box-sizing: border-box;
 	}
