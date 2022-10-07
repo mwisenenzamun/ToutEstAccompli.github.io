@@ -1457,6 +1457,20 @@ p{
 
 /*  Box Index_______________________________________________________________*/
 
+.WRAPS{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+@media (max-width: 1000px) {
+
+
+  .WRAPS{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 
 .wrap
 {
