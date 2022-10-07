@@ -19,6 +19,8 @@
         main {
             margin-left: 0%;
             margin-top: 0px;
+            display: flex;
+            justify-content: center;
         }
 
         body {
@@ -32,6 +34,16 @@
 
         }
 
+        .LeMenu a {
+            text-align: left;
+
+        }
+
+        .menu img {
+            width: 30px;
+            margin-right: 5px;
+        }
+
         h1 {
             text-align: center;
         }
@@ -41,10 +53,14 @@
             height: 60%;
             display: flex;
             justify-content: center;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             /*  box-shadow is from materialize css's website */
             box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
                 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar {
+            display: none;
         }
 
         @media (max-width: 1000px) {
@@ -53,7 +69,7 @@
                 height: 100%;
                 display: flex;
                 justify-content: center;
-                margin-bottom: 20px;
+                margin-bottom: 10px;
                 /*  box-shadow is from materialize css's website */
                 box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
                     0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
@@ -63,6 +79,31 @@
                 display: none;
             }
 
+            .tile3:hover {
+                width: 90%;
+                height: 320px;
+                /*opacity: 0.5;*/
+
+
+                /*   background-color:#99aeff; */
+                /*box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);*/
+                transform: scale(1.05);
+            }
+
+
+
+        }
+
+
+        .tile3:hover {
+            width: 80%;
+            height: 320px;
+            /*opacity: 0.5;*/
+
+
+            /*   background-color:#99aeff; */
+            /*box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);*/
+            transform: scale(1.05);
         }
 
         .containers img {
@@ -79,6 +120,7 @@
             cursor: pointer;
             padding: 1em;
             display: flex;
+            text-align: left;
         }
 
         button .arrow {
