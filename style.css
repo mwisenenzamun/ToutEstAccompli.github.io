@@ -1523,6 +1523,20 @@ p{
   height:calc(100% - 60px);
   
 }
+
+@media (max-width: 1000px) {
+  .tile .text
+  {
+    /*   z-index:99; */
+      position:absolute;
+      padding:10px;
+      height:calc(100% - 60px);
+      
+    }
+
+}
+
+
 .tile h1
 {
  
