@@ -86,6 +86,8 @@
             }
 
             .tile3:hover {
+                display: flex;
+                flex-direction: column;
                 width: 90%;
                 height: 320px;
                 /*opacity: 0.5;*/
@@ -100,8 +102,32 @@
 
         }
 
+        .tile3 {
+            width: 145px;
+            height: 60px;
+            margin: 5px;
+            background-color: #a79d9d #9c9292;
+            /*#a79d9d*/
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            background-size: cover;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.4s ease-out;
+            /*box-shadow: 0px 25px 77px -17px rgba(0,0,0,0.44);*/
+            border: solid 1.5px #000;
+
+            overflow: hidden;
+            color: white;
+
+
+        }
+
 
         .tile3:hover {
+            display: flex;
+            flex-direction: column;
             width: 80%;
             height: 320px;
             /*opacity: 0.5;*/
@@ -251,8 +277,10 @@
                 <div class="tile3">
 
                     <div class="text3">
-                        <h1>SOMMAIRE</h1>
-                        <h2 class="animate-text"> SOMMAIRE</h2>
+                        <div>
+                            <h1>SOMMAIRE</h1>
+                            <h2 class="animate-text"> SOMMAIRE</h2>
+                        </div>
                         <div class="LeMenu">
                             <a class="hoverable" id="x1">PRÉFACE</a>
                             <a class="hoverable" id="x2">PRÉSENTATION </a>
