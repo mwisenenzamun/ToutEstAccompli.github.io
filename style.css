@@ -2,6 +2,7 @@
 
 
 
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@0,300;1,300&family=Updock&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@1,200&family=Updock&display=swap');
 
@@ -438,8 +439,8 @@ img {
   flex-direction: row; 
   margin-left: 15%;
   margin-right: 25%;
-  margin-top: 300px;
-  margin-bottom: 400px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 
   
 }
@@ -458,8 +459,8 @@ img {
 .Apropos{
   display: grid;
   
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   
   margin-left: 15%;
   margin-right: 15%;
@@ -469,8 +470,8 @@ img {
 .section1{
   background-color: #c7b9b9;
   width: 100%;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   
 }
 
@@ -513,6 +514,8 @@ aside{
   
     font-size: medium;
     margin: 0;
+    font-size: 15px;
+  margin-left: 5%;
 
   }
 
@@ -532,20 +535,14 @@ aside{
       margin-top: 80px;
       margin-bottom: 80px;
       
-      margin-left: 0%;
-      margin-right: 0%;
+      margin-left: 10%;
+      margin-right: 10%;
       
     }
 
 }
 
-.propos{
-  
-  font-size: 15px;
-  margin-left: 5%;
 
-
-}
 
 
 
@@ -576,11 +573,11 @@ aside{
 .Témoignage{
   display: grid;
   
-  margin-top: 200px;
+  margin-top: 100px;
   
   margin-left: 15%;
   margin-right: 15%;
-  margin-bottom: 300px;
+  margin-bottom: 100px;
 
   background-color: rgb(230, 216, 216);
   border-style: solid;
@@ -615,8 +612,8 @@ aside{
   justify-content: center;
   background-color: #c7b9b9;
   width: 100%;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .card{
@@ -661,10 +658,10 @@ aside{
   font-size: 20px;
   text-transform : capitalize;
 }
-.titles4{  /*comment soutenir l'oeuvre */
+.titles4{  /*Ressources */
   color: black;
   margin-top:15px ;
-  margin-bottom:25px;
+  margin-bottom:5px;
   text-align: center;
   font-size: 15px;
   text-transform : capitalize;
@@ -690,7 +687,7 @@ aside{
   height: 400px;
   overflow: hidden;
   margin-left: 20%;
-  margin-top: 100px;
+  margin-top: 10px;
   margin-bottom: 50px;
 
   background-color: rgb(230, 216, 216);
@@ -708,8 +705,8 @@ aside{
     width: 100%;
     height: 600px;
     
-    margin-left: 10%;
-    margin-top: 100px;
+
+    margin-top: 10px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: row;
@@ -730,8 +727,8 @@ aside{
   height: 40px;
   overflow: hidden;
   margin-left: 10%;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 
   background-color:  rgb(230, 216, 216);
   display: flex;
@@ -805,7 +802,7 @@ aside{
 .resources p{
   color: #000;
   font-size: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   margin: 15%;
   font-weight: 400;
   
@@ -815,7 +812,7 @@ aside{
 .resources h3{
   font-size: 20px;
   font-family: 'Nunito', sans-serif;
-  margin-bottom:30px ;
+  margin-bottom:10px ;
   text-decoration: underline 1px;
 
 }
@@ -1038,6 +1035,8 @@ p{
   top: 90px;
   z-index: 42;
   width: 100%;
+  height: 0px;
+  
   
 
 }
