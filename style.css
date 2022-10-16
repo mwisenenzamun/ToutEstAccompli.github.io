@@ -269,13 +269,6 @@
   
   }
   
-
-
-  .navbar {
-    
-  
-   
-   }
 }
 
 
@@ -283,6 +276,7 @@
 .menu img{
   width: 40px;
   margin-right: 5px;
+  clip-path: circle(54% at 50% 50%);
 }
 
 button{
