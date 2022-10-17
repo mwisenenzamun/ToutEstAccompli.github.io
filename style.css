@@ -198,29 +198,19 @@
 
 
   .titrepage2{
-    
-
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-right: 200px;
-    
-    
-    
+    margin-right: 200px; 
     padding-top: 0;
-    
-    
   }
 
 
 .titrepage h1{
-    
-   
     font-family: 'Updock',cursive;
     position: absolute;
     margin-bottom: 100px;
-    text-transform : none;
-        
+    text-transform : none;       
 }
 
 .titrepage2 h1{
@@ -263,7 +253,6 @@
     flex-direction: row;
     margin-left: 0px;
     font-weight: 1000;
-    font-size: 1rem;
    justify-content: center;
    
   
@@ -276,8 +265,10 @@
 .menu img{
   width: 40px;
   margin-right: 5px;
+  
   clip-path: circle(54% at 50% 50%);
 }
+
 
 button{
   background-color:   rgb(230, 216, 216);
@@ -443,9 +434,7 @@ img {
   .accueil{
     
     margin-top: 100px;
-    margin-bottom: 100px;
-  
-    
+    margin-bottom: 100px; 
   }
 
 }
@@ -699,7 +688,7 @@ aside{
     width: 100%;
     height: 600px;
     
-
+    
     margin-top: 10px;
     margin-bottom: 20px;
     display: flex;
@@ -1091,7 +1080,7 @@ p{
   padding:5px;
   height:calc(100% - 60px);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .text3{
@@ -1149,7 +1138,7 @@ p{
 .tile3:hover
 {
   width:100%;
-  height: 70px;
+  height: 100px;
   /*opacity: 0.5;*/
   
 
