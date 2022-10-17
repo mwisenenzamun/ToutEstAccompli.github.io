@@ -222,6 +222,7 @@
 .LeMenu{
   margin-left: 10px;
  justify-content: center;
+
 }
   
 .LeMenu a{
@@ -257,9 +258,19 @@
    
   
   }
+ 
   
 }
+@media screen and (max-width: 600px) {
 
+  .LeMenu{
+   margin-left: 10px;
+   justify-content: center;
+   display: flex;
+   flex-direction: column ;
+  }
+  
+}
 
 
 .menu img{
