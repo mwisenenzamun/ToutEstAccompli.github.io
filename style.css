@@ -832,9 +832,10 @@ aside{
 
 .resources h3{
   font-size: 20px;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Updock',cursive;
+  
   margin-bottom:10px ;
-  text-decoration: underline 1px;
+  /*text-decoration: underline 1px;*/
 
 }
 
