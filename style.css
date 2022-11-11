@@ -2,8 +2,6 @@
 
 
 
-
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@0,300;1,300&family=Updock&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@1,200&family=Updock&display=swap');
 
@@ -714,7 +712,7 @@ aside{
 .resources{
 
   width: 70%;
-  height: 400px;
+  height: auto;
   overflow: hidden;
   margin-left: 10%;
   margin-top: 10px;
@@ -753,8 +751,8 @@ aside{
 
 .resources2{
 
-  width: 30px;
-  height: 40px;
+  width: 80%;
+  height: 100%;
   overflow: hidden;
   margin-left: 10%;
   margin-top: 50px;
@@ -782,14 +780,7 @@ aside{
   }
 }
 
-.resources2:hover{
 
-  width: 80%;
-
-  height: 100%;
-  
-
-}
 
 .fleche {
   text-transform: uppercase;
@@ -850,8 +841,8 @@ aside{
 
 .video{
   
-  margin: 15px;
-  margin-bottom: 100px;
+  margin: 10px;
+  margin-bottom: 5px;
 
   
   
@@ -2250,3 +2241,135 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 
 /*****/
 
+.home-demo .item {
+  background: #ff3f4d;
+}
+.home-demo h2 {
+  color: #FFF;
+  text-align: center;
+  padding: 5rem 0;
+  margin: 0;
+  font-style: italic;
+  font-weight: 300;
+}
+
+
+/***/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+
+.wrapper2 {
+  width: 100%;
+}
+
+.carousel {
+  width: 1500px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.carousel .card {
+  color: #fff;
+  text-align: center;
+  margin: 10px 0;
+  line-height: 50px;
+  font-size: 90px;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  flex-direction: column;
+  }
+
+.carousel .card-1 {
+  background-color: rgb(187, 183, 183, 0.5);
+}
+
+.carousel .card-2 {
+  background-color: rgb(187, 183, 183, 0.5);
+
+}
+
+.carousel .card-3 {
+  background-color: rgb(187, 183, 183, 0.5);
+
+}
+.carousel .card-4 {
+  background-color: rgb(187, 183, 183, 0.5);
+
+}
+
+.carousel .card-5 {
+   background-color: rgb(187, 183, 183, 0.5);
+
+}
+
+.carousel .card-6 {
+  background-color: rgb(187, 183, 183, 0.5);
+
+}
+
+ .carousel .card-7 {
+  background-color: rgb(187, 183, 183, 0.5);
+
+}
+
+.carousel .card-8 {
+  background-color: rgb(187, 183, 183, 0.5);
+}
+
+.carousel .card-9 {
+  background-color: rgb(187, 183, 183, 0.5);
+
+}
+
+.carousel .card-10 {
+  background-color: rgb(187, 183, 183, 0.5);
+
+}
+
+.carousel .card-11 {
+  background-color: rgb(187, 183, 183, 0.5);
+
+}
+
+.carousel .card-12 {
+  background-color: rgb(187, 183, 183, 0.5);
+}
+
+.carousel .card-13 {
+  background-color: rgb(187, 183, 183, 0.5);
+
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.owl-dot {
+  height: 15px;
+  width: 45px;
+  margin: 0 5px;
+  outline: none;
+  border-radius: 14px;
+  border: 2px solid #333b41 !important;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+  
+  background: #848e94 !important;
+}
+
+.Horiz-line {
+  border-top: 2px solid #000;
+  display: inline-block;
+  height: 30px;
+  margin: 0 20px;
+}
