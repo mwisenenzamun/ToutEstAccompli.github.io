@@ -731,7 +731,8 @@ aside{
   .resources{
 
     width: 100%;
-        
+    
+    
     margin-top: 10px;
     margin-bottom: 10px;
     display: flex;
@@ -2161,7 +2162,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 	
 
 	
-	/* fixer une largeur maximale de 100% aux éléments potentiellement problématiques */
+	/* fixer une largeur maximale de 100% aux éléments potentiellement problématiques 
 
 	img,
 	table,
@@ -2176,7 +2177,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 	embed,
 	video {
 		width: 100%;
-	}
+	}*/
 	
 	/* conserver le ratio des images */
 
@@ -2257,13 +2258,24 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
+@media (max-width: 1000px) {
+
+  .wrapper2 {
+    width: 70%;
+  }
+
+  .video iframe{
+    width:30px;
+  }
+
+}
 
 .wrapper2 {
   width: 100%;
 }
 
 .carousel {
-  width: 1500px;
+  width: 100%;
   margin: auto;
   padding: 0 10px;
   overflow: hidden;
