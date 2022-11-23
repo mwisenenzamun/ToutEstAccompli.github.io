@@ -261,8 +261,9 @@
 .LeMenu{
   margin-left: 10px;
   justify-content: center;
-  
-
+  background-color: #ffffff;
+  opacity: 0.5;
+  z-index: -50;
 }
   
 .LeMenu a{
