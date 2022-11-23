@@ -421,8 +421,9 @@ footer{
 .under{
   border-top: solid black;
   border-top-width: thin;
-  
+  font-size: 12px;
   width: 80%;
+ 
   margin-left: 10%;
   
   
