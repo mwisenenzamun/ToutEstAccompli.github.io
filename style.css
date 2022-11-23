@@ -3,6 +3,10 @@
 
 
 
+
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@0,300;1,300&family=Updock&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@1,200&family=Updock&display=swap');
 
@@ -1031,10 +1035,10 @@ p{
 @media (max-width: 600px) {
   .titles2{
     float: left;
-    width: 100px;
+    width: 50px;
     font-size: 15px;
     margin-top: 40px;
-    margin-right: 5px;
+    
     color: black;
     text-transform: uppercase;
     writing-mode: vertical-rl;
