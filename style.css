@@ -2,6 +2,7 @@
 
 
 
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@0,300;1,300&family=Updock&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@1,200&family=Updock&display=swap');
 
@@ -470,8 +471,8 @@ img {
 .accueil{
   display:flex;
   flex-direction: row; 
-  margin-left: 15%;
-  margin-right: 25%;
+  justify-content: center;
+  width: 100%;
   margin-top: 100px;
   margin-bottom: 100px;
 
@@ -717,7 +718,7 @@ aside{
   width: 70%;
  
   overflow: hidden;
-  margin-left: 10%;
+  margin-left: 0%;
   margin-top: 10px;
   margin-bottom: 20px;
 
@@ -1698,7 +1699,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 @media (max-width: 1000px) {
   .wrap {
    flex-direction: column;
-    width:100%;
+    width:70%;
   }
 }*/
 
