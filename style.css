@@ -967,6 +967,7 @@ p{
    font-size: 15px;
    font-family : 'Nunito', sans-serif;
    text-align: left;
+   margin-top: 25px;
 }
 
 .propos{
@@ -974,10 +975,10 @@ p{
   flex-direction:row ;}
 
 .propos h2{
-  margin-top: 25%;
-  margin-right: 40px;
+  margin-top: 20%;
+  margin-right: 20px;
   /*font-family: 'Updock',cursive;*/
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   color: black;
   text-transform: uppercase;
   writing-mode: vertical-rl;
