@@ -2,6 +2,7 @@
 
 
 
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@0,300;1,300&family=Updock&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@1,200&family=Updock&display=swap');
 
@@ -355,21 +356,21 @@ button a{
     border-bottom-width:thin ;
     width: 60%;*/
 
-   }
+  }
 
-   @media (max-width: 600px) {
-    	nav{
-      	    position:relative;
-    	}
-   }
+  @media (max-width: 600px) {
+    nav{
+      position: relative;
+    }
+  }
 
-   .Contact{
-     display: flex;
-     flex-direction: row ;
-     flex-wrap:wrap;
+  .Contact{
+    display: flex;
+    flex-direction: row ;
+    flex-wrap:wrap;
     
      
-   }
+  }
 
    
 
@@ -523,6 +524,13 @@ aside{
   top: 70px;
   overflow: hidden;
   z-index: 41;
+}
+
+@media (max-width: 1000px) {
+  aside{
+   display: none;
+  }
+
 }
 
 .section2{
@@ -1083,6 +1091,14 @@ p{
   
   
 
+}
+@media (max-width: 600px) {
+  .cards2{
+    position: sticky;
+    overflow: visible;
+    top: 0px;
+    z-index: 42;
+  }
 }
 
 
