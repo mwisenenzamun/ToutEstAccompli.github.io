@@ -357,6 +357,12 @@ button a{
 
    }
 
+   @media (max-width: 600px) {
+    	nav{
+      	    position: fixed;
+    	}
+   }
+
    .Contact{
      display: flex;
      flex-direction: row ;
