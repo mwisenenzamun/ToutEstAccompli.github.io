@@ -359,7 +359,7 @@ button a{
 
    @media (max-width: 600px) {
     	nav{
-      	    position: fixed;
+      	    position:relative;
     	}
    }
 
