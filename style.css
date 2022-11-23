@@ -1018,10 +1018,10 @@ p{
 @media (max-width: 600px) {
   .titles2{
     float: left;
-    width: 100px;
-    font-size: 15px;
+    width: 90px;
+    font-size: 10px;
     margin-top: 40px;
-    margin-right: 5px;
+   
     color: black;
     text-transform: uppercase;
     writing-mode: vertical-rl;
