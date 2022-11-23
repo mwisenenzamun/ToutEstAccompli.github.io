@@ -732,10 +732,10 @@ aside{
 
 .resources{
 
-  width: 70%;
+  width: 90%;
  
   overflow: hidden;
-  margin-left: 0%;
+  margin-left: 10%;
   margin-top: 10px;
   margin-bottom: 20px;
 
@@ -746,6 +746,7 @@ aside{
   flex-wrap: wrap;
   
 }
+
 
 @media (max-width: 1000px) {
 
