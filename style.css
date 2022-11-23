@@ -422,11 +422,11 @@ footer{
   border-top: solid black;
   border-top-width: thin;
   
-  width: 40%;
+  width: 80%;
+  margin-left: 10%;
   
-  margin-left: 20%;
   
-  text-align: center;
+  text-align:right;
   
 }
 
