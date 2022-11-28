@@ -2,7 +2,6 @@
 
 
 
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@0,300;1,300&family=Updock&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@1,200&family=Updock&display=swap');
 
@@ -977,7 +976,7 @@ margin-top: 40px;
 h3{
 
   font-family: 'Courier New', Courier, monospace;
-  text-transform : capitalize;
+  
   font-size: 20px;
   font-weight: 100;
   color: black;
@@ -988,6 +987,7 @@ h3{
 
  width: 50%; 
  margin-left:25% ;
+
  margin-top: 40px;
  font-size: 20px;
  font-weight: 150;
@@ -999,6 +999,7 @@ h3{
 
     width: 65%; 
     margin-left:15% ;
+   
     margin-top: 40px;
     font-size:18px;
     font-weight: 150;
@@ -1391,7 +1392,7 @@ p{
   .tile2 p 
   {
     font-weight:100;
-    
+    margin-top: 10%;
     margin: 5%;
     line-height: 25px;
     text-align : left;
@@ -1425,8 +1426,7 @@ p{
   
 }
 
-@media(width: 1000px){
-
+@media(max-width: 600px){
 
 }
 
@@ -1436,6 +1436,7 @@ p{
   z-index:99; 
   position:absolute;
   padding:5%;
+  margin-top: 10%;
   height:calc(100% - 60px);
 }
 .tile2 h1
@@ -1455,6 +1456,7 @@ p{
 {
   font-weight:300;
   font-size: 15px;
+  margin-top: 10%;
   margin: 5%;
   line-height: 25px;
   text-align : left;
