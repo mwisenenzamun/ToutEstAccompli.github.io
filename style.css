@@ -2,6 +2,7 @@
 
 
 
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@0,300;1,300&family=Updock&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@1,200&family=Updock&display=swap');
 
@@ -263,7 +264,7 @@
   
 .LeMenu a{
   margin-right: 30px;
-  font-size: 1rem;
+  font-size: 0.85rem;
   text-align: center;
   font-weight: bold;
   
@@ -307,12 +308,19 @@
    display: flex;
    flex-direction: column ;
   }
+
+  .menu img{
+    width: 20px;
+    margin-right: 5px;
+    
+    clip-path: circle(54% at 50% 50%);
+  }
   
 }
 
 
 .menu img{
-  width: 40px;
+  width: 30px;
   margin-right: 5px;
   
   clip-path: circle(54% at 50% 50%);
@@ -585,6 +593,16 @@ aside{
       margin-right: 10%;
       
     }
+
+}
+
+@media (max-width: 600px) {
+
+  .Apropos img{
+    max-width:250px ;
+    height: 290px;
+
+  }
 
 }
 
@@ -957,7 +975,7 @@ h3{
 
   font-family: 'Courier New', Courier, monospace;
   text-transform : capitalize;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 100;
   color: black;
 
@@ -1014,7 +1032,7 @@ p{
 }
 .titles2{
   float: left;
-  width: 200px;
+  width: 100px;
   font-size: 20px;
   margin-top: 40px;
   margin-right: 60px;
@@ -1027,7 +1045,7 @@ p{
 
   .titles2{
     float: left;
-    width: 200px;
+    width: 100px;
     font-size: 20px;
     margin-top: 40px;
     margin-right: 20px;
@@ -1130,8 +1148,8 @@ p{
 
 .tile3
 {
-  width:130px;
-  height: 60px;
+  width:150px;
+  height: 40px;
   margin:5px;
   background-color:#a79d9d #9c9292;
   /*#a79d9d*/
@@ -1151,16 +1169,6 @@ p{
   
 }
 
-.tile3 img
-{
-  height:100%;
-  width:100%;
-  position:absolute;
-  top:0;
-  left:0;
-  z-index:0;
-  transition: all 0.4s ease-out;
-}
 .tile3 .text3
 {
 /*   z-index:99; */
@@ -1626,7 +1634,18 @@ p{
 
 }
 
+@media (max-width: 400px) {
 
+
+  .tile
+{
+  width: 200px;
+  height:200px;
+  margin:0px;
+}
+
+
+}
 
 
 .tile img
