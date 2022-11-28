@@ -2,11 +2,6 @@
 
 
 
-
-
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@0,300;1,300&family=Updock&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@1,200&family=Updock&display=swap');
 
@@ -263,7 +258,7 @@
   justify-content: center;
   background-color: #ffffff;
   opacity: 0.5;
-
+  
 }
   
 .LeMenu a{
@@ -749,7 +744,6 @@ aside{
   
 }
 
-
 @media (max-width: 1000px) {
 
   .resources{
@@ -961,12 +955,22 @@ margin-top: 40px;
 
 h3{
 
-  font-family: 'Updock',cursive;
+  font-family: 'Courier New', Courier, monospace;
   text-transform : capitalize;
   font-size: 25px;
   font-weight: 100;
   color: black;
 
+}
+
+.oeuvre p{
+
+ width: 50%; 
+ margin-left:25% ;
+ margin-top: 40px;
+ font-size: 20px;
+ font-weight: 150;
+ color: black;
 }
 
 .page-title {
@@ -1000,7 +1004,7 @@ p{
 
 .propos h2{
   margin-top: 20%;
-
+  
   /*font-family: 'Updock',cursive;*/
   font-size: 1.3rem;
   color: black;
@@ -1056,7 +1060,7 @@ p{
   text-align: :right;
 }
 
-.soutenir p{
+.wrap2 p{
   color: black;
   font-size: 15px;
   font-family : 'Nunito', sans-serif;
