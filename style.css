@@ -435,6 +435,9 @@ footer{
 }
 
 
+
+
+
 /* a propos de l'accueil */
   
 
@@ -990,6 +993,21 @@ h3{
  font-weight: 150;
  color: black;
 }
+
+@media (max-width: 600px) {
+  .oeuvre p{
+
+    width: 65%; 
+    margin-left:15% ;
+    margin-top: 40px;
+    font-size:18px;
+    font-weight: 150;
+    color: black;
+   }
+}
+
+
+
 
 .page-title {
   opacity: .75 !important;
