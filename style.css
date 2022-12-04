@@ -895,6 +895,58 @@ aside{
 
 }
 
+.livre{
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.livre img{
+
+  width: 20%;
+  height: auto;
+  margin:2% ;
+
+}
+@media (max-width: 1000px) {
+
+
+
+  .livre img{
+
+    width: 25%;
+    height: auto;
+    margin:2% ;
+  
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .livre{
+    
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .livre img{
+
+    width: 70%;
+    height: auto;
+    margin:2% ;
+  
+  }
+
+
+}
+
+
+
+
 .lesVideos{
   display: flex;
   flex-wrap: wrap;
