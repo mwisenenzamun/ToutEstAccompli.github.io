@@ -906,7 +906,7 @@ aside{
 .livre img{
 
   width: 20%;
-  
+  height: auto;
   margin:2% ;
 
 }
@@ -935,8 +935,8 @@ aside{
   
   .livre img{
 
-    width: 70%;
-    
+    width: 50%;
+
     margin:2% ;
   
   }
