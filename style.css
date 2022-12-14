@@ -2,6 +2,9 @@
 
 
 
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@0,300;1,300&family=Updock&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@1,200&family=Updock&display=swap');
 
@@ -1654,7 +1657,7 @@ p{
 .wrap
 {
   
-  width:90%;
+
   display:flex;
   margin-bottom: 10px;
   align-items:space-around;
@@ -1736,7 +1739,7 @@ p{
 {
 /*   z-index:99; */
   position:absolute;
-  padding:100px;
+  padding:10px;
   height:calc(100% - 60px);
   
 }
