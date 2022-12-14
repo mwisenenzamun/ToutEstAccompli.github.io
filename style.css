@@ -929,13 +929,13 @@ aside{
   .livre{
     
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   
   }
   
   .livre img{
 
-    width: 50%;
+    width: 45%;
     height: auto;
     margin:2% ;
   
