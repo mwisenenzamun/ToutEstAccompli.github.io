@@ -2,6 +2,9 @@
 
 
 
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@0,300;1,300&family=Updock&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@1,200&family=Updock&display=swap');
 
@@ -256,8 +259,8 @@
 .LeMenu{
   margin-left: 10px;
   justify-content: center;
-  /*background-color: #ffffff;
-  opacity: 0.5;*/
+  background-color: #a39797;
+  opacity: 0.9;
   
 }
   
