@@ -401,139 +401,193 @@
 </head>
 
 <body>
-    <!-- navbar-->
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="page-title">
-                <div class="container">
-                    <!--<div id="loader">Loading...</div>-->
+    <div class="lapageChragement" id="lapageChragement">
+        <div class="charge" id="chargement">
+            <div class="loader">
+            </div>
+        </div>
+    </div>
+    <link href="stylecharge.css" rel="stylesheet" type="text/css">
+
+
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState === "loading") {
+
+
+
+                document.querySelector("#chargement").style.visibility = "visible";
+
+                document.querySelector("#bod").style.display = "none";
+
+            }
+            else {
+                document.querySelector("#chargement").style.display = "none";
+                document.querySelector("body").style.visibility = "visible";
+                document.querySelector("#bod").style.display = "block";
+            }
+        };
+
+
+        $(".carousel").owlCarousel({
+            margin: 20,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                600: {
+                    items: 1,
+                    nav: false
+                },
+                1000: {
+                    items: 2,
+                    nav: false
+                }
+            }
+        });
+    </script>
+    <div class="Body2" id="bod">
+        <!-- navbar-->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="page-title">
+                    <div class="container">
+                        <!--<div id="loader">Loading...</div>-->
+                    </div>
+
+
                 </div>
+
+
+                <ul class="nav navbar-nav">
+
+                    <div class="titrepage2">
+                        <div class='strow2' style="width: 50px;">
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                        </div>
+                        <!--<img src="logo.toutestaccompli.png">-->
+                        <h1 style="color:black; font-family: 'Updock',cursive;text-transform: none">Tout Est
+                            Accompli </h1>
+                        <h1 style="font-size: 20px; color: black;"> </h1>
+                    </div>
+
+
+                </ul>
+                <!-- -->
+
+
+                <!--<div class="droppo">
+                                <button class="drop"><a class="hoverable">MENU</a></button>
+                                <div class="menu">
+                                    <a class="hoverable" href="#Le-Dévotionnel">Le Dévotionnel</a>
+                                    <a class="hoverable" href="#A-propos">A PROPOS</a>
+                                    <a class="hoverable" href="#temoignage">TEMOIGNAGES</a>
+                                    <a class="hoverable" href="#resource">RESSOURCES</a>
+                                    <a class="hoverable" href="#soutenir">comment soutenir L'oeuvre
+                </a>
+                                </div>-->
+
 
 
             </div>
 
+        </nav>
+        <div class="cards3">
+            <div class="card3">
+                <div class="wrap4">
+                    <div class="tile4">
 
-            <ul class="nav navbar-nav">
+                        <div class="text4">
+                            <h1>MENU</h1>
+                            <h2 class="animate-text1">MENU</h2>
+                            <div class="LeMenu">
+                                <a class="hoverable" id="x1"><u>PRÉFACE</u> </a>
+                                <a class="hoverable" id="x2"><u>PRÉSENTATION</u> </a>
+                                <a class="hoverable" id="x3"><u>INTRODUCTION</u></a>
+                                <a class="hoverable" id="x4"><u>PARTIE 1:</u> DIEU ET SA PAROLE </a>
+                                <a class="hoverable" id="x5"><u>PARTIE 2: </u>TU ES CELLE QUE DIEU DIT QUE TU ES</a>
+                                <a class="hoverable" id="x6"><u>PARTIE 3:</u> LE PÉCHÉ ORIGINEL, SES CONSÉQUENCES ET
+                                    L’ANNONCE
+                                    DE NOTRE SAUVEUR</a>
+                                <a class="hoverable" id="x7"><u>PARTIE 4:</u> JÉSUS A SOUFFERT POUR QUE TU N’AIES PLUS À
+                                    SOUFFRIR</a>
+                                <a class="hoverable" id="x8"><u>PARTIE 5:</u> TON CORPS ET TOI N’ÊTES PLUS SOUS LA LOI
+                                    MAIS
+                                    SOUS LA GRÂCE</a>
+                                <a class="hoverable" id="x9"><u>PARTIE 6: </u>TON CORPS NE S’APPARTIENT PLUS, IL
+                                    APPARTIENT À JÉSUS</a>
+                                <a class="hoverable" id="x10"><u>PARTIE 7:</u> L’AUTORITÉ QUE JÉSUS T’A DONNÉE</a>
+                                <a class="hoverable" id="x11"><u>PARTIE 8: </u>GARDE TES PENSÉES FIXÉES SUR LA
+                                    VÉRITÉ</a>
+                                <a class="hoverable" id="x12"><u>« MIEUX VAUT LA FIN D’UNE CHOSE QUE SON
+                                        COMMENCEMENT»</em>(Ecclésiastes 7:8)</a>
 
-                <div class="titrepage2">
-                    <div class='strow2' style="width: 50px;">
-                        <div class='smoke'></div>
-                        <div class='smoke'></div>
-                        <div class='smoke'></div>
-                        <div class='smoke'></div>
-                        <div class='smoke'></div>
-                        <div class='smoke'></div>
-                        <div class='smoke'></div>
-                        <div class='smoke'></div>
-                        <div class='smoke'></div>
-                        <div class='smoke'></div>
-                        <div class='smoke'></div>
-                        <div class='smoke'></div>
-                        <div class='smoke'></div>
-                        <div class='smoke'></div>
-                        <div class='smoke'></div>
-                        <div class='smoke'></div>
-                        <div class='smoke'></div>
-                        <div class='smoke'></div>
-                        <div class='smoke'></div>
-                        <div class='smoke'></div>
-                        <div class='smoke'></div>
-                        <div class='smoke'></div>
-                        <div class='smoke'></div>
-                        <div class='smoke'></div>
-                        <div class='smoke'></div>
-                    </div>
-                    <!--<img src="logo.toutestaccompli.png">-->
-                    <h1 style="color:black; font-family: 'Updock',cursive;text-transform: none">Tout Est
-                        Accompli </h1>
-                    <h1 style="font-size: 20px; color: black;"> </h1>
-                </div>
+                            </div>
 
-
-            </ul>
-            <!-- -->
-
-
-            <!--<div class="droppo">
-            <button class="drop"><a class="hoverable">MENU</a></button>
-            <div class="menu">
-                <a class="hoverable" href="#Le-Dévotionnel">Le Dévotionnel</a>
-                <a class="hoverable" href="#A-propos">A PROPOS</a>
-                <a class="hoverable" href="#temoignage">TEMOIGNAGES</a>
-                <a class="hoverable" href="#resource">RESSOURCES</a>
-                <a class="hoverable" href="#soutenir">comment soutenir L'oeuvre
-                </a>
-            </div>-->
-
-
-
-        </div>
-
-    </nav>
-    <div class="cards3">
-        <div class="card3">
-            <div class="wrap4">
-                <div class="tile4">
-
-                    <div class="text4">
-                        <h1>MENU</h1>
-                        <h2 class="animate-text1">MENU</h2>
-                        <div class="LeMenu">
-                            <a class="hoverable" id="x1"><u>PRÉFACE</u> </a>
-                            <a class="hoverable" id="x2"><u>PRÉSENTATION</u> </a>
-                            <a class="hoverable" id="x3"><u>INTRODUCTION</u></a>
-                            <a class="hoverable" id="x4"><u>PARTIE 1:</u> DIEU ET SA PAROLE </a>
-                            <a class="hoverable" id="x5"><u>PARTIE 2: </u>TU ES CELLE QUE DIEU DIT QUE TU ES</a>
-                            <a class="hoverable" id="x6"><u>PARTIE 3:</u> LE PÉCHÉ ORIGINEL, SES CONSÉQUENCES ET
-                                L’ANNONCE
-                                DE NOTRE SAUVEUR</a>
-                            <a class="hoverable" id="x7"><u>PARTIE 4:</u> JÉSUS A SOUFFERT POUR QUE TU N’AIES PLUS À
-                                SOUFFRIR</a>
-                            <a class="hoverable" id="x8"><u>PARTIE 5:</u> TON CORPS ET TOI N’ÊTES PLUS SOUS LA LOI
-                                MAIS
-                                SOUS LA GRÂCE</a>
-                            <a class="hoverable" id="x9"><u>PARTIE 6: </u>TON CORPS NE S’APPARTIENT PLUS, IL
-                                APPARTIENT À JÉSUS</a>
-                            <a class="hoverable" id="x10"><u>PARTIE 7:</u> L’AUTORITÉ QUE JÉSUS T’A DONNÉE</a>
-                            <a class="hoverable" id="x11"><u>PARTIE 8: </u>GARDE TES PENSÉES FIXÉES SUR LA VÉRITÉ</a>
-                            <a class="hoverable" id="x12"><u>« MIEUX VAUT LA FIN D’UNE CHOSE QUE SON
-                                    COMMENCEMENT»</em>(Ecclésiastes 7:8)</a>
 
                         </div>
 
-
                     </div>
-
-                </div>
-                <div class=" Contact">
-                    <div class="menu"><a id="len4" class="hoverable" href="mailto:tracysibomana@gmail.jpeg"><img
-                                src="logo.mail.png"></a>
-                    </div>
-                    <div class="menu"><a id="len4" class="hoverable" href="#"><img src="logo.instagram.jpeg"></a>
+                    <div class=" Contact">
+                        <div class="menu"><a id="len4" class="hoverable" href="mailto:tracysibomana@gmail.jpeg"><img
+                                    src="logo.mail.png"></a>
+                        </div>
+                        <div class="menu"><a id="len4" class="hoverable" href="#"><img src="logo.instagram.jpeg"></a>
+                        </div>
                     </div>
                 </div>
             </div>
+
+
         </div>
 
+        <main>
+            <h1></h1>
+            <div class="containers">
+                <button id="left-btn"><i class="arrow"></i></button>
+                <img id="carousel" src="" alt="">
+                <button id="right-btn"><i class="arrow"></i></button>
+            </div>
+        </main>
 
-    </div>
-
-    <main>
-        <h1></h1>
-        <div class="containers">
-            <button id="left-btn"><i class="arrow"></i></button>
-            <img id="carousel" src="" alt="">
-            <button id="right-btn"><i class="arrow"></i></button>
+        <div class="under">
+            <p class="copyright" style="color:black;"><a href="" style="font-size: 15px;">Mention légale</a>
+                - ©ToutEstAccompli.com 2022.- Tous droits
+                réservés.</p>
         </div>
-    </main>
 
-    <div class="under">
-        <p class="copyright" style="color:black;"><a href="" style="font-size: 15px;">Mention légale</a>
-            - ©ToutEstAccompli.com 2022.- Tous droits
-            réservés.</p>
+        <script src="main.js"></script>
+
     </div>
-
-    <script src="main.js"></script>
 </body>
 
 </html>
