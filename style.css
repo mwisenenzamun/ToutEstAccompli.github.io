@@ -684,7 +684,7 @@ aside{
 
 .card{
   
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -868,10 +868,10 @@ aside{
 }
 
 .resources h3{
-  font-size: 20px;
-  font-family: 'Updock',cursive;
-  
-  margin-bottom:10px ;
+  font-size: 15px;
+  font-family: 'Courier New',cursive;
+ 
+  margin-bottom:0px ;
   /*text-decoration: underline 1px;*/
 
 }
@@ -1030,7 +1030,7 @@ h3{
   font-family: 'Courier New', Courier, monospace;
   
   font-size: 20px;
-  font-weight: 100;
+  font-weight: 1;
   color: black;
 
 }
