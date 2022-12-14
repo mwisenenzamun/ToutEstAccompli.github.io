@@ -1446,6 +1446,7 @@ p{
     font-weight:100;
     margin-top: 10%;
     margin: 5%;
+    width: 60%;
     line-height: 25px;
     text-align : left;
   /*   opacity:0; */
@@ -1509,7 +1510,8 @@ p{
   font-weight:300;
   font-size: 15px;
   margin-top: 10%;
-  margin: 5%;
+  width: 30%;
+  margin: 0;
   line-height: 25px;
   text-align : left;
 /*   opacity:0; */
