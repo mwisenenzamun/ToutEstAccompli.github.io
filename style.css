@@ -3,8 +3,6 @@
 
 
 
-
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@0,300;1,300&family=Updock&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@1,200&family=Updock&display=swap');
 
@@ -167,6 +165,17 @@
   html{
     margin: none;
 
+    
+  }
+
+  @media screen and (min-width: 1880px) {
+    body {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+    }
+   
     
   }
   
