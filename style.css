@@ -267,10 +267,21 @@
 .LeMenu{
   margin-left: 10px;
   justify-content: center;
-  /*background-color: #a39797;
-  opacity: 0.9;*/
+  /*background-color: #c7b9b9;
+  /*opacity: 0.9;*/
   
 }
+
+@media (max-width: 800px) {
+  .LeMenu{
+    background-color: #c7b9b9;
+    /*opacity: 0.9;*/
+    
+  }
+
+}
+
+
   
 .LeMenu a{
   margin-right: 30px;
