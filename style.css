@@ -2,7 +2,6 @@
 
 
 
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@0,300;1,300&family=Updock&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@1,200&family=Updock&display=swap');
 
@@ -268,8 +267,8 @@
 .LeMenu{
   margin-left: 10px;
   justify-content: center;
-  background-color: #a39797;
-  opacity: 0.9;
+  /*background-color: #a39797;
+  opacity: 0.9;*/
   
 }
   
@@ -1231,8 +1230,8 @@ p{
 
 .tile3
 {
-  width:150px;
-  height: 40px;
+  width:50px;
+  height: 35px;
   margin:5px;
   background-color:#a79d9d #9c9292;
   /*#a79d9d*/
@@ -1244,7 +1243,7 @@ p{
   cursor:pointer;
   transition: all 0.4s ease-out;
   /*box-shadow: 0px 25px 77px -17px rgba(0,0,0,0.44);*/
-  border: solid 1.5px #000;
+  /*border: solid 1.5px #000;*/
 
   overflow:hidden;
   color:white;
@@ -1262,11 +1261,15 @@ p{
   flex-direction: column;
 }
 
+.text3:hover{
+
+  display: flex;
+  flex-direction: row;
+}
+
 .text3{
   font-size: 11px; 
   color: #fff;
-  
-
 }
 
 
@@ -1315,7 +1318,7 @@ p{
 
 
 
-.tile3:hover
+.tile3:hover 
 {
   width:fit-content;
   height:fit-content;
@@ -1325,6 +1328,7 @@ p{
 /*   background-color:#99aeff; */
 /*box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);*/
   transform:scale(1.05);
+  
 }
 
 
@@ -1362,11 +1366,15 @@ p{
 
 
 }
+.tile3 img
+{
+  width: 30px;
+}
 
 
 .tile3:hover img
 {
-  opacity: 0.2;
+  /*opacity: 0.2;*/
 }
 .tile2:hover .animate-text
 {
@@ -2531,4 +2539,5 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
+/***/
 
