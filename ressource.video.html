@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>LE DEVOTIONNEL-Tout Est Accompli © </title>
+    <link rel="icon" type="image/png" sizes="16x16" href="logo.toutestaccompli.png">
+
+    <style>
+        .videos {
+
+            display: flex;
+            flex: row;
+            flex-wrap: wrap;
+
+        }
+
+        .video img {}
+
+        @media (max-width: 600px) {
+            .video img {
+                width: 100%;
+            }
+
+        }
+
+
+        .boxvideo {
+            margin-top: 50px;
+            width: 80%;
+            margin-right: 20%;
+            margin-left: 20%;
+            justify-content: center;
+        }
+
+        h3 {
+
+            margin-top: 50px;
+            position: center;
+            font-weight: bold;
+
+        }
+
+        .Horiz-line {
+            border-top: 2px solid rgb(87, 66, 66);
+            display: inline-block;
+            height: 30px;
+            width: 80%;
+            margin: 0 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="lapageChragement" id="lapageChragement">
+        <div class="charge" id="chargement">
+            <div class="loader">
+            </div>
+        </div>
+    </div>
+    <link href="stylecharge.css" rel="stylesheet" type="text/css">
+
+
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState === "loading") {
+
+
+
+                document.querySelector("#chargement").style.visibility = "visible";
+
+                document.querySelector("#bod").style.display = "none";
+
+            }
+            else {
+                document.querySelector("#chargement").style.display = "none";
+                document.querySelector("body").style.visibility = "visible";
+                document.querySelector("#bod").style.display = "block";
+            }
+        };
+
+
+        $(".carousel").owlCarousel({
+            margin: 20,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                600: {
+                    items: 1,
+                    nav: false
+                },
+                1000: {
+                    items: 2,
+                    nav: false
+                }
+            }
+        });
+    </script>
+    <div class="Body2" id="bod">
+        <!-- navbar-->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="page-title">
+                    <div class="container">
+                        <!--<div id="loader">Loading...</div>-->
+                    </div>
+
+
+                </div>
+
+
+                <ul class="nav navbar-nav">
+
+                    <div class="titrepage2">
+                        <div class='strow2' style="width: 50px;">
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                        </div>
+                        <!--<img src="logo.toutestaccompli.png">-->
+                        <h1 style="color:black; font-family: 'Updock',cursive;text-transform: none">Tout Est
+                            Accompli </h1>
+                        <h1 style="font-size: 20px; color: black;"> </h1>
+                    </div>
+
+
+                </ul>
+                <!-- -->
+
+
+                <!--<div class="droppo">
+                                <button class="drop"><a class="hoverable">MENU</a></button>
+                                <div class="menu">
+                                    <a class="hoverable" href="#Le-Dévotionnel">Le Dévotionnel</a>
+                                    <a class="hoverable" href="#A-propos">A PROPOS</a>
+                                    <a class="hoverable" href="#temoignage">TEMOIGNAGES</a>
+                                    <a class="hoverable" href="#resource">RESSOURCES</a>
+                                    <a class="hoverable" href="#soutenir">comment soutenir L'oeuvre
+                </a>
+                                </div>-->
+
+
+
+            </div>
+
+        </nav>
+        <div class="cards2">
+            <div class="card2">
+                <div class="wrap3">
+
+                    <div class=" Contact">
+
+                        <div class="menu"><a id="len4" class="hoverable" href="index.html#resource"><img
+                                    src="logo.menu.jpg"></a>
+                        </div>
+                        <div class="menu"><a id="len4" class="hoverable" href="mailto:tracysibomana@gmail.jpeg"><img
+                                    src="logo.mail.png"></a>
+                        </div>
+                        <div class="menu"><a id="len4" class="hoverable" href="#"><img src="logo.instagram.jpeg"></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+        <div class="boxvideo">
+
+            <h3> Qui est Jésus?</h3>
+            <span class="Horiz-line"></span>
+            <div class="videos">
+
+                <div class=" video">
+                    <a href="https://www.youtube.com/embed/ZNANpKzngXc"> <img src="image_video12.png" alt=""></a>
+                </div>
+
+                <div class=" video">
+                    <a href="https://www.youtube.com/embed/EieI6qcWsck"> <img src="image_video2.png" alt=""></a>
+                </div>
+
+                <div class=" video">
+                    <a href="https://www.youtube.com/embed/Gw6mZDcphbE"><img src="image_video4.png" alt=""></a>
+                </div>
+            </div>
+            <h3>L'œuvre de la croix</h3>
+            <span class="Horiz-line"></span>
+            <div class="videos">
+
+                <div class=" video">
+                    <a href="https://www.youtube.com/embed/EAHwHOfAXFU"><img src="image_video13.png" alt=""></a>
+                </div>
+
+                <div class=" video">
+                    <a href="https://www.youtube.com/embed/0_daOWmHjJc"><img src="image_video6.png" alt=""></a>
+                </div>
+            </div>
+
+
+            <h3>La croix et la stérilité</h3>
+            <span class="Horiz-line"></span>
+            <div class="videos">
+
+
+
+                <div class=" video">
+                    <a href="https://www.youtube.com/embed/qo1IhFYLLvU"><img src="image_video1.png" alt=""></a>
+                </div>
+
+
+                <div class=" video">
+                    <a href="https://www.youtube.com/embed/ShvJsve3u50"><img src="image_video3.png" alt=""></a>
+                </div>
+            </div>
+
+            <h3>La croix et les menstruations</h3>
+            <span class="Horiz-line"></span>
+            <div class="videos">
+
+                <div class=" video">
+                    <a href="https://www.youtube.com/embed/kdJuuQMiXME"><img src="image_video5.png" alt=""></a>
+                </div>
+
+
+
+
+
+                <div class=" video">
+                    <a href="https://www.youtube.com/embed/0uYYMa7_1eE"><img src="image_video7.png" alt=""></a>
+                </div>
+
+
+                <div class=" video">
+                    <a href="https://www.youtube.com/embed/zyoSsFZ5FqM"><img src="image_video8.png" alt=""></a>
+                </div>
+
+                <div class=" video">
+                    <a href="https://www.youtube.com/embed/Tee8LkkfSSI"><img src="image_video11.png" alt=""></a>
+                </div>
+
+                <div class=" video">
+                    <a href="https://www.youtube.com/embed/dbFE9776pEI"><img src="image_video10.png" alt=""></a>
+                </div>
+
+                <div class=" video">
+                    <a href="https://www.youtube.com/embed/V_EFSLz4HOA"><img src="image_video.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="under">
+        <p class="copyright" style="color:black;"><a href="" style="font-size: 15px;">Mention légale</a>
+            - ©ToutEstAccompli.com 2022.- Tous droits
+            réservés.</p>
+    </div>
+
+    <script src="main.js"></script>
+
+    </div>
+</body>
+
+</html>
