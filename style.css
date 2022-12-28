@@ -2,8 +2,6 @@
 
 
 
-
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@0,300;1,300&family=Updock&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@1,200&family=Updock&display=swap');
 
@@ -797,28 +795,55 @@ aside{
 .slide__text {
   font-size: 15px;
   width: 55%;
-  margin: 40px;
+  margin: 20px;
   text-align: left;
   font-family: 'Nunito', sans-serif;
   font-weight: normal;
 
   color: #000;
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+  .slider {
+    width: 100%;
+    max-width: 1000px;
+    max-height: 500px;
+    margin: 10px;
+    
+    border-radius: 20px;
+    
 
-  
-  .slide2 {
-   
-    overflow-y: auto;
+   position: relative;
   }
+  .slide {
+    display: flex;
+    /*justify-content: center;
+    align-items: center;*/
+    flex-shrink: 0;
+    width: 100%;
+  
+    scroll-snap-align: center;
+  
+    margin-right: 0px;
+    box-sizing: border-box;
+    background: white;
+    transform-origin: center center;
+    transform: scale(1);
+  }
+  .slide2{
+
+    height: 400px;
+  }
+  
+  
   .slide__text {
     font-size: 15px;
     width: 75%;
-    margin: 40px;
+    
+    margin: 20px;
     text-align: left;
     font-family: 'Nunito', sans-serif;
     font-weight: normal;
-    
+    overflow-y: auto;
     color: #000;
   }
   
