@@ -822,8 +822,8 @@ a.slide__next,
 .slide__next {
   position: absolute;
   top: 48%;
-  width: 35px;
-  height: 35px;
+  width: 15px;
+  height: 15px;
   border: solid black;
   border-width: 0 4px 4px 0;
   padding: 3px;
@@ -1004,7 +1004,7 @@ a.slide__next,
 
 .resources p{
   color: #000;
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 10px;
   margin: 10%;
   font-weight: 300;
@@ -1670,7 +1670,7 @@ p{
 .tile2
 {
   width:100%;
-  height: fit-content;
+  height: 60px;
   margin:0px;
   background-color:#464853;
   display: flex;
@@ -2053,6 +2053,7 @@ p{
   transform: translateX(-200px);
   transition-delay: 0.2s;
   font-size: 15px;
+  width: 90%;
 }
 @media (max-width: 600px) {
 
@@ -2068,10 +2069,13 @@ p{
   transform: translateX(-200px);
   transition-delay: 0.2s;
   font-size: 12px;
+  width: 90%;
 }
 
 
 }
+
+
 
 
 
