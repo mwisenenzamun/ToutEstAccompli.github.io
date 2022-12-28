@@ -2,6 +2,8 @@
 
 
 
+
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@0,300;1,300&family=Updock&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@1,200&family=Updock&display=swap');
 
@@ -802,12 +804,12 @@ aside{
 
   color: #000;
 }
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .slider {
     width: 100%;
     max-width: 1000px;
-    max-height: 500px;
-    margin: 10px;
+    max-height: 700px;
+    margin: 20px;
     
     border-radius: 20px;
     
@@ -829,11 +831,16 @@ aside{
     transform-origin: center center;
     transform: scale(1);
   }
-  .slide2{
-
-    height: 400px;
+  .slide1{
+    
+    margin: 40px;
+    height: 500px;
   }
-  
+  .slide2{
+    
+    margin: 5px;
+    height: 500px;
+  }
   
   .slide__text {
     font-size: 15px;
