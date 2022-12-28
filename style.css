@@ -768,7 +768,7 @@ aside{
 }
 
 .slide:nth-of-type(even) {
-  background-color: rgb(189, 193, 201);
+  background-color: rgb(240, 241, 243);
 }
 
 .slide {
@@ -854,6 +854,7 @@ a.slide__next,
   width: 15px;
   border-radius: 50%;
   background-color: black;
+  opacity: 0.3;
   margin: 0 10px 0 10px;
 }
 
