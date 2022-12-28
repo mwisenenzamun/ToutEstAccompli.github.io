@@ -2,6 +2,8 @@
 
 
 
+
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@0,300;1,300&family=Updock&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@1,200&family=Updock&display=swap');
 
@@ -745,7 +747,7 @@ aside{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height:100%;
 }
 
 .slider {
@@ -759,13 +761,18 @@ aside{
  position: relative;
 }
 
+
+
 .slides {
   display: flex;
   overflow-x: scroll;
+  
   position: relative;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
 }
+
+
 
 .slide:nth-of-type(even) {
   background-color: rgb(240, 241, 243);
@@ -779,6 +786,7 @@ aside{
   width: 100%;
 
   scroll-snap-align: center;
+
   margin-right: 0px;
   box-sizing: border-box;
   background: white;
@@ -796,6 +804,27 @@ aside{
 
   color: #000;
 }
+@media (max-width: 600px) {
+
+  
+  .slide2 {
+   
+    overflow-y: auto;
+  }
+  .slide__text {
+    font-size: 15px;
+    width: 75%;
+    margin: 40px;
+    text-align: left;
+    font-family: 'Nunito', sans-serif;
+    font-weight: normal;
+    
+    color: #000;
+  }
+  
+   
+  
+  }
 
 .slide a {
   background: none;
@@ -850,6 +879,7 @@ a.slide__next,
 
 .slider__navlink {
   display: inline-block;
+  
   height: 15px;
   width: 15px;
   border-radius: 50%;
@@ -1674,6 +1704,7 @@ p{
   height: 60px;
   margin:0px;
   background-color:#464853;
+  opacity:0.85;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
