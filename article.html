@@ -206,19 +206,21 @@
         .wrap4 {
             margin: 5px auto 0 auto;
             width: 100%;
-            height: 100%;
+            max-height: 100%;
             display: flex;
 
             align-items: space-around;
             max-width: 1200px;
-            text-align: center;
+
 
         }
 
         .LeMenu {
             margin-left: 10px;
+            margin: 40px;
             justify-content: center;
             background-color: #c7b9b9;
+            text-align: center;
             /*opacity: 0.9;*/
 
         }
@@ -238,7 +240,7 @@
             transition: all 0.4s ease-out;
             /*box-shadow: 0px 25px 77px -17px rgba(0,0,0,0.44);*/
             /*border: solid 1.5px #000;*/
-
+            text-align: center;
             overflow: hidden;
             color: white;
 
@@ -252,6 +254,7 @@
             height: calc(100% - 60px);
             display: flex;
             flex-direction: column;
+            text-align: center;
         }
 
         .text4 {
@@ -259,7 +262,7 @@
             color: rgb(19, 17, 17);
 
 
-            opacity: 0.8;
+
 
         }
 
@@ -305,13 +308,10 @@
 
         }
 
-
-
-
-
         .tile4:hover {
             width: fit-content;
-            height: fit-content;
+            max-height: 500px;
+            overflow-y: auto;
             /*opacity: 0.5;*/
 
 
@@ -330,6 +330,7 @@
             .tile4 .text {
                 display: flex;
                 flex-direction: column;
+
             }
 
             .tile4:hover {
@@ -364,6 +365,16 @@
         .tile4:hover .animate-text {
             transform: translateX(0);
             opacity: 1;
+        }
+
+        .dot {
+            height: 10px;
+            width: 10px;
+            margin-left: 15px;
+            margin-right: 15px;
+            background-color: rgb(17, 16, 16);
+            border-radius: 50%;
+            display: inline-block;
         }
 
 
@@ -560,26 +571,36 @@
                             <h1>Les Chapitres</h1>
                             <h2 class="animate-text1">MENU</h2>
                             <div class="LeMenu">
-                                <a class="hoverable" id="x1"><u>PRÉFACE</u> </a>
-                                <a class="hoverable" id="x2"><u>PRÉSENTATION</u> </a>
-                                <a class="hoverable" id="x3"><u>INTRODUCTION</u></a>
-                                <a class="hoverable" id="x4"><u>PARTIE 1:</u> DIEU ET SA PAROLE </a>
-                                <a class="hoverable" id="x5"><u>PARTIE 2: </u>TU ES CELLE QUE DIEU DIT QUE TU ES</a>
-                                <a class="hoverable" id="x6"><u>PARTIE 3:</u> LE PÉCHÉ ORIGINEL, SES CONSÉQUENCES ET
-                                    L’ANNONCE
-                                    DE NOTRE SAUVEUR</a>
-                                <a class="hoverable" id="x7"><u>PARTIE 4:</u> JÉSUS A SOUFFERT POUR QUE TU N’AIES PLUS À
-                                    SOUFFRIR</a>
-                                <a class="hoverable" id="x8"><u>PARTIE 5:</u> TON CORPS ET TOI N’ÊTES PLUS SOUS LA LOI
+                                <a class="hoverable" id="x1"><span class="dot"></span><u>PRÉFACE</u> <br><br> </a>
+                                <a class="hoverable" id="x2"><span class="dot"></span><u>PRÉSENTATION</u> <br><br> </a>
+                                <a class="hoverable" id="x3"><span class="dot"></span><u>INTRODUCTION</u><br><br></a>
+                                <a class="hoverable" id="x4"><span class="dot"></span><u>PARTIE 1:</u> DIEU ET SA PAROLE
+                                    <br><br></a>
+                                <a class="hoverable" id="x5"><span class="dot"></span><u>PARTIE 2: </u>TU ES CELLE QUE
+                                    DIEU DIT QUE TU ES
+                                    <br><br></a>
+                                <a class="hoverable" id="x6"><span class="dot"></span><u>PARTIE 3:</u> LE PÉCHÉ
+                                    ORIGINEL, SES CONSÉQUENCES ET
+                                    L’ANNONCE DE NOTRE SAUVEUR <br><br></a>
+                                <a class="hoverable" id="x7"><span class="dot"></span><u>PARTIE 4:</u> JÉSUS A SOUFFERT
+                                    POUR QUE TU N’AIES PLUS À
+                                    SOUFFRIR <br><br></a>
+                                <a class="hoverable" id="x8"><span class="dot"></span><u>PARTIE 5:</u> TON CORPS ET TOI
+                                    N’ÊTES PLUS SOUS LA LOI
                                     MAIS
-                                    SOUS LA GRÂCE</a>
-                                <a class="hoverable" id="x9"><u>PARTIE 6: </u>TON CORPS NE S’APPARTIENT PLUS, IL
-                                    APPARTIENT À JÉSUS</a>
-                                <a class="hoverable" id="x10"><u>PARTIE 7:</u> L’AUTORITÉ QUE JÉSUS T’A DONNÉE</a>
-                                <a class="hoverable" id="x11"><u>PARTIE 8: </u>GARDE TES PENSÉES FIXÉES SUR LA
-                                    VÉRITÉ</a>
-                                <a class="hoverable" id="x12"><u>« MIEUX VAUT LA FIN D’UNE CHOSE QUE SON
-                                        COMMENCEMENT»</em>(Ecclésiastes 7:8)</a>
+                                    SOUS LA GRÂCE <br><br></a>
+                                <a class="hoverable" id="x9"><span class="dot"></span><u>PARTIE 6: </u>TON CORPS NE
+                                    S’APPARTIENT PLUS, IL
+                                    APPARTIENT À JÉSUS <br><br></a>
+                                <a class="hoverable" id="x10"><span class="dot"></span><u>PARTIE 7:</u> L’AUTORITÉ QUE
+                                    JÉSUS T’A DONNÉE
+                                    <br><br></a>
+                                <a class="hoverable" id="x11"><span class="dot"></span><u>PARTIE 8: </u>GARDE TES
+                                    PENSÉES FIXÉES SUR LA
+                                    VÉRITÉ <br><br></a>
+                                <a class="hoverable" id="x12"><span class="dot"></span><u>« MIEUX VAUT LA FIN D’UNE
+                                        CHOSE QUE SON
+                                        COMMENCEMENT»</em>(Ecclésiastes 7:8)<br><br></a>
 
                             </div>
 
