@@ -2,6 +2,7 @@
 
 
 
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@0,300;1,300&family=Updock&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@1,200&family=Updock&display=swap');
 
@@ -1706,6 +1707,29 @@ p{
  
 }
 
+.tile2
+{
+  width:100%;
+  height: 60px;
+  margin:0px;
+  background-color:#464853;
+  opacity:0.85;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-size:cover;
+  position: relative;
+  cursor:pointer;
+  transition: all 0.4s ease-out;
+  box-shadow: 0px 25px 77px -17px rgba(0,0,0,0.44);
+  border-radius: 40px;
+  overflow: hidden;
+  color:white;
+  
+}
+
+
+
 @media(max-width: 1000px){
 
   .wrap2
@@ -1724,7 +1748,7 @@ p{
     .tile2:hover
   {
     width:100%;
-    height: 109px;
+    height: fit-content;
 
   /*   background-color:#99aeff; */
     box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
@@ -1748,30 +1772,9 @@ p{
   }
 }
 
-.tile2
-{
-  width:100%;
-  height: 60px;
-  margin:0px;
-  background-color:#464853;
-  opacity:0.85;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  background-size:cover;
-  position: relative;
-  cursor:pointer;
-  transition: all 0.4s ease-out;
-  box-shadow: 0px 25px 77px -17px rgba(0,0,0,0.44);
-  border-radius: 40px;
-  overflow: hidden;
-  color:white;
-  
-}
 
-@media(max-width: 600px){
 
-}
+
 
 
 .tile2 .text2
@@ -1875,6 +1878,36 @@ p{
 {
   transform:translateX(0);
   opacity:1;
+}
+@media(max-width: 600px){
+  .tile21:hover
+{
+  height: 509px;
+  
+}
+
+.tile22:hover
+{
+  height: 309px;
+  
+}
+
+.tile23:hover
+{
+  height: 409px;
+  
+}
+.tile24:hover
+{
+  height: 409px;
+  
+}
+.tile25:hover
+{
+  height: 309px;
+  
+}
+
 }
 
 @media(max-width: 400px){
