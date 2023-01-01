@@ -104,12 +104,12 @@
         }
 
         button {
-            height: 10%;
+            height: 5%;
             border: none;
             outline: none;
             background: rgba(0, 0, 0, 0.5);
             cursor: pointer;
-            padding: 1em;
+            padding: 0.5em;
             display: flex;
             text-align: left;
         }
@@ -118,7 +118,7 @@
             border: solid #fff;
             border-width: 0 4px 4px 0;
             display: inline-block;
-            padding: 10px;
+            padding: 5px;
             transition: transform 0.3s ease-out;
             outline: none;
         }
@@ -193,7 +193,7 @@
 
         @media (max-width: 600px) {
             .cards3 {
-                position: sticky;
+
                 overflow: visible;
                 top: 0px;
                 z-index: 42;
@@ -250,7 +250,7 @@
         .tile4 .text4 {
             /*   z-index:99; */
 
-            padding: 5px;
+            /*padding: 5px;*/
             height: calc(100% - 60px);
             display: flex;
             flex-direction: column;
@@ -275,6 +275,11 @@
             line-height: 5;
 
         }
+
+        .text4 img {
+            width: 30px;
+        }
+
 
 
         .tile4 h1 {
@@ -310,7 +315,7 @@
 
         .tile4:hover {
             width: fit-content;
-            max-height: 500px;
+            height: 500px;
             overflow-y: auto;
             /*opacity: 0.5;*/
 
@@ -322,27 +327,60 @@
 
         .hoverable {
             margin-bottom: 10px;
+
+        }
+
+        .hoverableM {
+            margin-bottom: 10px;
+            margin: 15px;
+
         }
 
 
         @media (max-width: 1000px) {
+            .tile4 h1 {
+                font-size: 20px;
+                margin: none;
+                padding: 0px;
+                text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+                text-align: left;
+
+            }
+
 
             .tile4 .text {
                 display: flex;
                 flex-direction: column;
+                word-wrap: break-word;
+            }
+
+
+            .tile4:hover {
+                width: 600px;
+                height: 500px;
+
+                /*opacity: 0.5;*/
+
+
+                /*   background-color:#99aeff; */
+                /*box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);*/
+                transform: none;
 
             }
 
-            .tile4:hover {
-                width: fit-content;
-                height: fit-content;
+            .hoverableM {
+                margin-bottom: 10px;
+                margin: 15px;
+                word-wrap: break-word;
+                width: 260px;
+
             }
 
             .card3 {
 
                 margin-bottom: 0px;
-                margin-left: 10px;
-                width: 100%;
+                margin-left: 0px;
+                width: 80%;
                 overflow: visible;
             }
 
@@ -350,9 +388,57 @@
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                margin-left: 30px;
+                margin-left: 5px;
 
             }
+
+            .wrap4 {
+                margin: 5px auto 0 auto;
+                width: 100%;
+                max-height: 100%;
+                display: flex;
+
+                align-items: space-around;
+                max-width: 1500px;
+
+
+            }
+
+            .LeMenu {
+                margin-left: 10px;
+                margin: 0px;
+
+                justify-content: center;
+                background-color: #c7b9b9;
+                text-align: center;
+                overflow-y: auto;
+                /*opacity: 0.9;*/
+
+            }
+
+            .tile4 {
+                width: 250px;
+                height: 30px;
+                margin: 5px;
+                margin-bottom: 200px;
+                background-color: #a79d9d #9c9292;
+                /*#a79d9d*/
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                background-size: cover;
+
+                cursor: pointer;
+                transition: all 0.4s ease-out;
+                /*box-shadow: 0px 25px 77px -17px rgba(0,0,0,0.44);*/
+                /*border: solid 1.5px #000;*/
+                text-align: center;
+                overflow: hidden;
+                color: white;
+
+
+            }
+
 
 
         }
@@ -568,39 +654,62 @@
 
 
                         <div class="text4">
+                            <!--<h1>Les Chapitres</h1>
+                            <h2 class="animate-text1">MENU</h2>-->
+                            <img src="logo.chapitres.png">
                             <h1>Les Chapitres</h1>
-                            <h2 class="animate-text1">MENU</h2>
+
                             <div class="LeMenu">
-                                <a class="hoverable" id="x1"><span class="dot"></span><u>PRÉFACE</u> <br><br> </a>
-                                <a class="hoverable" id="x2"><span class="dot"></span><u>PRÉSENTATION</u> <br><br> </a>
-                                <a class="hoverable" id="x3"><span class="dot"></span><u>INTRODUCTION</u><br><br></a>
-                                <a class="hoverable" id="x4"><span class="dot"></span><u>PARTIE 1:</u> DIEU ET SA PAROLE
+
+
+                                <a class="hoverable hoverableM" id="x1"><span class="dot"></span><u>PRÉFACE</u> <br><br>
+                                </a>
+                                <a class="hoverable hoverableM" id="x2"><span class="dot"></span><u>PRÉSENTATION</u><br>
+                                    <br><br> </a>
+                                <a class="hoverable hoverableM" id="x3"><span
+                                        class="dot"></span><u>INTRODUCTION</u><br><br></a>
+                                <a class="hoverable hoverableM" id="x4"><span class="dot"></span><u>PARTIE 1:</u><br>
+                                    DIEU
+                                    ET SA PAROLE
                                     <br><br></a>
-                                <a class="hoverable" id="x5"><span class="dot"></span><u>PARTIE 2: </u>TU ES CELLE QUE
+                                <a class="hoverable hoverableM" id="x5"><span class="dot"></span><u>PARTIE 2: </u><br>TU
+                                    ES
+                                    CELLE QUE
                                     DIEU DIT QUE TU ES
                                     <br><br></a>
-                                <a class="hoverable" id="x6"><span class="dot"></span><u>PARTIE 3:</u> LE PÉCHÉ
+                                <a class="hoverable hoverableM" id="x6"><span class="dot"></span><u>PARTIE 3:</u><br> LE
+                                    PÉCHÉ
                                     ORIGINEL, SES CONSÉQUENCES ET
                                     L’ANNONCE DE NOTRE SAUVEUR <br><br></a>
-                                <a class="hoverable" id="x7"><span class="dot"></span><u>PARTIE 4:</u> JÉSUS A SOUFFERT
+                                <a class="hoverable hoverableM" id="x7"><span class="dot"></span><u>PARTIE 4:</u><br>
+                                    JÉSUS
+                                    A SOUFFERT
                                     POUR QUE TU N’AIES PLUS À
                                     SOUFFRIR <br><br></a>
-                                <a class="hoverable" id="x8"><span class="dot"></span><u>PARTIE 5:</u> TON CORPS ET TOI
+                                <a class="hoverable hoverableM" id="x8"><span class="dot"></span><u>PARTIE 5:</u><br>
+                                    TON
+                                    CORPS ET TOI
                                     N’ÊTES PLUS SOUS LA LOI
                                     MAIS
                                     SOUS LA GRÂCE <br><br></a>
-                                <a class="hoverable" id="x9"><span class="dot"></span><u>PARTIE 6: </u>TON CORPS NE
-                                    S’APPARTIENT PLUS, IL
+                                <a class="hoverable hoverableM" id="x9"><span class="dot"></span><u>PARTIE 6:
+                                    </u><br>TON
+                                    CORPS NE
+                                    T’APPARTIENT PLUS, IL
                                     APPARTIENT À JÉSUS <br><br></a>
-                                <a class="hoverable" id="x10"><span class="dot"></span><u>PARTIE 7:</u> L’AUTORITÉ QUE
+                                <a class="hoverable hoverableM" id="x10"><span class="dot"></span><u>PARTIE 7:</u><br>
+                                    L’AUTORITÉ QUE
                                     JÉSUS T’A DONNÉE
                                     <br><br></a>
-                                <a class="hoverable" id="x11"><span class="dot"></span><u>PARTIE 8: </u>GARDE TES
+                                <a class="hoverable hoverableM" id="x11"><span class="dot"></span><u>PARTIE 8: </u><br>
+                                    GARDE
+                                    TES
                                     PENSÉES FIXÉES SUR LA
                                     VÉRITÉ <br><br></a>
-                                <a class="hoverable" id="x12"><span class="dot"></span><u>« MIEUX VAUT LA FIN D’UNE
+                                <a class="hoverable hoverableM" id="x12"><span class="dot"></span><u>« MIEUX VAUT LA FIN
+                                        D’UNE
                                         CHOSE QUE SON
-                                        COMMENCEMENT»</em>(Ecclésiastes 7:8)<br><br></a>
+                                        COMMENCEMENT»</u><br>(Ecclésiastes 7:8)<br><br></a>
 
                             </div>
 
