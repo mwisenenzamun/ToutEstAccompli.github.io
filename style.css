@@ -2,7 +2,6 @@
 
 
 
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@0,300;1,300&family=Updock&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@1,200&family=Updock&display=swap');
 
@@ -1762,6 +1761,8 @@ p{
   padding:5%;
   margin-top: 10%;
   height:calc(100% - 60px);
+  opacity:0.8;
+  transition: all 0.6s ease-in-out;
 }
 .tile2 h1
 {
@@ -1791,8 +1792,8 @@ p{
   transition-delay: 0.2s;
   color: #fff;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  
+  transition: all 0.6s ease-in-out;
 }
 
 .tile2 a{
