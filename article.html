@@ -18,7 +18,7 @@
 
         main {
             margin-left: 0%;
-            margin-top: 0px;
+            margin-top: 100px;
             display: flex;
             justify-content: center;
         }
@@ -34,7 +34,7 @@
 
         }
 
-        .LeMenu {
+        .LeMenu2 {
             display: flex;
             flex-direction: column;
 
@@ -230,7 +230,7 @@
 
         }
 
-        .LeMenu {
+        .LeMenu2 {
             margin-left: 15px;
             margin: 40px;
             border-radius: 20px;
@@ -244,8 +244,9 @@
         }
 
         .tile4 {
-            width: 250px;
+
             height: 30px;
+            width: 30px;
             margin: 0px;
             /*background-color: #a79d9d #9c9292;*/
             /*#a79d9d*/
@@ -285,7 +286,7 @@
 
         }
 
-        }
+
 
 
 
@@ -311,7 +312,7 @@
 
         .tile4 h2 {
 
-            margin: 10px 0 0 0;
+            margin: 5px 0 0 0;
             font-style: italic;
             transform: translateX(200px);
         }
@@ -334,9 +335,12 @@
 
         }
 
+
+
         .tile4:hover {
             width: fit-content;
             height: 500px;
+            margin-left: 20px;
 
 
             /*opacity: 0.5;*/
@@ -344,19 +348,10 @@
 
             /*   background-color:#99aeff; */
             /*box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);*/
-            transform: scale(1.05);
+            transform: scale(1.00);
         }
 
-        .hoverable {
-            margin-bottom: 10px;
 
-        }
-
-        .hoverableM {
-            margin-bottom: 10px;
-            margin: 15px;
-
-        }
 
 
         @media (max-width: 1000px) {
@@ -378,7 +373,7 @@
 
 
             .tile4:hover {
-                width: 600px;
+                width: 50%;
                 height: 500px;
 
                 /*opacity: 0.5;*/
@@ -390,13 +385,7 @@
 
             }
 
-            .hoverableM {
-                margin-bottom: 10px;
-                margin: 15px;
-                word-wrap: break-word;
-                width: 260px;
 
-            }
 
             .card3 {
 
@@ -426,38 +415,41 @@
 
             }
 
-            .LeMenu::-webkit-scrollbar {
+            .LeMenu2::-webkit-scrollbar {
 
                 width: 5px;
                 color: rgb(8, 7, 7);
             }
 
-            .LeMenu::-webkit-scrollbar-track {
+            .LeMenu2::-webkit-scrollbar-track {
                 background-color: rgb(255, 255, 255);
             }
 
-            .LeMenu::-webkit-scrollbar-thumb {
+            .LeMenu2::-webkit-scrollbar-thumb {
                 box-shadow: inset 0px 0px 1700px rgba(7, 6, 6, 0.3);
 
             }
 
-            .LeMenu {
+            .LeMenu2 {
+
                 margin-left: 10px;
-                margin: 0px;
+                margin-top: 50px;
 
                 justify-content: center;
                 background-color: #c7b9b9;
                 text-align: center;
                 overflow-y: auto;
+
                 /*opacity: 0.9;*/
 
             }
 
             .tile4 {
-                width: 250px;
+                width: 30px;
                 height: 30px;
+
                 margin: 0px;
-                margin-bottom: 200px;
+
                 background-color: #a79d9d #9c9292;
                 /*#a79d9d*/
                 display: flex;
@@ -481,9 +473,9 @@
         }
 
 
-        .tile4:hover img {
-            /*opacity: 0.2;*/
-        }
+        /*.tile4:hover img {
+            /*opacity: 0.2;
+        }*/
 
         .tile4:hover .animate-text {
             transform: translateX(0);
@@ -649,19 +641,7 @@
 
 
                 </ul>
-                <!-- -->
 
-
-                <!--<div class="droppo">
-                                <button class="drop"><a class="hoverable">MENU</a></button>
-                                <div class="menu">
-                                    <a class="hoverable" href="#Le-Dévotionnel">Le Dévotionnel</a>
-                                    <a class="hoverable" href="#A-propos">A PROPOS</a>
-                                    <a class="hoverable" href="#temoignage">TEMOIGNAGES</a>
-                                    <a class="hoverable" href="#resource">RESSOURCES</a>
-                                    <a class="hoverable" href="#soutenir">comment soutenir L'oeuvre
-                </a>
-                                </div>-->
 
 
 
@@ -700,104 +680,136 @@
                         <div class="menu"><a id="len4" class="hoverable" href="DEVOTIONNEL - Tout est accompli.pdf"><img
                                     src="logo.download.png"></a>
                         </div>
-                    </div>
-
-                    <div class="tile4">
 
 
+                        <div class="tile4">
 
 
-                        <div class="text4">
-                            <!--<h1>Les Chapitres</h1>
+
+
+                            <div class="text4">
+                                <!--<h1>Les Chapitres</h1>
                             <h2 class="animate-text1">MENU</h2>-->
-                            <img src="logo.chapitres.png">
-                            <h1>Les Chapitres</h1>
+                                <img src="logo.chapitres.png">
+                                <!--<h1>Les Chapitres</h1>-->
 
-                            <div class="LeMenu">
-
-                                <a class="hoverable hoverableM" id="x1"><span class="dot"></span><u>PRÉFACE</u> <br><br>
-                                </a>
-
-                                <a class="hoverable hoverableM" id="x2"><span class="dot"></span><u>PRÉSENTATION</u><br>
-                                    <br><br> </a>
-                                <a class="hoverable hoverableM" id="x3"><span
-                                        class="dot"></span><u>INTRODUCTION</u><br><br></a>
-
-                                <a class="hoverable hoverableM" id="x4"><span class="dot"></span><u>PARTIE 1:</u><br>
-                                    DIEU
-                                    ET SA PAROLE
-                                    <br><br></a>
-
-                                <a class="hoverable hoverableM" id="x5"><span class="dot"></span><u>PARTIE 2: </u><br>TU
-                                    ES
-                                    CELLE QUE
-                                    DIEU DIT QUE TU ES
-                                    <br><br></a>
+                                <div class="LeMenu LeMenu2 ">
 
 
-                                <a class="hoverable hoverableM" id="x6"><span class="dot"></span><u>PARTIE 3:</u><br> LE
-                                    PÉCHÉ
-                                    ORIGINEL, SES CONSÉQUENCES ET
-                                    L’ANNONCE DE NOTRE SAUVEUR <br><br></a>
-                                <a class="hoverable hoverableM" id="x1"><span class="dot"></span><u>PRÉFACE</u> <br><br>
-                                </a>
+                                    <a class="hoverable " id="x2"><span class="dot"></span><u>PRÉFACE</u>
+                                        <br><br>
+                                    </a>
 
-                                <a class="hoverable hoverableM" id="x2"><span class="dot"></span><u>PRÉSENTATION</u><br>
-                                    <br><br> </a>
-                                <a class="hoverable hoverableM" id="x3"><span
-                                        class="dot"></span><u>INTRODUCTION</u><br><br></a>
+                                    <a class="hoverable"><span class="dot"></span><u>PRÉSENTATION</u><br>
+                                        <br><br> </a>
+                                    <a class="hoverable "><span class="dot"></span><u>INTRODUCTION</u><br><br></a>
 
-                                <a class="hoverable hoverableM" id="x4"><span class="dot"></span><u>PARTIE 1:</u><br>
-                                    DIEU
-                                    ET SA PAROLE
-                                    <br><br></a>
+                                    <a class="hoverable "><span class="dot"></span><u>PARTIE
+                                            1:</u><br>
+                                        DIEU
+                                        ET SA PAROLE
+                                        <br><br></a>
 
-                                <a class="hoverable hoverableM" id="x5"><span class="dot"></span><u>PARTIE 2: </u><br>TU
-                                    ES
-                                    CELLE QUE
-                                    DIEU DIT QUE TU ES
-                                    <br><br></a>
+                                    <a class="hoverable "><span class="dot"></span><u>PARTIE 2:
+                                        </u><br>TU
+                                        ES
+                                        CELLE QUE
+                                        DIEU DIT QUE TU ES
+                                        <br><br></a>
 
-                                <a class="hoverable hoverableM" id="x6"><span class="dot"></span><u>PARTIE 3:</u><br> LE
-                                    PÉCHÉ
-                                    ORIGINEL, SES CONSÉQUENCES ET
-                                    L’ANNONCE DE NOTRE SAUVEUR <br><br></a>
+                                    <a class="hoverable hoverableM"><span class="dot"></span><u>PARTIE
+                                            3:</u><br> LE
+                                        PÉCHÉ
+                                        ORIGINEL, SES CONSÉQUENCES ET
+                                        L’ANNONCE DE NOTRE SAUVEUR <br><br></a>
 
-                                <a class="hoverable hoverableM" id="x7"><span class="dot"></span><u>PARTIE 4:</u><br>
-                                    JÉSUS
-                                    A SOUFFERT
-                                    POUR QUE TU N’AIES PLUS À
-                                    SOUFFRIR <br><br></a>
-                                <a class="hoverable hoverableM" id="x8"><span class="dot"></span><u>PARTIE 5:</u><br>
-                                    TON
-                                    CORPS ET TOI
-                                    N’ÊTES PLUS SOUS LA LOI
-                                    MAIS
-                                    SOUS LA GRÂCE <br><br></a>
-                                <a class="hoverable hoverableM" id="x9"><span class="dot"></span><u>PARTIE 6:
-                                    </u><br>TON
-                                    CORPS NE
-                                    T’APPARTIENT PLUS, IL
-                                    APPARTIENT À JÉSUS <br><br></a>
-                                <a class="hoverable hoverableM" id="x10"><span class="dot"></span><u>PARTIE 7:</u><br>
-                                    L’AUTORITÉ QUE
-                                    JÉSUS T’A DONNÉE
-                                    <br><br></a>
-                                <a class="hoverable hoverableM" id="x11"><span class="dot"></span><u>PARTIE 8: </u><br>
-                                    GARDE
-                                    TES
-                                    PENSÉES FIXÉES SUR LA
-                                    VÉRITÉ <br><br></a>
-                                <a class="hoverable hoverableM" id="x12"><span class="dot"></span><u>« MIEUX VAUT LA FIN
-                                        D’UNE
-                                        CHOSE QUE SON
-                                        COMMENCEMENT»</u><br>(Ecclésiastes 7:8)<br><br></a>
+
+                                    <a class="hoverable"><span class="dot"></span><u>PRÉSENTATION</u><br>
+                                        <br><br> </a>
+                                    <a class="hoverable "><span class="dot"></span><u>INTRODUCTION</u><br><br></a>
+
+                                    <a class="hoverable " span class="dot"></span><u>PARTIE
+                                            1:</u><br>
+                                        DIEU
+                                        ET SA PAROLE
+                                        <br><br></a>
+                                    <a class="hoverable"><span class="dot"></span><u>PRÉSENTATION</u><br>
+                                        <br><br> </a>
+                                    <a class="hoverable "><span class="dot"></span><u>INTRODUCTION</u><br><br></a>
+
+                                    <a class="hoverable "><span class="dot"></span><u>PARTIE
+                                            1:</u><br>
+
+                                        <br><br></a>
+                                    <a class="hoverable " id="x1"><span class="dot"></span><u>PRÉFACE</u>
+                                        <br><br>
+                                    </a>
+
+                                    <a class="hoverable" id="x2"><span class="dot"></span><u>PRÉSENTATION</u><br>
+                                        <br><br> </a>
+                                    <a class="hoverable " id="x3"><span
+                                            class="dot"></span><u>INTRODUCTION</u><br><br></a>
+
+                                    <a class="hoverable " id="x4"><span class="dot"></span><u>PARTIE
+                                            1:</u><br>
+                                        DIEU
+                                        ET SA PAROLE
+                                        <br><br></a>
+
+
+                                    <a class="hoverable " id="x5"><span class="dot"></span><u>PARTIE 2:
+                                        </u><br>TU
+                                        ES
+                                        CELLE QUE
+                                        DIEU DIT QUE TU ES
+                                        <br><br></a>
+
+                                    <a class="hoverable hoverableM" id="x6"><span class="dot"></span><u>PARTIE
+                                            3:</u><br> LE
+                                        PÉCHÉ
+                                        ORIGINEL, SES CONSÉQUENCES ET
+                                        L’ANNONCE DE NOTRE SAUVEUR <br><br></a>
+                                    <a class="hoverable hoverableM" id="x7"><span class="dot"></span><u>PARTIE
+                                            4:</u><br>
+                                        JÉSUS
+                                        A SOUFFERT
+                                        POUR QUE TU N’AIES PLUS À
+                                        SOUFFRIR <br><br></a>
+                                    <a class="hoverable hoverableM" id="x8"><span class="dot"></span><u>PARTIE
+                                            5:</u><br>
+                                        TON
+                                        CORPS ET TOI
+                                        N’ÊTES PLUS SOUS LA LOI
+                                        MAIS
+                                        SOUS LA GRÂCE <br><br></a>
+                                    <a class="hoverable hoverableM" id="x9"><span class="dot"></span><u>PARTIE 6:
+                                        </u><br>TON
+                                        CORPS NE
+                                        T’APPARTIENT PLUS, IL
+                                        APPARTIENT À JÉSUS <br><br></a>
+                                    <a class="hoverable hoverableM" id="x10"><span class="dot"></span><u>PARTIE
+                                            7:</u><br>
+                                        L’AUTORITÉ QUE
+                                        JÉSUS T’A DONNÉE
+                                        <br><br></a>
+                                    <a class="hoverable hoverableM" id="x11"><span class="dot"></span><u>PARTIE 8:
+                                        </u><br>
+                                        GARDE
+                                        TES
+                                        PENSÉES FIXÉES SUR LA
+                                        VÉRITÉ <br><br></a>
+                                    <a class="hoverable hoverableM" id="x12"><span class="dot"></span><u>« MIEUX VAUT LA
+                                            FIN
+                                            D’UNE
+                                            CHOSE QUE SON
+                                            COMMENCEMENT»</u><br>(Ecclésiastes 7:8)<br><br></a>
+
+                                </div>
+
 
                             </div>
 
-
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -805,126 +817,7 @@
 
         </div>
 
-        <!-- <div class="cards3">
-            <div class="card3">
-                <div class="wrap4">
-                    <div class=" Contact">
-                        <div class="menu"><a id="len4" class="hoverable" href="index.html"><img src="logo.menu.jpg"></a>
-                        </div>
 
-                        <div class="menu"><a id="len4" class="hoverable" href="mailto:tracysibomana@gmail.jpeg"><img
-                                    src="logo.mail.png"></a>
-                        </div>
-                        <div class="menu"><a id="len4" class="hoverable"
-                                href="https://www.instagram.com/sibom.s/?hl=fr"><img src="logo.instagram.jpeg"></a>
-                        </div>
-                        <div class="menu"><a id="len4" class="hoverable" href="DEVOTIONNEL - Tout est accompli.pdf"><img
-                                    src="logo.download.png"></a>
-                        </div>
-                    </div>
-                    <div class="tile4">
-
-
-
-
-                        <div class="text4">
-                            <h1>Les Chapitres</h1>
-                            <h2 class="animate-text1">MENU</h2>
-                            <img src="logo.chapitres.png">
-                            <h1>Les Chapitres</h1>
-
-                            <div class="LeMenu">
-
-                                <a class="hoverable hoverableM" id="x1"><span class="dot"></span><u>PRÉFACE</u> <br><br>
-                                </a>
-
-                                <a class="hoverable hoverableM" id="x2"><span class="dot"></span><u>PRÉSENTATION</u><br>
-                                    <br><br> </a>
-                                <a class="hoverable hoverableM" id="x3"><span
-                                        class="dot"></span><u>INTRODUCTION</u><br><br></a>
-
-                                <a class="hoverable hoverableM" id="x4"><span class="dot"></span><u>PARTIE 1:</u><br>
-                                    DIEU
-                                    ET SA PAROLE
-                                    <br><br></a>
-
-                                <a class="hoverable hoverableM" id="x5"><span class="dot"></span><u>PARTIE 2: </u><br>TU
-                                    ES
-                                    CELLE QUE
-                                    DIEU DIT QUE TU ES
-                                    <br><br></a>
-
-
-                                <a class="hoverable hoverableM" id="x6"><span class="dot"></span><u>PARTIE 3:</u><br> LE
-                                    PÉCHÉ
-                                    ORIGINEL, SES CONSÉQUENCES ET
-                                    L’ANNONCE DE NOTRE SAUVEUR <br><br></a>
-                                <a class="hoverable hoverableM" id="x1"><span class="dot"></span><u>PRÉFACE</u> <br><br>
-                                </a>
-
-                                <a class="hoverable hoverableM" id="x2"><span class="dot"></span><u>PRÉSENTATION</u><br>
-                                    <br><br> </a>
-                                <a class="hoverable hoverableM" id="x3"><span
-                                        class="dot"></span><u>INTRODUCTION</u><br><br></a>
-
-                                <a class="hoverable hoverableM" id="x4"><span class="dot"></span><u>PARTIE 1:</u><br>
-                                    DIEU
-                                    ET SA PAROLE
-                                    <br><br></a>
-
-                                <a class="hoverable hoverableM" id="x5"><span class="dot"></span><u>PARTIE 2: </u><br>TU
-                                    ES
-                                    CELLE QUE
-                                    DIEU DIT QUE TU ES
-                                    <br><br></a>
-
-                                <a class="hoverable hoverableM" id="x6"><span class="dot"></span><u>PARTIE 3:</u><br> LE
-                                    PÉCHÉ
-                                    ORIGINEL, SES CONSÉQUENCES ET
-                                    L’ANNONCE DE NOTRE SAUVEUR <br><br></a>
-
-                                <a class="hoverable hoverableM" id="x7"><span class="dot"></span><u>PARTIE 4:</u><br>
-                                    JÉSUS
-                                    A SOUFFERT
-                                    POUR QUE TU N’AIES PLUS À
-                                    SOUFFRIR <br><br></a>
-                                <a class="hoverable hoverableM" id="x8"><span class="dot"></span><u>PARTIE 5:</u><br>
-                                    TON
-                                    CORPS ET TOI
-                                    N’ÊTES PLUS SOUS LA LOI
-                                    MAIS
-                                    SOUS LA GRÂCE <br><br></a>
-                                <a class="hoverable hoverableM" id="x9"><span class="dot"></span><u>PARTIE 6:
-                                    </u><br>TON
-                                    CORPS NE
-                                    T’APPARTIENT PLUS, IL
-                                    APPARTIENT À JÉSUS <br><br></a>
-                                <a class="hoverable hoverableM" id="x10"><span class="dot"></span><u>PARTIE 7:</u><br>
-                                    L’AUTORITÉ QUE
-                                    JÉSUS T’A DONNÉE
-                                    <br><br></a>
-                                <a class="hoverable hoverableM" id="x11"><span class="dot"></span><u>PARTIE 8: </u><br>
-                                    GARDE
-                                    TES
-                                    PENSÉES FIXÉES SUR LA
-                                    VÉRITÉ <br><br></a>
-                                <a class="hoverable hoverableM" id="x12"><span class="dot"></span><u>« MIEUX VAUT LA FIN
-                                        D’UNE
-                                        CHOSE QUE SON
-                                        COMMENCEMENT»</u><br>(Ecclésiastes 7:8)<br><br></a>
-
-                            </div>
-
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-
-        </div>-->
 
         <main>
             <h1></h1>
