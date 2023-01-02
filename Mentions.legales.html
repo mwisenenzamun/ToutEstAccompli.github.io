@@ -11,503 +11,30 @@
     <link rel="icon" type="image/png" sizes="16x16" href="logo.toutestaccompli.blanc1.png">
 
     <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
+        p {
+            color: black;
+            margin-top: 40px;
+            margin-bottom: 20px;
 
-        main {
-            margin-left: 0%;
-            margin-top: 0px;
-            display: flex;
-            justify-content: center;
-        }
-
-        body {
-
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-
-
-        }
-
-        .LeMenu {
-            display: flex;
-            flex-direction: column;
-
-        }
-
-        .LeMenu a {
-            text-align: left;
-
-        }
-
-        .menu img {
-            width: 30px;
-            margin-right: 5px;
         }
 
         h1 {
-            text-align: center;
+            color: black;
+            font-size: 25px;
         }
 
-        .containers {
-            width: 50%;
-            height: 60%;
+        .page {
             display: flex;
             justify-content: center;
-            margin-bottom: 10px;
-            /*  box-shadow is from materialize css's website */
-            box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
-                0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
         }
 
-        .navbar {
-            display: none;
-        }
-
-        @media (max-width: 1000px) {
-            .containers {
-                width: 90%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                margin-bottom: 10px;
-                /*  box-shadow is from materialize css's website */
-                box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
-                    0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
-            }
-
-            .navbar {
-                display: none;
-            }
-
-
-
-
-
-        }
-
-
-
-        .containers img {
-            width: 100%;
-            z-index: -2;
-
-        }
-
-        .em {
-            text-decoration: underline;
-        }
-
-        button {
-            height: 5%;
-            border: none;
-            outline: none;
-            background: rgba(0, 0, 0, 0.5);
-            cursor: pointer;
-            padding: 0.5em;
-            display: flex;
-            text-align: left;
-        }
-
-        button .arrow {
-            border: solid #fff;
-            border-width: 0 4px 4px 0;
-            display: inline-block;
-            padding: 5px;
-            transition: transform 0.3s ease-out;
-            outline: none;
-        }
-
-        #right-btn {
-            margin: auto 0 auto -2em;
-        }
-
-        #right-btn .arrow {
-            transform: rotate(-45deg);
-        }
-
-        #left-btn {
-            z-index: 0;
-            margin: auto -2em auto 0;
-        }
-
-        #left-btn .arrow {
-            transform: rotate(135deg);
-        }
-
-
-        .copyright {
-            float: right;
-            margin-right: 10%;
-            margin-bottom: 100px;
-        }
-
-        .under {
-            border-top: solid black;
-            border-top-width: thin;
-
+        .Mentions {
+            color: black;
+            margin-top: 40px;
             width: 60%;
-            margin-left: 20%;
-
-            text-align: center;
-
-        }
-
-
-
-
-        /*  menu _______________________________________________________________*/
-        .card3 {
-
-            margin-bottom: 20px;
-            margin-left: 100px;
-            width: 100%;
-            height: 100px;
-            overflow: visible;
-        }
-
-
-        /* tout le menu*/
-        .cards3 {
-
-            display: flex;
-            flex-wrap: nowrap;
-            flex-direction: row;
-            justify-content: center;
-            /*margin-right:60% ;*/
-            position: sticky;
-            overflow: visible;
-            top: 90px;
-            z-index: 42;
-            width: 100%;
-            height: 100%;
-
-
-
-        }
-
-        @media (max-width: 600px) {
-            .cards3 {
-
-                overflow: visible;
-                top: 0px;
-                z-index: 42;
-            }
-        }
-
-
-
-
-        .wrap4 {
-            margin: 5px auto 0 auto;
-            width: 100%;
-            max-height: 100%;
-            display: flex;
-
-            align-items: space-around;
-            max-width: 1200px;
-
-
-        }
-
-        .LeMenu {
-            margin-left: 10px;
-            margin: 40px;
-            justify-content: center;
-            background-color: #c7b9b9;
-            text-align: center;
-            overflow-y: auto;
-            /*opacity: 0.9;*/
-
-        }
-
-        .tile4 {
-            width: 250px;
-            height: 30px;
-            margin: 5px;
-            background-color: #a79d9d #9c9292;
-            /*#a79d9d*/
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            background-size: cover;
-            position: relative;
-            cursor: pointer;
-            transition: all 0.4s ease-out;
-            /*box-shadow: 0px 25px 77px -17px rgba(0,0,0,0.44);*/
-            /*border: solid 1.5px #000;*/
-            text-align: center;
-            overflow: hidden;
-            color: white;
-
-
-        }
-
-        .tile4 .text4 {
-            /*   z-index:99; */
-
-            /*padding: 5px;*/
-            height: calc(100% - 60px);
             display: flex;
             flex-direction: column;
-            text-align: center;
-        }
-
-        .text4 {
-            font-size: 11px;
-            color: rgb(19, 17, 17);
-
-
-
-
-        }
-
-        }
-
-
-
-        .text4 .a {
-            font-size: 10px;
-            line-height: 5;
-
-        }
-
-        .text4 img {
-            width: 30px;
-        }
-
-
-
-        .tile4 h1 {
-
-            margin: 0;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-        }
-
-        .tile4 h2 {
-
-            margin: 10px 0 0 0;
-            font-style: italic;
-            transform: translateX(200px);
-        }
-
-        .tile4 p {
-            font-weight: 200;
-
-            line-height: 6;
-            /*   opacity:0; */
-            transform: translateX(-200px);
-            transition-delay: 0.2s;
-            color: #fff;
-        }
-
-        .animate-text1 {
-
-            opacity: 0;
-            transition: all 0.6s ease-in-out;
-            font-size: 10px;
-
-        }
-
-        .tile4:hover {
-            width: fit-content;
-            height: 500px;
-
-
-            /*opacity: 0.5;*/
-
-
-            /*   background-color:#99aeff; */
-            /*box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);*/
-            transform: scale(1.05);
-        }
-
-        .hoverable {
-            margin-bottom: 10px;
-
-        }
-
-        .hoverableM {
-            margin-bottom: 10px;
-            margin: 15px;
-
-        }
-
-
-        @media (max-width: 1000px) {
-            .tile4 h1 {
-                font-size: 20px;
-                margin: none;
-                padding: 0px;
-                text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-                text-align: left;
-
-            }
-
-
-            .tile4 .text {
-                display: flex;
-                flex-direction: column;
-                word-wrap: break-word;
-            }
-
-
-            .tile4:hover {
-                width: 600px;
-                height: 500px;
-
-                /*opacity: 0.5;*/
-
-
-                /*   background-color:#99aeff; */
-                /*box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);*/
-                transform: none;
-
-            }
-
-            .hoverableM {
-                margin-bottom: 10px;
-                margin: 15px;
-                word-wrap: break-word;
-                width: 260px;
-
-            }
-
-            .card3 {
-
-                margin-bottom: 0px;
-                margin-left: 0px;
-                width: 80%;
-                overflow: visible;
-            }
-
-            .Contact {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                margin-left: 5px;
-
-            }
-
-            .wrap4 {
-                margin: 5px auto 0 auto;
-                width: 100%;
-                max-height: 100%;
-                display: flex;
-
-                align-items: space-around;
-                max-width: 1500px;
-
-
-            }
-
-            .LeMenu {
-                margin-left: 10px;
-                margin: 0px;
-
-                justify-content: center;
-                background-color: #c7b9b9;
-                text-align: center;
-                overflow-y: auto;
-                /*opacity: 0.9;*/
-
-            }
-
-            .tile4 {
-                width: 250px;
-                height: 30px;
-                margin: 5px;
-                margin-bottom: 200px;
-                background-color: #a79d9d #9c9292;
-                /*#a79d9d*/
-                display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                background-size: cover;
-
-                cursor: pointer;
-                transition: all 0.4s ease-out;
-                /*box-shadow: 0px 25px 77px -17px rgba(0,0,0,0.44);*/
-                /*border: solid 1.5px #000;*/
-                text-align: center;
-                overflow: hidden;
-                color: white;
-
-
-            }
-
-
-
-        }
-
-
-        .tile4:hover img {
-            /*opacity: 0.2;*/
-        }
-
-        .tile4:hover .animate-text {
-            transform: translateX(0);
-            opacity: 1;
-        }
-
-        .dot {
-            height: 10px;
-            width: 10px;
-            margin-left: 15px;
-            margin-right: 15px;
-            background-color: rgb(17, 16, 16);
-            border-radius: 50%;
-            display: inline-block;
-        }
-
-
-        .dots {
-            position: absolute;
-            bottom: 20px;
-            right: 30px;
-            margin: 0 auto;
-            width: 30px;
-            height: 30px;
-            color: currentColor;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-
-        }
-
-        .dots span {
-            width: 5px;
-            height: 5px;
-            background-color: currentColor;
-            border-radius: 50%;
-            display: block;
-            opacity: 0;
-            transition: transform 0.4s ease-out, opacity 0.5s ease;
-            transform: translateY(30px);
-
-        }
-
-        .tile4:hover span {
-            opacity: 1;
-            transform: translateY(0px);
-        }
-
-        .dots span:nth-child(1) {
-            transition-delay: 0.05s;
-        }
-
-        .dots span:nth-child(2) {
-            transition-delay: 0.1s;
-        }
-
-        .dots span:nth-child(3) {
-            transition-delay: 0.15s;
+            justify-content: center;
         }
     </style>
 </head>
@@ -633,114 +160,22 @@
             </div>
 
         </nav>
+        <div class="cards2">
+            <div class="card2">
+                <div class="wrap3">
+                    <div class="tile3">
 
-        <div class="cards3">
-            <div class="card3">
-                <div class="wrap4">
-                    <div class=" Contact">
-                        <div class="menu"><a id="len4" class="hoverable" href="index.html"><img src="logo.menu.jpg"></a>
-                        </div>
+                        <div class="text3">
+                            <img src="logo.menu.jpg">
 
-                        <div class="menu"><a id="len4" class="hoverable" href="mailto:tracysibomana@gmail.jpeg"><img
-                                    src="logo.mail.png"></a>
-                        </div>
-                        <div class="menu"><a id="len4" class="hoverable"
-                                href="https://www.instagram.com/sibom.s/?hl=fr"><img src="logo.instagram.jpeg"></a>
-                        </div>
-                        <div class="menu"><a id="len4" class="hoverable" href="DEVOTIONNEL - Tout est accompli.pdf"><img
-                                    src="logo.download.png"></a>
-                        </div>
-                    </div>
-                    <div class="tile4">
-
-
-
-
-                        <div class="text4">
-                            <!--<h1>Les Chapitres</h1>
-                            <h2 class="animate-text1">MENU</h2>-->
-                            <img src="logo.chapitres.png">
-                            <h1>Les Chapitres</h1>
 
                             <div class="LeMenu">
 
-                                <a class="hoverable hoverableM" id="x1"><span class="dot"></span><u>PRÉFACE</u> <br><br>
-                                </a>
-
-                                <a class="hoverable hoverableM" id="x2"><span class="dot"></span><u>PRÉSENTATION</u><br>
-                                    <br><br> </a>
-                                <a class="hoverable hoverableM" id="x3"><span
-                                        class="dot"></span><u>INTRODUCTION</u><br><br></a>
-
-                                <a class="hoverable hoverableM" id="x4"><span class="dot"></span><u>PARTIE 1:</u><br>
-                                    DIEU
-                                    ET SA PAROLE
-                                    <br><br></a>
-
-                                <a class="hoverable hoverableM" id="x5"><span class="dot"></span><u>PARTIE 2: </u><br>TU
-                                    ES
-                                    CELLE QUE
-                                    DIEU DIT QUE TU ES
-                                    <br><br></a>
-
-
-                                <a class="hoverable hoverableM" id="x6"><span class="dot"></span><u>PARTIE 3:</u><br> LE
-                                    PÉCHÉ
-                                    ORIGINEL, SES CONSÉQUENCES ET
-                                    L’ANNONCE DE NOTRE SAUVEUR <br><br></a>
-                                <a class="hoverable hoverableM" id="x1"><span class="dot"></span><u>PRÉFACE</u> <br><br>
-                                </a>
-
-                                <a class="hoverable hoverableM" id="x2"><span class="dot"></span><u>PRÉSENTATION</u><br>
-                                    <br><br> </a>
-                                <a class="hoverable hoverableM" id="x3"><span
-                                        class="dot"></span><u>INTRODUCTION</u><br><br></a>
-
-                                <a class="hoverable hoverableM" id="x4"><span class="dot"></span><u>PARTIE 1:</u><br>
-                                    DIEU
-                                    ET SA PAROLE
-                                    <br><br></a>
-
-                                <a class="hoverable hoverableM" id="x5"><span class="dot"></span><u>PARTIE 2: </u><br>TU
-                                    ES
-                                    CELLE QUE
-                                    DIEU DIT QUE TU ES
-                                    <br><br></a>
-
-                                <a class="hoverable hoverableM" id="x6"><span class="dot"></span><u>PARTIE 3:</u><br> LE
-                                    PÉCHÉ
-                                    ORIGINEL, SES CONSÉQUENCES ET
-                                    L’ANNONCE DE NOTRE SAUVEUR <br><br></a>
-
-                                <a class="hoverable hoverableM" id="x7"><span class="dot"></span><u>PARTIE 4:</u><br>
-                                    JÉSUS
-                                    A SOUFFERT
-                                    POUR QUE TU N’AIES PLUS À
-                                    SOUFFRIR <br><br></a>
-                                <a class="hoverable hoverableM" id="x8"><span class="dot"></span><u>PARTIE 5:</u><br>
-                                    TON
-                                    CORPS ET TOI
-                                    N’ÊTES PLUS SOUS LA LOI
-                                    MAIS
-                                    SOUS LA GRÂCE <br><br></a>
-                                <a class="hoverable hoverableM" id="x9"><span class="dot"></span><u>PARTIE 6:
-                                    </u><br>TON
-                                    CORPS NE
-                                    T’APPARTIENT PLUS, IL
-                                    APPARTIENT À JÉSUS <br><br></a>
-                                <a class="hoverable hoverableM" id="x10"><span class="dot"></span><u>PARTIE 7:</u><br>
-                                    L’AUTORITÉ QUE
-                                    JÉSUS T’A DONNÉE
-                                    <br><br></a>
-                                <a class="hoverable hoverableM" id="x11"><span class="dot"></span><u>PARTIE 8: </u><br>
-                                    GARDE
-                                    TES
-                                    PENSÉES FIXÉES SUR LA
-                                    VÉRITÉ <br><br></a>
-                                <a class="hoverable hoverableM" id="x12"><span class="dot"></span><u>« MIEUX VAUT LA FIN
-                                        D’UNE
-                                        CHOSE QUE SON
-                                        COMMENCEMENT»</u><br>(Ecclésiastes 7:8)<br><br></a>
+                                <a class="hoverable" href="#A-propos">À PROPOS <br><br> </a>
+                                <a class="hoverable" href="#Le-Dévotionnel">LES DÉVOTIONNELS <br><br></a>
+                                <a class="hoverable" href="#temoignage">TÉMOIGNAGES <br><br> </a>
+                                <a class="hoverable" href="#resource">RESSOURCES <br><br> </a>
+                                <a class="hoverable" href="#soutenir">COMMENT SOUTENIR L'ŒUVRE?<br><br></a>
 
                             </div>
 
@@ -748,34 +183,99 @@
                         </div>
 
                     </div>
-
+                    <div class=" Contact">
+                        <div class="menu"><a id="len4" class="hoverable" href="mailto:tracysibomana@gmail.jpeg"><img
+                                    src="logo.mail.png"></a>
+                        </div>
+                        <div class="menu"><a id="len4" class="hoverable"
+                                href="https://www.instagram.com/sibom.s/?hl=fr"><img src="logo.instagram.jpeg"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
 
         </div>
+        <div class="page">
+            <div class="Mentions">
+                <h1> Mentions légales </h1>
+                En vigueur au 01/ 01/2023
 
-        <main>
-            <h1></h1>
-            <div class="containers">
-                <button id="left-btn"><i class="arrow"></i></button>
-                <img id="carousel" src="" alt="">
-                <button id="right-btn"><i class="arrow"></i></button>
-            </div>
-        </main>
+                <p>Conformément aux dispositions des Articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la
+                    Confiance dans l’économie numérique, dite L.C.E.N., il est porté à la connaissance des utilisateurs
+                    et
+                    visiteurs, ci-après l""Utilisateur", du site https://toutestaccompli.netlify.app/ , ci-après le
+                    "Site",
+                    les
+                    présentes mentions légales.
+                    La connexion et la navigation sur le Site par l’Utilisateur implique acceptation intégrale et sans
+                    réserve
+                    des présentes mentions légales.
+                    Ces dernières sont accessibles sur le Site à la rubrique « Mentions légales ».
 
-        <div class="under" style="background-color: #a79d9d;">
-            <div class="copyright" style="color:black;"> <a href="Mentions.legales.html"
-                    style="font-size: 15px;">Mention
-                    légale</a>
-                <p> - ©ToutEstAccompli.com 2022.- Tous droits
-                    réservés.</p>
+                </p>
+
+                <p>
+                    ARTICLE 1 - L'ÉDITEUR <br>
+                    L’édition et la direction de la publication du Site est assurée par Munezero Esther, domiciliée
+                    en Belgique,joignable à l'adresse e-mail estmwis@hotmail.com.
+
+
+                </p>
+
+                <p>
+                    ARTICLE 2 - L'HÉBERGEUR<br>
+                    L'hébergeur du Site est la société netlify, dont le siège social est situé au 2325 3rd Street, Suite
+                    296,
+                    San Francisco, California 94107. , joignable à l’adresse email support@netlify.com
+
+                </p>
+                <p>
+                    ARTICLE 3 - ACCÈS AU SITE<br>
+                    Le Site est accessible en tout endroit, 7j/7, 24h/24 sauf cas de force majeure, interruption
+                    programmée ou non et pouvant découlant d’une nécessité de maintenance.
+                    En cas de modification, interruption ou suspension du Site, l'Editeur ne saurait être tenu
+                    responsable.
+
+                </p>
+                <p>
+
+                    ARTICLE 4 - COLLECTE DES DONNÉES<br>
+                    Le site est exempté de déclaration à la Commission Nationale Informatique et Libertés (CNIL) dans la
+                    mesure où il ne collecte aucune donnée concernant les utilisateurs.
+                    Toute utilisation, reproduction, diffusion, commercialisation, modification de toute ou partie du
+                    Site,
+                    sans autorisation de l’Editeur est prohibée et pourra entraînée des actions et poursuites
+                    judiciaires
+                    telles que notamment prévues par le Code de la propriété intellectuelle et le Code civil.
+                </p>
             </div>
         </div>
 
-        <script src="main.js"></script>
+
+
+
+
+
+
+
+
+
 
     </div>
+
+    <div class="under">
+        <p class="copyright" style="color:black;"><a href="" style="font-size: 15px;">Mention légale</a>
+            - ©ToutEstAccompli.com 2022.- Tous droits
+            réservés.</p>
+    </div>
+
+    <script type="text/javascript" src="https://cookieconsent.popupsmart.com/src/js/popper.js"></script>
+    <script> window.start.init({ Palette: "palette4", Mode: "banner bottom", Theme: "edgeless", ButtonText: "Alow it", Time: "5", })</script>
+
+    <script src="main.js"></script>
+
+
 </body>
 
 </html>
