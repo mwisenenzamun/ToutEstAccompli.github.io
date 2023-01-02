@@ -25,15 +25,43 @@
         @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
 
+
         .wrapper2 {
-            width: 100%;
+            max-width: 800px;
         }
 
+
+
+
+
+
+
+
         .carousel {
-            width: 80%;
+            width: 100%;
             margin: auto;
             padding: 0 0px;
             overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+
+        @media (max-width: 600px) {
+            .wrapper2 {
+                width: 70%;
+            }
+
+            .carousel {
+                width: 100%;
+                margin: auto;
+                padding: 0 0px;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+            }
+
+
         }
 
         .carousel .img {
@@ -416,67 +444,71 @@
                 <div class="titles2">
                     <H2>Les dévotionnels</H2>
                 </div>
-                <div class="WRAPS">
-                    <div class="wrap">
-                        <div class="tile">
-                            <img src='couverture.png' />
-                            <div class="text">
-                                <h1> </h1>
-                                <h2 class="animate-text">Dévotionnel 1</h2>
-                                <p class="animate-text">28 jours pour comprendre l'impact de l'oeuvre de la croix sur
-                                    les
-                                    menstruations
+                <div class="accueil2">
+                    <div class="WRAPS">
+                        <div class="wrap">
+                            <div class="tile">
+                                <img src='couverture.png' />
+                                <div class="text">
+                                    <h1> </h1>
+                                    <h2 class="animate-text">Dévotionnel 1</h2>
+                                    <p class="animate-text">28 jours pour comprendre <br> l'impact de l'oeuvre de la
+                                        croix
+                                        sur
+                                        les
+                                        menstruations
 
-                                </p>
-                                <a style="text-decoration: underline; color: white;" class="hoverable animate-text"
-                                    href=" article.html">Découvrir</a>
+                                    </p>
+                                    <a style="text-decoration: underline; color: white;" class="hoverable animate-text"
+                                        href=" article.html">Découvrir</a>
 
-                                <a style="text-decoration: underline; color: white;" class="hoverable animate-text"
-                                    target="_blank" href="DEVOTIONNEL - Tout est accompli.pdf"
-                                    value="Download!">Télécharger</a>
+                                    <a style="text-decoration: underline; color: white;" class="hoverable animate-text"
+                                        target="_blank" href="DEVOTIONNEL - Tout est accompli.pdf"
+                                        value="Download!">Télécharger</a>
 
 
 
-                                <div class="dots">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
+                                    <div class="dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
                                 </div>
                             </div>
+
+
+
                         </div>
 
+                        <div class="wrap">
+                            <div class="tile">
+                                <img src='couverture.png' />
+                                <div class="text">
+                                    <h1> </h1>
+                                    <h2 class="animate-text">Dévotionnel 2</h2>
+                                    <p class="animate-text">_________________________ descriptions Dévotionnel deux
+                                        ___________
+
+                                    </p>
+                                    <a style="text-decoration: underline; color: white;" class="hoverable animate-text"
+                                        href=" article.html">Découvrir</a>
+
+                                    <a style="text-decoration: underline; color: white;" class="hoverable animate-text"
+                                        target="_blank" href="DEVOTIONNEL - Tout est accompli.pdf"
+                                        value="Download!">Télécharger</a>
 
 
-                    </div>
-
-                    <div class="wrap">
-                        <div class="tile">
-                            <img src='couverture.png' />
-                            <div class="text">
-                                <h1> </h1>
-                                <h2 class="animate-text">Dévotionnel 2</h2>
-                                <p class="animate-text">_________________________ descriptions Dévotionnel deux
-                                    ___________
-
-                                </p>
-                                <a style="text-decoration: underline; color: white;" class="hoverable animate-text"
-                                    href=" article.html">Découvrir</a>
-
-                                <a style="text-decoration: underline; color: white;" class="hoverable animate-text"
-                                    target="_blank" href="DEVOTIONNEL - Tout est accompli.pdf"
-                                    value="Download!">Télécharger</a>
-
-
-                                <div class="dots">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
+                                    <div class="dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
                                 </div>
                             </div>
+
+
+
                         </div>
-
-
-
                     </div>
                 </div>
 
@@ -816,7 +848,10 @@
                     </div>
 
                 </div>
-                <a href="ressource.video.html"> <button class="button-30" role="button"> VOIR PLUS</button></a>
+
+                <div class=" LeBouton"> <a href="ressource.video.html"> <button class="button-30" role="button"> VOIR
+                            PLUS</button></a>
+                </div>
 
                 <div id="soutenir"></div>
             </div>
@@ -834,11 +869,11 @@
                             items: 1,
                             nav: false
                         },
-                        600: {
+                        800: {
                             items: 2,
                             nav: false
                         },
-                        1000: {
+                        1800: {
                             items: 2,
                             nav: false
                         }
@@ -871,7 +906,7 @@
 
             <div class="cards">
 
-                <div class="card">
+                <div class="cart">
                     <div class="wrap2">
                         <div class="tile2 tile21">
 
@@ -919,7 +954,7 @@
 
                 </div>
 
-                <div class="card">
+                <div class="cart">
                     <div class="wrap2">
                         <div class="tile2 tile22">
 
@@ -956,7 +991,7 @@
 
 
                 </div>
-                <div class="card">
+                <div class="cart">
                     <div class="wrap2">
                         <div class="tile2 tile23">
 
@@ -990,7 +1025,7 @@
                     </div>
 
                 </div>
-                <div class="card">
+                <div class="cart">
                     <div class="wrap2">
                         <div class="tile2 tile24">
 
