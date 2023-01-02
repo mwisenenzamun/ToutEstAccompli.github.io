@@ -192,6 +192,12 @@
             background: #848e94 !important;
         }
 
+        @media (max-width: 500px) {
+            .owl-dots {
+                display: none;
+            }
+        }
+
         .Horiz-line {
             border-top: 2px solid #000;
             display: inline-block;
@@ -861,9 +867,9 @@
                 $(".carousel").owlCarousel({
                     margin: 20,
                     loop: true,
-                    autoplay: false,
+                    autoplay: true,
                     autoplayTimeout: 2000,
-                    autoplayHoverPause: false,
+                    autoplayHoverPause: true,
                     responsive: {
                         0: {
                             items: 1,
