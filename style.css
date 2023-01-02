@@ -2,6 +2,7 @@
 
 
 
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@0,300;1,300&family=Updock&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@1,200&family=Updock&display=swap');
 
@@ -1177,10 +1178,9 @@ a.slide__next,
   text-align: center;
   font-size: 15px;
   text-transform : capitalize;
+
+
 }
-
-@media (min-width: 1700px) {
-
 
 .resources{
 
@@ -1197,7 +1197,7 @@ a.slide__next,
   
   
 }
-}
+
 
 
 
@@ -1294,7 +1294,7 @@ a.slide__next,
   color: #000;
   
   font-size: 18px;
-  width: 20%;
+  width: 40%;
   margin: 5%;
   align-items: center;
   font-weight: 300;
@@ -2326,6 +2326,7 @@ background: linear-gradient(158deg, rgba(223,230,216,1) 4%, rgba(149,164,164,1) 
   overflow:hidden;
   color:white;
   font-family:'Roboto';
+  align-items: center;
   
 }
 
