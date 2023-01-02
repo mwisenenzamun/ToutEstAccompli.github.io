@@ -1,179 +1,59 @@
-<!doctype html>
-<html lang="fr">
-<!--- -->
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title> Tout Est Accompli © </title>
-    <link rel="icon" type="image/png" sizes="16x16" href="logo.toutestaccompli.png">
-
-
-    <meta charset="utf-8">
-    <title>Responsive Owl-Carousel Slider | CodingNepal</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Tout Est Accompli © </title>
+    <link rel="icon" type="image/png" sizes="16x16" href="logo.toutestaccompli.blanc1.png">
+
     <style>
-        .slider-container {
-            background: ;
+        .videos {
+
             display: flex;
-            align-items: center;
+            flex: row;
+            flex-wrap: wrap;
+
+        }
+
+        .video img {}
+
+        @media (max-width: 600px) {
+            .video img {
+                width: 100%;
+            }
+
+        }
+
+
+        .boxvideo {
+            margin-top: 50px;
+            width: 80%;
+            margin-right: 20%;
+            margin-left: 20%;
             justify-content: center;
-            height: 100%;
         }
 
-        .slider {
-            width: 100%;
-            max-width: 1000px;
-            height: fit-content;
-            margin: 20px;
-            text-align: center;
-            border-radius: 20px;
-            overflow: hidden;
-            position: relative;
+        h3 {
+
+            margin-top: 50px;
+            position: center;
+            font-weight: 550;
+
         }
 
-        .slides {
-            display: flex;
-            overflow-x: scroll;
-            position: relative;
-            scroll-behavior: smooth;
-            scroll-snap-type: x mandatory;
-        }
-
-        .slide:nth-of-type(even) {
-            background-color: rgb(139, 110, 122);
-        }
-
-        .slide {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-shrink: 0;
-            width: 100%;
-
-            scroll-snap-align: center;
-            margin-right: 0px;
-            box-sizing: border-box;
-            background: white;
-            transform-origin: center center;
-            transform: scale(1);
-        }
-
-        .slide__text {
-            font-size: 15px;
-            width: 55%;
-            margin: 40px;
-            text-align: left;
-            font-family: 'Nunito', sans-serif;
-            font-weight: normal;
-
-            color: #000;
-        }
-
-        .slide a {
-            background: none;
-            border: none;
-        }
-
-        a.slide__prev,
-        .slider::before {
-            transform: rotate(135deg);
-            -webkit-transform: rotate(135deg);
-            left: 5%;
-        }
-
-        a.slide__next,
-        .slider::after {
-            transform: rotate(-45deg);
-            -webkit-transform: rotate(-45deg);
-            right: 5%;
-        }
-
-        .slider::before,
-        .slider::after,
-        .slide__prev,
-        .slide__next {
-            position: absolute;
-            top: 48%;
-            width: 35px;
-            height: 35px;
-            border: solid black;
-            border-width: 0 4px 4px 0;
-            padding: 3px;
-            box-sizing: border-box;
-        }
-
-        .slider::before,
-        .slider::after {
-            content: "";
-            z-index: 1;
-            background: none;
-            pointer-events: none;
-        }
-
-        .slider__nav {
-            box-sizing: border-box;
-            position: absolute;
-            bottom: 5%;
-            left: 50%;
-            width: 200px;
-            margin-left: -100px;
-            text-align: center;
-        }
-
-        .slider__navlink {
+        .Horiz-line {
+            border-top: 2px solid rgb(87, 66, 66);
             display: inline-block;
-            height: 15px;
-            width: 15px;
-            border-radius: 50%;
-            background-color: black;
-            margin: 0 10px 0 10px;
-        }
-
-
-
-
-
-
-
-
-        .read-article {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            z-index: 999;
-            color: #000;
-            background: white;
-            padding: 10px 20px;
-            border-radius: 10px;
-            font-family: arial;
-            text-decoration: none;
-            box-shadow: rgb(50 50 93 / 25%) 0 0 100px -20px, rgb(0 0 0 / 30%) 0 0 60px -15px;
-        }
-
-        .read-article:hover {
-            background: #d5d5d5;
-            box-shadow: rgb(50 50 93 / 25%) 0 0 100px -20px, rgb(0 0 0 / 30%) 0 0 60px 0px;
-        }
-
-        iframe[sandbox] .read-article {
-            display: none;
+            height: 30px;
+            width: 80%;
+            margin: 0 20px;
         }
     </style>
-
-
 </head>
-
-
-
-<!---chargement de la page -->
 
 <body>
     <div class="lapageChragement" id="lapageChragement">
@@ -187,103 +67,257 @@
 
     <script>
         document.onreadystatechange = function () {
-            if (document.readyState != "complete") {
+            if (document.readyState === "loading") {
 
 
 
                 document.querySelector("#chargement").style.visibility = "visible";
 
                 document.querySelector("#bod").style.display = "none";
-            }
 
+            }
             else {
                 document.querySelector("#chargement").style.display = "none";
                 document.querySelector("body").style.visibility = "visible";
                 document.querySelector("#bod").style.display = "block";
             }
-
         };
+
+
+        $(".carousel").owlCarousel({
+            margin: 20,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                600: {
+                    items: 1,
+                    nav: false
+                },
+                1000: {
+                    items: 2,
+                    nav: false
+                }
+            }
+        });
     </script>
-
     <div class="Body2" id="bod">
+        <!-- navbar-->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="page-title">
+                    <div class="container">
+                        <!--<div id="loader">Loading...</div>-->
+                    </div>
 
 
-        <div class="slider-container">
-            <div class="slider">
-                <div class="slides">
-                    <div id="slides__1" class="slide">
-                        <span class="slide__text">Coucou Tracy, <br>
-                            <br>
-                            Il fallait que je t’envoie un message au sujet du devotionnel. <br>
-                            <br> Je l’ai fait avec une amie pendant les 28 jours et je peux te dire que j’ai été
-                            vraiment
-                            bénie.
-                            Redécouvrir des vérités bibliques sous un nouveau jour a été un « eye opener » pour moi.
-                            <br>
-                            <br> Surtout que j’ai pas
-                            mal eu de problèmes de règles irrégulières et quand je demandais à des amies de prier pour
-                            moi
-                            elles
-                            me
-                            disaient:mais c’est pas grave, ça arrive que ce soit irrégulier. Moi je prenais cela très au
-                            sérieux
-                            et je n’étais
-                            pas d’accord avec cela. <br>
-                            <br> Et quand j’ai médité sur ton devotionnel et que tu en parlais ça été comme
-                            une
-                            confirmation que notre corps est le temple du St Esprit et par conséquent, il est soumis à
-                            Dieu
-                            et
-                            on n’a pas à subir ce genre de choses!
-                            <br>
-                            <br> Enfin je pourrai encore écrire mais je voulais vraiment
-                            envoyer ce
-                            message pour dire que j’ai été bénie.</span>
-                        <a class="slide__prev" href="#slides__4" title="Next"></a>
-                        <a class="slide__next" href="#slides__2" title="Next"></a>
-                    </div>
-                    <div id="slides__2" class="slide">
-                        <span class="slide__text">2</span>
-                        <a class="slide__prev" href="#slides__1" title="Prev"></a>
-                        <a class="slide__next" href="#slides__3" title="Next"></a>
-                    </div>
-                    <div id="slides__3" class="slide">
-                        <span class="slide__text">3</span>
-                        <a class="slide__prev" href="#slides__2" title="Prev"></a>
-                        <a class="slide__next" href="#slides__4" title="Next"></a>
-                    </div>
-                    <div id="slides__4" class="slide">
-                        <span class="slide__text">4</span>
-                        <a class="slide__prev" href="#slides__3" title="Prev"></a>
-                        <a class="slide__next" href="#slides__1" title="Prev"></a>
-                    </div>
                 </div>
-                <div class="slider__nav">
-                    <a class="slider__navlink" href="#slides__1"></a>
-                    <a class="slider__navlink" href="#slides__2"></a>
-                    <a class="slider__navlink" href="#slides__3"></a>
-                    <a class="slider__navlink" href="#slides__4"></a>
+
+
+                <ul class="nav navbar-nav">
+
+                    <div class="titrepage2">
+                        <div class='strow2' style="width: 50px;">
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                        </div>
+                        <!--<img src="logo.toutestaccompli.png">-->
+                        <h1 style="color:black; font-family: 'Updock',cursive;text-transform: none">Tout Est
+                            Accompli </h1>
+                        <h1 style="font-size: 20px; color: black;"> </h1>
+                    </div>
+
+
+                </ul>
+                <!-- -->
+
+
+                <!--<div class="droppo">
+                                <button class="drop"><a class="hoverable">MENU</a></button>
+                                <div class="menu">
+                                    <a class="hoverable" href="#Le-Dévotionnel">Le Dévotionnel</a>
+                                    <a class="hoverable" href="#A-propos">A PROPOS</a>
+                                    <a class="hoverable" href="#temoignage">TEMOIGNAGES</a>
+                                    <a class="hoverable" href="#resource">RESSOURCES</a>
+                                    <a class="hoverable" href="#soutenir">comment soutenir L'oeuvre
+                </a>
+                                </div>-->
+
+
+
+            </div>
+
+        </nav>
+        <div class="cards2">
+            <div class="card2">
+                <div class="wrap3">
+                    <div class="tile3">
+
+                        <div class="text3">
+                            <img src="logo.menu.jpg">
+
+
+                            <div class="LeMenu">
+
+                                <a class="hoverable" href="index.html#A-propos">À PROPOS <br><br> </a>
+                                <a class="hoverable" href="index.html#Le-Dévotionnel">LES DÉVOTIONNELS <br><br></a>
+                                <a class="hoverable" href="index.html#temoignage">TÉMOIGNAGES <br><br> </a>
+                                <a class="hoverable" href="index.html#resource">RESSOURCES <br><br> </a>
+                                <a class="hoverable" href="index.html#soutenir">COMMENT SOUTENIR L'ŒUVRE?<br><br></a>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class=" Contact">
+                        <div class="menu"><a id="len4" class="hoverable" href="mailto:tracysibomana@gmail.jpeg"><img
+                                    src="logo.mail.png"></a>
+                        </div>
+                        <div class="menu"><a id="len4" class="hoverable"
+                                href="https://www.instagram.com/sibom.s/?hl=fr"><img src="logo.instagram.jpeg"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
         </div>
 
 
-        <div class="under" style="background-color: #a79d9d;">
-            <div class="copyright" style="color:black;"> <a style="font-size: 15px;">Mention
-                    légale</a>
-                - ©ToutEstAccompli.com 2022.- Tous droits
-                réservés.
+
+
+
+        <div class="boxvideo">
+            <!--<div class="titles4">
+                <H2>RESSOURCES</H2>
+            </div>-->
+
+            <h3> Qui est Jésus?</h3>
+            <span class="Horiz-line"></span>
+            <div class="videos">
+                <div class=" video">
+                    <a href="https://www.youtube.com/embed/EieI6qcWsck"> <img src="image_video2.png" alt=""></a>
+                </div>
+
+                <div class=" video">
+                    <a href="https://www.youtube.com/embed/Gw6mZDcphbE"><img src="image_video4.png" alt=""></a>
+                </div>
+            </div>
+            <h3>L'œuvre de la croix</h3>
+            <span class="Horiz-line"></span>
+            <div class="videos">
+
+                <div class=" video">
+                    <a href="https://www.youtube.com/embed/EAHwHOfAXFU"><img src="image_video13.png" alt=""></a>
+                </div>
+
+                <div class=" video">
+                    <a href="https://www.youtube.com/embed/0_daOWmHjJc"><img src="image_video6.png" alt=""></a>
+                </div>
+
+                <div class=" video">
+                    <a href="https://www.youtube.com/embed/qo1IhFYLLvU"><img src="image_video1.png" alt=""></a>
+                </div>
+
+                <div class=" video">
+                    <a href="https://www.youtube.com/embed/6ctn3GlEM_8"><img src="image_video14.png" alt=""></a>
+
+                </div>
+
+                <div class=" video">
+                    <a href="https://www.youtube.com/embed/RZW7eTbT1Mk"><img src="image_video15.png" alt=""></a>
+                </div>
+
+            </div>
+
+
+            <h3>La croix et les menstruations</h3>
+            <span class="Horiz-line"></span>
+            <div class="videos">
+
+                <div class=" video">
+                    <a href="https://www.youtube.com/embed/kdJuuQMiXME"><img src="image_video5.png" alt=""></a>
+                </div>
+            </div>
+
+            <h3>La croix et la stérilité</h3>
+            <span class="Horiz-line"></span>
+            <div class="videos">
+
+                <div class=" video">
+                    <a href="https://www.youtube.com/embed/0uYYMa7_1eE"><img src="image_video7.png" alt=""></a>
+                </div>
+
+                <div class=" video">
+                    <a href="https://www.youtube.com/embed/ShvJsve3u50"><img src="image_video3.png" alt=""></a>
+                </div>
+
+
+                <div class=" video">
+                    <a href="https://www.youtube.com/embed/zyoSsFZ5FqM"><img src="image_video8.png" alt=""></a>
+                </div>
+
+                <div class=" video">
+                    <a href="https://www.youtube.com/embed/Tee8LkkfSSI"><img src="image_video11.png" alt=""></a>
+                </div>
+
+                <div class=" video">
+                    <a href="https://www.youtube.com/embed/dbFE9776pEI"><img src="image_video10.png" alt=""></a>
+                </div>
+
+                <div class=" video">
+                    <a href="https://www.youtube.com/embed/V_EFSLz4HOA"><img src="image_video.png" alt=""></a>
+                </div>
             </div>
         </div>
-
-
-
-
 
 
     </div>
-</body>
 
-<script src="main.js"></script>
+    <div class="under" style="background-color: #a79d9d;">
+        <div class="copyright" style="color:black;"> <a href="Mentions.legales.html" style="font-size: 15px;">Mention
+                légale</a>
+            <p> - ©ToutEstAccompli.com 2022.- Tous droits
+                réservés.</p>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cookieconsent.popupsmart.com/src/js/popper.js"></script>
+    <script> window.start.init({ Palette: "palette4", Mode: "banner bottom", Theme: "edgeless", ButtonText: "Alow it", Time: "5", })</script>
+
+    <script src="main.js"></script>
+
+
+</body>
 
 </html>
