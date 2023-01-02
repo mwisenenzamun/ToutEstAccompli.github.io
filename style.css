@@ -2,6 +2,10 @@
 
 
 
+
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@0,300;1,300&family=Updock&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@1,200&family=Updock&display=swap');
 
@@ -170,9 +174,9 @@
   }
   @media screen and (max-width: 1880px) {
     body {
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
     
     }
    
@@ -180,7 +184,7 @@
   }
   @media screen and (max-width: 880px) {
     body {
-    width:70%;
+    width:100%;
   
   
     
@@ -757,6 +761,9 @@ aside{
  
   
 }
+
+
+
 .Témoignage{
   display: grid;
   
@@ -770,9 +777,6 @@ aside{
   border-color: rgb(139, 125, 125);
 
 }
-
-
-
 
 
 
@@ -956,14 +960,14 @@ aside{
 @media (max-width: 600px) {
   .slider {
     width: 100%;
-    max-width: 1000px;
-    max-height: 700px;
-    margin: 20px;
+    
+    max-height: 800px;
+    
     
     border-radius: 20px;
     
 
-   position: relative;
+    position: relative;
   }
 
   
@@ -987,14 +991,14 @@ aside{
  
   .slide1{
     
-    margin: 30px;
+  
     margin-top: 40px;
     margin-bottom: 40px;
     height: 500px;
   }
   .slide2{
     
-    margin: 30px;
+    
     margin-top: 40px;
     margin-bottom: 40px;
     height: 500px;
@@ -1035,6 +1039,29 @@ aside{
     scroll-snap-type: x mandatory;
   }
 
+  @media (min-width: 600px) {
+    .slide__text {
+      font-size: 15px;
+      width: 55%;
+      display: flex;
+      justify-content:center ;
+      
+      margin: 20px;
+      text-align: left;
+      font-family: 'Nunito', sans-serif;
+      font-weight: normal;
+      display: flex;
+      overflow-y: scroll;
+      color: #000;
+      position: relative;
+      scroll-behavior: smooth;
+      scroll-snap-type: x mandatory;
+    }
+
+
+
+  }
+
   .slide img {
     width: 5px;
     height:auto;
@@ -1073,7 +1100,7 @@ a.slide__next,
   width: 15px;
   height: 15px;
   border: solid black;
-  border-width: 0 4px 4px 0;
+  border-width: 0 2px 2px 0;
   padding: 3px;
   box-sizing: border-box;
 }
@@ -1089,7 +1116,7 @@ a.slide__next,
 .slider__nav {
   box-sizing: border-box;
   position: absolute;
-  bottom: 5%;
+  bottom: 2%;
   left: 50%;
   width: 200px;
   margin-left: -100px;
@@ -1099,8 +1126,8 @@ a.slide__next,
 .slider__navlink {
   display: inline-block;
   
-  height: 15px;
-  width: 15px;
+  height: 10px;
+  width: 10px;
   border-radius: 50%;
   background-color: black;
   opacity: 0.3;
