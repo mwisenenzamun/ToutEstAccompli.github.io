@@ -204,7 +204,7 @@
 
 
         .wrap4 {
-            margin: 5px auto 0 auto;
+            margin: 0px auto 0 auto;
             width: 100%;
             max-height: 100%;
             display: flex;
@@ -215,24 +215,42 @@
 
         }
 
+        .LeMenu::-webkit-scrollbar {
+
+            width: 5px;
+            color: rgb(8, 7, 7);
+        }
+
+        .LeMenu::-webkit-scrollbar-track {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .LeMenu::-webkit-scrollbar-thumb {
+            box-shadow: inset 0px 0px 1700px rgba(7, 6, 6, 0.3);
+
+        }
+
         .LeMenu {
-            margin-left: 10px;
+            margin-left: 15px;
             margin: 40px;
+            border-radius: 20px;
             justify-content: center;
-            background-color: #c7b9b9;
-            text-align: center;
-            overflow-y: auto;
+            /*background-color: #c7b9b9;*/
+            overflow-y: scroll;
             /*opacity: 0.9;*/
 
+            background: rgb(230, 216, 216);
+            background: radial-gradient(circle, rgba(230, 216, 216, 1) 0%, rgba(199, 185, 185, 1) 84%)
         }
 
         .tile4 {
             width: 250px;
             height: 30px;
-            margin: 5px;
-            background-color: #a79d9d #9c9292;
+            margin: 0px;
+            /*background-color: #a79d9d #9c9292;*/
             /*#a79d9d*/
-            display: flex;
+
+
             flex-direction: row;
             flex-wrap: nowrap;
             background-size: cover;
@@ -279,6 +297,8 @@
 
         .text4 img {
             width: 30px;
+
+            clip-path: circle(54% at 50% 50%);
         }
 
 
@@ -395,7 +415,7 @@
             }
 
             .wrap4 {
-                margin: 5px auto 0 auto;
+                margin: 10px auto 0 auto;
                 width: 100%;
                 max-height: 100%;
                 display: flex;
@@ -403,6 +423,21 @@
                 align-items: space-around;
                 max-width: 1500px;
 
+
+            }
+
+            .LeMenu::-webkit-scrollbar {
+
+                width: 5px;
+                color: rgb(8, 7, 7);
+            }
+
+            .LeMenu::-webkit-scrollbar-track {
+                background-color: rgb(255, 255, 255);
+            }
+
+            .LeMenu::-webkit-scrollbar-thumb {
+                box-shadow: inset 0px 0px 1700px rgba(7, 6, 6, 0.3);
 
             }
 
@@ -421,7 +456,7 @@
             .tile4 {
                 width: 250px;
                 height: 30px;
-                margin: 5px;
+                margin: 0px;
                 margin-bottom: 200px;
                 background-color: #a79d9d #9c9292;
                 /*#a79d9d*/
@@ -456,8 +491,8 @@
         }
 
         .dot {
-            height: 10px;
-            width: 10px;
+            height: 5px;
+            width: 5px;
             margin-left: 15px;
             margin-right: 15px;
             background-color: rgb(17, 16, 16);
@@ -633,14 +668,29 @@
             </div>
 
         </nav>
+        <div class="cards2">
+            <div class="card2">
+                <div class="wrap3">
+                    <div class="tile3">
 
-        <div class="cards3">
-            <div class="card3">
-                <div class="wrap4">
-                    <div class=" Contact">
-                        <div class="menu"><a id="len4" class="hoverable" href="index.html"><img src="logo.menu.jpg"></a>
+                        <div class="text3">
+                            <img src="logo.menu.jpg">
+
+
+                            <div class="LeMenu">
+                                <a class="hoverable" href="index.html#A-propos">À PROPOS <br><br> </a>
+                                <a class="hoverable" href="index.html#Le-Dévotionnel">LES DÉVOTIONNELS <br><br></a>
+                                <a class="hoverable" href="index.html#temoignage">TÉMOIGNAGES <br><br> </a>
+                                <a class="hoverable" href="index.html#resource">RESSOURCES <br><br> </a>
+                                <a class="hoverable" href="index.html#soutenir">COMMENT SOUTENIR L'ŒUVRE?<br><br></a>
+
+                            </div>
+
+
                         </div>
 
+                    </div>
+                    <div class=" Contact">
                         <div class="menu"><a id="len4" class="hoverable" href="mailto:tracysibomana@gmail.jpeg"><img
                                     src="logo.mail.png"></a>
                         </div>
@@ -651,6 +701,7 @@
                                     src="logo.download.png"></a>
                         </div>
                     </div>
+
                     <div class="tile4">
 
 
@@ -748,12 +799,132 @@
                         </div>
 
                     </div>
-
                 </div>
             </div>
 
 
         </div>
+
+        <!-- <div class="cards3">
+            <div class="card3">
+                <div class="wrap4">
+                    <div class=" Contact">
+                        <div class="menu"><a id="len4" class="hoverable" href="index.html"><img src="logo.menu.jpg"></a>
+                        </div>
+
+                        <div class="menu"><a id="len4" class="hoverable" href="mailto:tracysibomana@gmail.jpeg"><img
+                                    src="logo.mail.png"></a>
+                        </div>
+                        <div class="menu"><a id="len4" class="hoverable"
+                                href="https://www.instagram.com/sibom.s/?hl=fr"><img src="logo.instagram.jpeg"></a>
+                        </div>
+                        <div class="menu"><a id="len4" class="hoverable" href="DEVOTIONNEL - Tout est accompli.pdf"><img
+                                    src="logo.download.png"></a>
+                        </div>
+                    </div>
+                    <div class="tile4">
+
+
+
+
+                        <div class="text4">
+                            <h1>Les Chapitres</h1>
+                            <h2 class="animate-text1">MENU</h2>
+                            <img src="logo.chapitres.png">
+                            <h1>Les Chapitres</h1>
+
+                            <div class="LeMenu">
+
+                                <a class="hoverable hoverableM" id="x1"><span class="dot"></span><u>PRÉFACE</u> <br><br>
+                                </a>
+
+                                <a class="hoverable hoverableM" id="x2"><span class="dot"></span><u>PRÉSENTATION</u><br>
+                                    <br><br> </a>
+                                <a class="hoverable hoverableM" id="x3"><span
+                                        class="dot"></span><u>INTRODUCTION</u><br><br></a>
+
+                                <a class="hoverable hoverableM" id="x4"><span class="dot"></span><u>PARTIE 1:</u><br>
+                                    DIEU
+                                    ET SA PAROLE
+                                    <br><br></a>
+
+                                <a class="hoverable hoverableM" id="x5"><span class="dot"></span><u>PARTIE 2: </u><br>TU
+                                    ES
+                                    CELLE QUE
+                                    DIEU DIT QUE TU ES
+                                    <br><br></a>
+
+
+                                <a class="hoverable hoverableM" id="x6"><span class="dot"></span><u>PARTIE 3:</u><br> LE
+                                    PÉCHÉ
+                                    ORIGINEL, SES CONSÉQUENCES ET
+                                    L’ANNONCE DE NOTRE SAUVEUR <br><br></a>
+                                <a class="hoverable hoverableM" id="x1"><span class="dot"></span><u>PRÉFACE</u> <br><br>
+                                </a>
+
+                                <a class="hoverable hoverableM" id="x2"><span class="dot"></span><u>PRÉSENTATION</u><br>
+                                    <br><br> </a>
+                                <a class="hoverable hoverableM" id="x3"><span
+                                        class="dot"></span><u>INTRODUCTION</u><br><br></a>
+
+                                <a class="hoverable hoverableM" id="x4"><span class="dot"></span><u>PARTIE 1:</u><br>
+                                    DIEU
+                                    ET SA PAROLE
+                                    <br><br></a>
+
+                                <a class="hoverable hoverableM" id="x5"><span class="dot"></span><u>PARTIE 2: </u><br>TU
+                                    ES
+                                    CELLE QUE
+                                    DIEU DIT QUE TU ES
+                                    <br><br></a>
+
+                                <a class="hoverable hoverableM" id="x6"><span class="dot"></span><u>PARTIE 3:</u><br> LE
+                                    PÉCHÉ
+                                    ORIGINEL, SES CONSÉQUENCES ET
+                                    L’ANNONCE DE NOTRE SAUVEUR <br><br></a>
+
+                                <a class="hoverable hoverableM" id="x7"><span class="dot"></span><u>PARTIE 4:</u><br>
+                                    JÉSUS
+                                    A SOUFFERT
+                                    POUR QUE TU N’AIES PLUS À
+                                    SOUFFRIR <br><br></a>
+                                <a class="hoverable hoverableM" id="x8"><span class="dot"></span><u>PARTIE 5:</u><br>
+                                    TON
+                                    CORPS ET TOI
+                                    N’ÊTES PLUS SOUS LA LOI
+                                    MAIS
+                                    SOUS LA GRÂCE <br><br></a>
+                                <a class="hoverable hoverableM" id="x9"><span class="dot"></span><u>PARTIE 6:
+                                    </u><br>TON
+                                    CORPS NE
+                                    T’APPARTIENT PLUS, IL
+                                    APPARTIENT À JÉSUS <br><br></a>
+                                <a class="hoverable hoverableM" id="x10"><span class="dot"></span><u>PARTIE 7:</u><br>
+                                    L’AUTORITÉ QUE
+                                    JÉSUS T’A DONNÉE
+                                    <br><br></a>
+                                <a class="hoverable hoverableM" id="x11"><span class="dot"></span><u>PARTIE 8: </u><br>
+                                    GARDE
+                                    TES
+                                    PENSÉES FIXÉES SUR LA
+                                    VÉRITÉ <br><br></a>
+                                <a class="hoverable hoverableM" id="x12"><span class="dot"></span><u>« MIEUX VAUT LA FIN
+                                        D’UNE
+                                        CHOSE QUE SON
+                                        COMMENCEMENT»</u><br>(Ecclésiastes 7:8)<br><br></a>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>-->
 
         <main>
             <h1></h1>
@@ -764,10 +935,13 @@
             </div>
         </main>
 
-        <div class="under">
-            <p class="copyright" style="color:black;"><a href="" style="font-size: 15px;">Mention légale</a>
-                - ©ToutEstAccompli.com 2022.- Tous droits
-                réservés.</p>
+        <div class="under" style="background-color: #a79d9d;">
+            <div class="copyright" style="color:black;"> <a href="Mentions.legales.html"
+                    style="font-size: 15px;">Mention
+                    légale</a>
+                <p> - ©ToutEstAccompli.com 2022.- Tous droits
+                    réservés.</p>
+            </div>
         </div>
 
         <script src="main.js"></script>
