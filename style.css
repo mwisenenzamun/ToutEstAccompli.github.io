@@ -560,15 +560,7 @@ img {
 
   
 }
-@media (max-width: 1000px) {
 
-  .accueil{
-    
-    margin-top: 100px;
-    margin-bottom: 100px; 
-  }
-
-}
 
 
 .Apropos{
@@ -620,6 +612,25 @@ aside{
   z-index: 41;
   display: none;
 }
+@media (max-width: 1000px) {
+
+  .accueil{
+    
+    margin-top: 100px;
+    margin-bottom: 100px; 
+  }
+
+  .section2{
+  
+    width: 100%;
+    margin-top: 200px;
+    
+    
+    
+  }
+
+
+}
 
 @media (max-width: 1000px) {
   aside{
@@ -664,16 +675,16 @@ aside{
     }
 
 
-    .Apropos{
-      display: grid;
+  .Apropos{
+    display: grid;
       
-      margin-top: 80px;
-      margin-bottom: 80px;
+    margin-top: 80px;
+    margin-bottom: 80px;
       
-      margin-left: 10%;
-      margin-right: 10%;
+    margin-left: 0%;
+    margin-right: 5%;
       
-    }
+  }
 
 }
 
@@ -707,12 +718,15 @@ aside{
 
 
 
+
+
+
 .section3{
 
 
-  width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
   margin-top: 200px;
  
   
@@ -732,17 +746,7 @@ aside{
 
 }
 
-@media (max-width: 1000px) {
 
-  .Témoignage{
-    display: grid;
-    
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-}
 
 
 
@@ -757,6 +761,42 @@ aside{
   margin-right: 15%;
   margin-top: 200px;
 }
+@media (max-width: 1000px) {
+  .section3{
+
+
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 200px;
+   
+    
+  }
+
+  .Témoignage{
+    display: grid;
+    margin-left: 0%;
+  margin-right: 0%;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+  }
+  .soutenir{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    width: 100%;
+    margin-left: 0%;
+  margin-right: 0%;
+    
+    margin-top: 200px;
+  }
+  
+}
+
+
 
 .card{
   margin-top: 10px;
@@ -876,7 +916,7 @@ aside{
 
 .slide__text {
   font-size: 15px;
-  width: 55%;
+  width: 65%;
   margin: 20px;
   text-align: left;
   font-family: 'Nunito', sans-serif;
@@ -922,12 +962,16 @@ aside{
  
   .slide1{
     
-    margin: 40px;
+    margin: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     height: 500px;
   }
   .slide2{
     
-    margin: 40px;
+    margin: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     height: 500px;
   }
   
@@ -1125,6 +1169,37 @@ a.slide__next,
     width:"220" ;
     height:"115";
   }
+
+  .resources{
+
+    width: 100%;
+    
+    overflow: hidden;
+    margin-top: 200px;
+    
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  }
+  .resources2{
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-left: 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  }
+  
 }
 
 
