@@ -2,8 +2,6 @@
 
 
 
-
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@0,300;1,300&family=Updock&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@1,200&family=Updock&display=swap');
 
@@ -170,10 +168,34 @@
 
     
   }
+  @media screen and (max-width: 1880px) {
+    body {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    
+    }
+   
+    
+  }
+  @media screen and (max-width: 880px) {
+    body {
+    width:70%;
+  
+  
+    
+    }
+   
+    
+  }
 
 
   
   body {
+    background: rgb(230,216,216);
+background: radial-gradient(circle, rgba(230,216,216,1) 13%, rgba(238,238,238,1) 73%);
+
+    /*
     background: rgb(230,216,216);
     background: radial-gradient(circle, rgba(230,216,216,1) 0%, rgba(199,185,185,1) 84%);
 
@@ -204,8 +226,9 @@
     /*rgb(224, 223, 221)*/ /*orange claire*/
     /*rgb(116, 110, 99)*/ /*brun*/
 
-    width: 100%;
-    
+
+
+     
     color: white;
     
         
@@ -296,9 +319,21 @@
   /*background-color: #c7b9b9;
   /*opacity: 0.9;*/
 
-  background: rgb(230,216,216);
+  background: rgb(131, 173, 89);
+background: linear-gradient(86deg, rgba(223,230,216,1) 0%, rgba(216,230,230,1) 49%, rgba(230,216,216,1) 92%);
+
+ /* background: rgb(223,230,216);
+background: radial-gradient(circle, rgba(223,230,216,1) 0%, rgba(216,230,230,1) 49%, rgba(230,216,216,1) 92%);
+
+  /*background: rgb(223,230,216);
+background: radial-gradient(circle, rgba(223,230,216,1) 0%, rgba(216,230,230,1) 49%, rgba(230,216,216,1) 92%);
+
+  /*background: rgb(230,216,216);
+background: radial-gradient(circle, rgba(230,216,216,1) 13%, rgba(238,238,238,1) 73%);
+
+ /* background: rgb(230,216,216);
 background: radial-gradient(circle, rgba(230,216,216,1) 0%, rgba(199,185,185,1) 84%);
-  
+  */
 }
 
 @media (max-width: 700px) {
@@ -791,7 +826,7 @@ aside{
 .card{
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 100%;
+  width: 95%;
   display: flex;
   justify-content: center;
   
@@ -1110,21 +1145,26 @@ a.slide__next,
   text-transform : capitalize;
 }
 
+@media (min-width: 1700px) {
 
 
 .resources{
 
-  width: 100%;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
 
   overflow: hidden;
-  margin-top: 200px;
+  margin-top: 100px;
   
  
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
+ 
   
+  
+}
 }
 
 
@@ -1149,9 +1189,7 @@ a.slide__next,
     width: 100%;
     
     overflow: hidden;
-    margin-top: 200px;
-    
-   
+    margin-top: 100px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1864,7 +1902,7 @@ p{
 .wrap2
 {
   margin:50px auto 0 auto;
-  width:50%;
+  width:80%;
   height: 100%;
   display:flex;
   align-items:space-around;
@@ -1872,6 +1910,19 @@ p{
   text-align: center;
  
 }
+
+
+.cart{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+
+}
+
+
 
 .tile2
 {
