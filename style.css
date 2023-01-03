@@ -190,28 +190,26 @@
     background: rgb(230,216,216);
     background: radial-gradient(circle, rgba(230,216,216,1) 13%, rgba(238,238,238,1) 73%);
 
-    /*
-    background: rgb(230,216,216);
+    
+    /*background: rgb(230,216,216);
     background: radial-gradient(circle, rgba(230,216,216,1) 0%, rgba(199,185,185,1) 84%);
-
+*/
     /*background: rgb(230,216,216);
      background: radial-gradient(circle, rgba(230,216,216,1) 0%, rgba(238,238,238,1) 84%);
-    /*background: rgb(230,216,216);
+    */
+     /*background: rgb(230,216,216);
      background: radial-gradient(circle, rgba(230,216,216,1) 0%, rgba(199,185,185,1) 84%);
-
-
-    /*background: rgb(230,216,216);
-    background: radial-gradient(circle, rgba(230,216,216,1) 0%, rgba(216,230,230,1) 84%);
+*/
 
     /*background: rgb(230,216,216);
-    background: radial-gradient(circle, rgba(230,216,216,1) 0%, rgba(216,230,216,1) 84%);
+    background: radial-gradient(circle, rgba(230,216,216,1) 0%, rgba(216,230,230,1) 84%);*/
 
-    /*
-    background: rgb(230,216,216);
-    background: radial-gradient(circle, rgba(230,216,216,1) 0%, rgba(199,185,185,1) 84%);
+   
+
 
     /*background: rgb(230,216,216);
     background: radial-gradient(circle, rgba(230,216,216,1) 0%, rgba(216,216,230,1) 84%);
+    
     /*background-color: rgb(230, 216, 216);
     /*rgb(186, 190, 207)*/ /*bleu mauve
     /*rgb(163, 145, 165)*/ /*mauve
@@ -443,7 +441,7 @@ button a{
     text-transform:uppercase;
     
     padding-top: 0;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
 
 
 
@@ -645,16 +643,12 @@ aside{
 }
 @media (max-width: 1000px) {
 
-  .accueil{
-    
-    margin-top: 100px;
-    margin-bottom: 100px; 
-  }
+  
 
   .section2{
   
     width: 100%;
-    margin-top: 200px;
+    
     
     
     
@@ -754,13 +748,7 @@ aside{
 
 
 
-.section3{
 
-
-  
- 
-  
-}
 
 
 
@@ -795,7 +783,7 @@ aside{
     width: 100%;
     margin-left: 0%;
     margin-right: 0%;
-    margin-top: 50px;
+   
    
     
   }
@@ -816,9 +804,9 @@ aside{
   
     width: 100%;
     margin-left: 0%;
-  margin-right: 0%;
+    margin-right: 0%;
     
-    margin-top: 200px;
+    margin-top: 100px;
   }
   
 }
@@ -844,8 +832,17 @@ aside{
   flex-wrap: nowrap;
   flex-direction: column;
   justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .cards{
   
-  
+    display: flex;
+    width: 60%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+  }
 
 }
 
@@ -2190,7 +2187,7 @@ background: linear-gradient(158deg, rgba(223,230,216,1) 4%, rgba(149,164,164,1) 
 }
 .tile24:hover
 {
-  height: 409px;
+  height: 459px;
   
 }
 .tile25:hover
