@@ -2,7 +2,6 @@
 
 
 
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@0,300;1,300&family=Updock&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@1,200&family=Updock&display=swap');
 
@@ -1770,7 +1769,7 @@ p{
 .tile3
 {
   width:35px;
-  height: 37px;
+  height: 35px;
   margin:0px;
   
   /*#a79d9d*/
@@ -2289,7 +2288,7 @@ p{
   opacity:1;
 }
 }
-@media(min-width:;)
+@media(min-width:600px){
 
 
 .dots
