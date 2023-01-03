@@ -1,3107 +1,1142 @@
+<!doctype html>
+<html lang="fr">
+<!--- -->
 
+<head>
+    <!-- Required meta tags -->
+    <link href="style.css" rel="stylesheet" type="text/css">
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@0,300;1,300&family=Updock&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Nunito:ital,wght@1,200&family=Updock&display=swap');
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
+    <title> Tout Est Accompli © </title>
+    <link rel="icon" type="image/png" sizes="16x16" href="logo.toutestaccompli.blanc1.png">
 
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 
-.charge {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 0%;
-  
-}
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
-.loader {
-  width: 120px;
-  height: 120px;
-  border-top: 4px solid rgb(237, 44, 73);
-  border-radius: 50%;
-  animation: spin 0.8s linear infinite;
-}
 
 
-
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-
-
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5px;
-  grid-auto-rows: minmax(100px, auto);
-  width: min-content;
-  margin-left: 200px;
-  padding: center;
-}
-.one {
-  grid-column: 1 ;
-  grid-row: 1/5;
-}
-.two {
-  grid-column: 3;
-  grid-row: 4/5;
-}
-.three {
-  grid-column: 2;
-  grid-row: 3 / 5;
-}
-.four {
-  grid-column: 3;
-  grid-row: 3;
-}
-.five {
-  grid-column: 2;
-  grid-row: 4;
-}
-.six {
-  grid-column: 3;
-  grid-row: 4;
-}
-
-
-
-.hoverable{
-    display:inline-block;
-    backface-visibility: hidden;
-    vertical-align: middle;
-    position:relative;
-    box-shadow: 0 0 1px rgba(0,0,0,0);
-    flood-color: translateZ(0);
-    transition-duration: .3s;
-    transition-property:transform;
-  }
-  
-  .hoverable:before{
-    position:absolute;
-    pointer-events: none;
-    z-index:-1;
-    content: '';
-    top: 100%;
-    left: 5%;
-    height:10px;
-    width:90%;
-    opacity:0;
-    background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
-    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
-    /* W3C */
-    transition-duration: 0.3s;
-    transition-property: transform, opacity;
-  }
-  
-  .hoverable:hover, .hoverable:active, .hoverable:focus{
-    transform: translateY(-5px);
-  }
-  .hoverable:hover:before, .hoverable:active:before, .hoverable:focus:before{
-    opacity: 1;
-    transform: translateY(-5px);
-  }
-  
-  
-  
-  @keyframes bounce-animation {
-    16.65% {
-      -webkit-transform: translateY(8px);
-      transform: translateY(8px);
-    }
-  
-    33.3% {
-      -webkit-transform: translateY(-6px);
-      transform: translateY(-6px);
-    }
-  
-    49.95% {
-      -webkit-transform: translateY(4px);
-      transform: translateY(4px);
-    }
-  
-    66.6% {
-      -webkit-transform: translateY(-2px);
-      transform: translateY(-2px);
-    }
-  
-    83.25% {
-      -webkit-transform: translateY(1px);
-      transform: translateY(1px);
-    }
-  
-    100% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
-    }
-  }
-  
-  .bounce {
-    animation-name: bounce-animation;
-    animation-duration: 2s;
-  }
-  
-  
-  
-  /*everything below here is just setting up the page, so dont worry about it */
-  
-  
-  /*@media (min-width: 768px) {
-    .navbar{
-      text-align: center !important;
-      float: none;
-      display: inline-block;
-      font-size: 1.3vw;
-    }
-  }*/
-  html{
-    margin: none;
-
-    
-  }
-
- 
-
-  @media screen and (min-width: 880px) {
-    .body2 {
-    width: 80%;
-    
-    }
-   
-    
-  }
-
-  body {
-    width:100%;
-    justify-content: center;}
-
-
-  
-  body {
-    background: rgb(230,216,216);
-    background: radial-gradient(circle, rgba(230,216,216,1) 13%, rgba(238,238,238,1) 73%);
-
-    
-    /*background: rgb(230,216,216);
-    background: radial-gradient(circle, rgba(230,216,216,1) 0%, rgba(199,185,185,1) 84%);
-*/
-    /*background: rgb(230,216,216);
-     background: radial-gradient(circle, rgba(230,216,216,1) 0%, rgba(238,238,238,1) 84%);
-    */
-     /*background: rgb(230,216,216);
-     background: radial-gradient(circle, rgba(230,216,216,1) 0%, rgba(199,185,185,1) 84%);
-*/
-
-    /*background: rgb(230,216,216);
-    background: radial-gradient(circle, rgba(230,216,216,1) 0%, rgba(216,230,230,1) 84%);*/
-
-   
-
-
-    /*background: rgb(230,216,216);
-    background: radial-gradient(circle, rgba(230,216,216,1) 0%, rgba(216,216,230,1) 84%);
-    
-    /*background-color: rgb(230, 216, 216);
-    /*rgb(186, 190, 207)*/ /*bleu mauve
-    /*rgb(163, 145, 165)*/ /*mauve
-    /*rgb(230, 216, 216)*/ /*rosé
-    /*rgb(186, 194, 207)*/ /*bleu 
-    /*rgb(145, 164, 165)*/ /*vert
-    /*rgb(224, 223, 221)*/ /*orange claire*/
-    /*rgb(116, 110, 99)*/ /*brun*/
-
-
-
-     
-    color: white;
-    
-        
-        font-weight: 400;
-        line-height: 1.5;
-    
-        word-wrap: break-word;
-          -webkit-hyphens: auto;
-           /*-moz-hyphens: auto;
-                  hyphens: auto; */
-    
-  }
-
-  .body2{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .bod{
-    display: flex;
-    flex-direction: row;
-  }
-
-  img:hover{
-    color: none;
-  }
- 
-
-
-
-  ul{
-    list-style-type: none;
-  }
-
-  .hautdepage{
-
-    display:flex;
-    justify-content: center;
-    height: 600px;
-
-  }
-
-
-  .titrepage{
-    
-
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
-    margin-top: 200px;
-   
-   
-    
-    
-    
-    
-  }
-
-
-
-  .titrepage2{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-right: 200px; 
-    padding-top: 0;
-  }
-
-
-.titrepage h1{
-    font-family: 'Updock',cursive;
-    position: absolute;
-    margin-bottom: 100px;
-    text-transform : none;       
-}
-
-.titrepage2 h1{
-    
-    font-size: 40px;
-    font-family: 'Updock',cursive;    
-}
-
-.LeMenu{
-  margin-left: 10px;
-  
-  justify-content: center;
-  border-radius: 20px;
-  
-  /*background-color: #c7b9b9;
-  /*opacity: 0.9;*/
-
-  background: rgb(131, 173, 89);
-background: linear-gradient(86deg, rgba(223,230,216,1) 0%, rgba(216,230,230,1) 49%, rgba(230,216,216,1) 92%);
-
- /* background: rgb(223,230,216);
-background: radial-gradient(circle, rgba(223,230,216,1) 0%, rgba(216,230,230,1) 49%, rgba(230,216,216,1) 92%);
-
-  /*background: rgb(223,230,216);
-background: radial-gradient(circle, rgba(223,230,216,1) 0%, rgba(216,230,230,1) 49%, rgba(230,216,216,1) 92%);
-
-  /*background: rgb(230,216,216);
-background: radial-gradient(circle, rgba(230,216,216,1) 13%, rgba(238,238,238,1) 73%);
-
- /* background: rgb(230,216,216);
-background: radial-gradient(circle, rgba(230,216,216,1) 0%, rgba(199,185,185,1) 84%);
-  */
-}
-
-@media (max-width: 700px) {
- 
-  .LeMenu a{
-    margin-right: 30px;
-    margin-left: 30px;
-    font-size: 0.85rem;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 20px;
-    
-  }
-
-}
-
-
-  
-.LeMenu a{
-  margin-right: 30px;
-  margin-left: 30px;
-  font-size: 0.85rem;
-  text-align: center;
-  font-weight: bold;
-  
-  
-}
-
-
-
-.container-fluid{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  
-}
-
-.droppo:hover .menu{
-  display: flex;
-
-}
-
-
-
-@media screen and (max-width: 1000px) {
-  .menu {
-    
-    flex-direction: row;
-    margin-left: 0px;
-    font-weight: 1000;
-   justify-content: center;
-   
-  
-  }
- 
-  
-}
-@media screen and (max-width: 600px) {
-
-  .LeMenu{
-   margin-left: 10px;
-   justify-content: center;
-   display: flex;
-   flex-direction: column ;
-  }
-
-  .menu img{
-    width: 20px;
-    margin-right: 5px;
-    
-    clip-path: circle(54% at 50% 50%);
-  }
-  
-}
-
-
-.menu img{
-  width: 30px;
-  margin-right: 5px;
-  
-  clip-path: circle(54% at 50% 50%);
-}
-
-
-button{
-  background-color:   rgb(230, 216, 216);
-
- 
-}
-
-button a{
-  margin: 5px;
-  
-}
-
-
-  
-  nav {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    /*position: sticky;*/
-    width: 100%;
-    
-   
-    overflow: hidden;
-    top: 0;
-    z-index: 42;
-   
-    text-transform:uppercase;
-    
-    padding-top: 0;
-    padding-bottom: 10px;
-
-
-
-    /*#a79d9d*/
-    margin-right: 100px;
-    list-style: none;
-
-    /*border-bottom: solid black;
-    border-bottom-width:thin ;
-    width: 60%;*/
-
-  }
-
-  @media (max-width: 600px) {
-    nav{
-      position: relative;
-    }
-  }
-
-  .Contact{
-    display: flex;
-    flex-direction: row ;
-    
-    width: fit-content;
-    
-     
-  }
-
-   
-
-   li {
-    margin-left: 3em;
-    margin-right: 3em;
-    display: inline;
-    list-style: none;
-    }
-
-  a{
-    transition: .5s color ease-in-out; 
-    color: rgb(57, 59, 61);
-    text-decoration:  none;
-    list-style: none;
-    font-size: larger;
-  }
-  a:hover{
-      color:rgb(57, 59, 61);
-  }
-  
-  
-
-/* foot  */
-
-footer{
-  display: flex;
-  justify-content: center; 
-  margin-bottom: 10px;
-  padding: 4%;
-  width: 100%;
-  /*background-color: #a79d9d;*/
-  background-color: white;
-  height: 50px;
-
-}
-
-.copyright{ 
-  float: right;
-  margin-right: 20%;
-  margin-bottom: 100px;
-}
-
-.under{
-  border-top: solid black;
-  border-top-width: thin;
-  font-size: 12px;
-  width: 80%;
- 
-  margin-left: 10%;
-  
-  
-  text-align:right;
-  
-}
-
-
-
-
-
-/* a propos de l'accueil */
-  
-
-
-*,*:after,*:before {
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
-
-
-
-img {
-	height: auto;
-	width: 400px;
-}
-
-
-
-
-
-
-
-.site_wrapper {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    margin-left: none;
-    margin-right: none;
-    width: 1000px;
-   
-   
-    
-	
-}
-
-
-.propos{
-  
-  margin-top:30px;
-  
-  
-}
-
-.accueil{
-  display:flex;
-  flex-direction: row; 
-  justify-content: center;
-  width: fit-content;
-  margin-top: 100px;
-  margin-bottom: 100px;
-
-  
-}
-.accueil2{
-  display:flex;
-  align-items: center;
-  justify-content:center;
-  width: fit-content;
-  
-
-  
-}
-
-
-
-.Apropos{
-  
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 50%;
- 
-}
-
-
-.section2{
-  margin-top: 40px;
-
-  display: flex;
-  justify-content: center;
- 
-  
-  
-}
-
-.section1{
- 
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
-  
-  
-}
-
-
-
-
-aside{
-  height: 30px;
-  background-color:  #c7b9b9;
-  box-shadow:2px 1px 2px black;
-  opacity: 0.60;
-  position: sticky;
-  top: 70px;
-  overflow: hidden;
-  z-index: 41;
-  display: none;
-}
-@media (max-width: 1000px) {
-
-  
-
-  .section2{
-  
-    width: 100%;
-    
-    
-    
-    
-  }
-
-
-}
-
-@media (max-width: 1000px) {
-  aside{
-   display: none;
-  }
-
-}
-
-
-
-
-.Apropos img{
-
-  box-shadow:4px 3px 2px black;
-  max-width: 310px;
-  height: 350px;
-}
-
-@media (max-width: 1000px) {
-  .Apropos img{
-    max-width:300px ;
-    height: 340px;
-
-  }
-
-  .propos{
-  
-    font-size: medium;
-    margin: 0;
-    font-size: 15px;
-    margin-left: 5%;
-
-  }
-
-  .propos h2{
-    margin-top: 10%;
-    
-  }
-    .vertical-line{
-      
-      margin: 0 ;
-    }
-
-
-  .Apropos{
-    display: grid;
-      
-    margin-top: 40px;
-    margin-bottom: 40px;
-      
-    margin-left: 0%;
-    margin-right: 0%;
-    
-    width: 100%;
-      
-  }
-
-}
-
-@media (max-width: 600px) {
-
-  .Apropos img{
-    max-width:250px ;
-    height: 290px;
-
-  }
-
-}
-
-
-
-
-
-.vertical-line{
-  border-left: 2px solid #000;
-  display: inline-block;
-  height: 100%;
-  margin: 0 20px;
-}
-
-.Horiz-line{
-  border-top: 2px solid #000;
-  display: inline-block;
-  height: 30px;
-  margin: 0 20px;
-}
-
-
-
-
-
-
-
-
-
-
-.Témoignage{
-  display: grid;
-  
-  margin-top: 50px;
-  
- 
-  margin-bottom: 50px;
-
-
-  border-style: solid;
-  border-color: rgb(139, 125, 125);
-
-}
-
-
-
-.soutenir{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
- align-items: center;
-  
-  margin-top: 100px;
-}
-@media (max-width: 1000px) {
-  .section3{
-
-
-    width: 100%;
-    margin-left: 0%;
-    margin-right: 0%;
-   
-   
-    
-  }
-
-  .Témoignage{
-    display: grid;
-    margin-left: 0%;
-  margin-right: 0%;
-    
-    margin-top: 10px;
-    margin-bottom: 10px;
-    
-  }
-  .soutenir{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  
-    width: 100%;
-    margin-left: 0%;
-    margin-right: 0%;
-    
-    margin-top: 100px;
-  }
-  
-}
-
-
-
-.card{
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 95%;
-  display: flex;
-  justify-content: center;
-  
-
-}
-
-
-/* toutes les cartes*/
-.cards{
-  
-  display: flex;
-  width: 40%;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  justify-content: center;
-}
-
-@media (max-width: 1000px) {
-  .cards{
-  
-    display: flex;
-    width: 60%;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-}
-
-
-
-.titles{
-  display: flex;
-  flex-direction: row;
-  font-size: 15px;
-  text-align: center;
-  text-transform : capitalize;
-}
-.titles3{  /*témoignages*/
-
-  display: flex;
-  flex-direction: row;
-  margin-top:65px ;
-  justify-content: center;
-  text-align: center;
-  font-size: 20px;
-  text-transform : capitalize;
-}
-.slider-container {
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height:100%;
-}
-
-.slider {
-  width: 50%;
-  max-width: 1000px;
-  height: fit-content;
-  margin: 20px;
-  text-align: center;
-  border-radius: 20px;
-  overflow: hidden;
- position: relative;
-}
-
-
-
-
-
-.slides::-webkit-scrollbar {
-  height: 10px;
-  color: #000;
-}
-
-.slides::-webkit-scrollbar-track {
-  background-color: rgb(235, 227, 227);
-}
-
-
-
-.slides::-webkit-scrollbar-thumb {
-  box-shadow: inset 0px 0px 1700px rgba(10, 10, 10, 0.3);
-  
-}
-
-
-.slides {
-  display: flex;
-  overflow-x: scroll;
-  
-  position: relative;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-}
-
-
-
-
-.slide:nth-of-type(even) {
-  background-color: rgb(240, 241, 243);
-}
-
-
-
-.slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  width: 100%;
-
-  scroll-snap-align: center;
-
-  margin-right: 0px;
-  box-sizing: border-box;
-  background: white;
-  transform-origin: center center;
-  transform: scale(1);
-}
-
-.slide__text {
-  font-size: 15px;
-  width: 65%;
-  margin: 20px;
-  text-align: left;
-  font-family: 'Nunito', sans-serif;
-  font-weight: normal;
-
-  color: #000;
-}
-
-
-
-
-@media (max-width: 600px) {
-  .slider {
-    width: 100%;
-    
-    max-height: 800px;
-    
-    
-    border-radius: 20px;
-    
-
-    position: relative;
-  }
-
-  
-  
-  .slide {
-    display: flex;
-    /*justify-content: center;
-    align-items: center;*/
-    flex-shrink: 0;
-    width: 100%;
-  
-   
-  
-    margin-right: 0px;
-    box-sizing: border-box;
-    background: white;
-    transform-origin: center center;
-    transform: scale(1);
-  }
-  
- 
-  .slide1{
-    
-  
-    margin-top: 40px;
-    margin-bottom: 40px;
-    height: 500px;
-  }
-  .slide2{
-    
-    
-    margin-top: 40px;
-    margin-bottom: 40px;
-    height: 500px;
-  }
-  
-  
-  
-  .slide__text::-webkit-scrollbar {
-    
-    width: 5px;
-    color: rgb(20, 19, 19);
-  }
-  
-  .slide__text::-webkit-scrollbar-track {
-    background-color: rgb(250, 244, 244);
-  }
-  
-  .slide__text::-webkit-scrollbar-thumb {
-    box-shadow: inset 0px 0px 1700px rgba(7, 6, 6, 0.3);
-    
-  }
-
-  .slide__text {
-    font-size: 15px;
-    width: 75%;
-    display: flex;
-    justify-content:center ;
-    
-    margin: 20px;
-    text-align: left;
-    font-family: 'Nunito', sans-serif;
-    font-weight: normal;
-    display: flex;
-    overflow-y: scroll;
-    color: #000;
-    position: relative;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-  }
-
-  @media (min-width: 600px) {
-    .slide__text {
-      font-size: 15px;
-      width: 55%;
-      display: flex;
-      justify-content:center ;
-      
-      margin: 20px;
-      text-align: left;
-      font-family: 'Nunito', sans-serif;
-      font-weight: normal;
-      display: flex;
-      overflow-y: scroll;
-      color: #000;
-      position: relative;
-      scroll-behavior: smooth;
-      scroll-snap-type: x mandatory;
-    }
-
-
-
-  }
-
-  .slide img {
-    width: 5px;
-    height:auto;
-    
-  }
-  
-   
-  
-  }
-
-.slide a {
-  background: none;
-  border: none;
-}
-
-a.slide__prev,
-.slider::before {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-  left: 5%;
-}
-
-a.slide__next,
-.slider::after {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  right: 5%;
-}
-
-.slider::before,
-.slider::after,
-.slide__prev,
-.slide__next {
-  position: absolute;
-  top: 48%;
-  width: 15px;
-  height: 15px;
-  border: solid black;
-  border-width: 0 2px 2px 0;
-  padding: 3px;
-  box-sizing: border-box;
-}
-
-.slider::before,
-.slider::after {
-  content: "";
-  z-index: 1;
-  background: none;
-  pointer-events: none;
-}
-
-.slider__nav {
-  box-sizing: border-box;
-  position: absolute;
-  bottom: 2%;
-  left: 50%;
-  width: 200px;
-  margin-left: -100px;
-  text-align: center;
-}
-
-.slider__navlink {
-  display: inline-block;
-  
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  background-color: black;
-  opacity: 0.3;
-  margin: 0 10px 0 10px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-.titles4{  /*Ressources */
-  color: rgb(15, 14, 14);
-  width: 50%;
-  margin-top:15px ;
-  margin-bottom:5px;
-  text-align: center;
-  font-size: 15px;
-  text-transform : capitalize;
-}
-
-
-
-
-.titles5{  /*comment soutenir l'oeuvre */
-  color: rgb(15, 14, 14);
-
-
-
-
-  margin-top:15px ;
-  margin-bottom:25px;
-  text-align: center;
-  font-size: 15px;
-  text-transform : capitalize;
-
-
-}
-
-.resources{
-
-  
-
-  overflow: hidden;
-  margin-top: 100px;
-  align-items: center;
- 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
- 
-  
-  
-}
-
-
-
-
-
-
-.iframe {
-  width:"520" ;
-  height:"315";
-}
-
-@media (max-width: 1000px) {
-
-
-  .iframe {
-    width:"220" ;
-    height:"115";
-  }
-
-  .resources{
-
-    width: 100%;
-    
-    overflow: hidden;
-    margin-top: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    
-  }
-  .resources2{
-
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    
-
-
-
-    margin-top: 50px;
-    margin-bottom: 50px;
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    
-  }
-  
-}
-
-
-
-.fleche {
-  text-transform: uppercase;
-  font-size: 2rem;
-  color: rgba(0,0,0,0.3);
-  text-align: center;
-  font-weight: 400;
-  margin-top: 20px;
-  position: absolute;
-  
-  
-  
-}
-
-.fleche:hover{
-  display: none;
-}
-
-.arrow-wrapper{
-
-  margin-left: 0px;
-}
-
-.arrow-down {
-  
-  
-  width: 32px;
-  height: 20px;
-  background-color: #1d1c1a;
-
-  clip-path: polygon(100% 0, 0 0, 50% 100%);
-}
-
-.arrow-down:hover{
-
-
-  clip-path: polygon(50% 0, 0 100%, 100% 100%);
-  
-}
-
-.resources p{
-  color: #000;
-  
-  font-size: 18px;
-  width: 40%;
-  margin: 5%;
-  align-items: center;
-  font-weight: 300;
-  
-
-}
-
-.resources h3{
-  font-size: 15px;
-  font-family: 'Courier New',cursive;
- 
-  margin-bottom:0px ;
-  /*text-decoration: underline 1px;*/
-
-}
-
-
-.video{
-  
-  margin: 10px;
-  margin-bottom: 5px;
-
-  
-  
-}
-
-.video h5{
- /* background-color: #6977af;*/
-  border: solid black 2px;
-  opacity: 0.6;
-  width: 300px;
-  
-
-}
-
-.livre{
-  margin-top: 80px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-
-}
-
-.livre img{
-
-  width: 200px;
-  height: 300px;
-  margin:2% ;
-
-}
-@media (max-width: 1000px) {
-  .resources p{
-    color: #000;
-    width:90%;
-    font-size: 18px;
-    margin-bottom: 10px;
-    margin: 10%;
-    font-weight: 300;
-    
-  
-  }
-
-
-  .livre img{
-
-    width: 35%;
-    height: auto;
-    margin:2% ;
-  
-  }
-
-}
-
-@media (max-width: 600px) {
-
-  .livre{
-    
-    display: flex;
-    flex-direction: row;
-  
-  }
-  
-  .livre img{
-
-    width: 45%;
-    height: auto;
-    margin:2% ;
-  
-  }
-
-
-}
-
-
-
-
-.lesVideos{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.LeBouton{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.button-30 {
-  align-items: center;
-  appearance: none;
-  background-color: #FCFCFD;
-  border-radius: 4px;
-  border-width: 0;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
-  box-sizing: border-box;
-  color: #36395A;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: "JetBrains Mono",monospace;
-  margin: 20px ;
-  height: 38px;
-  justify-content: center;
-  line-height: 1;
-  list-style: none;
-  overflow: hidden;
-  padding-left: 16px;
-  padding-right: 16px;
-  
-  text-align: left;
-  text-decoration: none;
-  transition: box-shadow .15s,transform .15s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  will-change: box-shadow,transform;
-  font-size: 14px;
-}
-
-.button-30:focus {
-  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-}
-
-.button-30:hover {
-  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-  transform: translateY(-2px);
-}
-
-.button-30:active {
-  box-shadow: #D6D6E7 0 3px 7px inset;
-  transform: translateY(2px);
-}
-
-
-section{
-    display: flex;
-    justify-content: center;
-    
-
-}
-
-.site__info {
-	clear: both;
-	display: block;
-	font-variant: small-caps;
-	letter-spacing: 2px;
-	padding-top: 1.5em;
-	padding-bottom: 1.5em;
-	text-align: center;
-}
-
-
-li {
-    color: #f8f8f8;
-    display: inline;
-    list-style: none;
-    margin-bottom: 0;
-    padding-right: 1em;
-
-    font-size: 0.85em;
-    font-variant: small-caps;
-    letter-spacing: 1px;
-
-    
-    }
-    li:not(:last-child):after {
-        content: "\25cf";
-        font-style: normal;
-        list-style: none;
-        position: relative;
-        color: rgba(white, 0.25);
-        /*right: -0.6em;*/
-    }
-        
-    li a {
-            color: #f8f8f8;
-            list-style: none;
+        .wrapper2 {
+            max-width: 800px;
         }
 
 
 
 
 
-/*les pages des articles____________________________________________*/
-
-.lesArticles{ 
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-margin-top: 40px;
-
-}
-
-.contenue{
-  
-  
-  width:1000px ;
-  display: flex;
-  justify-content: center;
- 
-  }
-/*texte et logo______________________________________________________________*/
-
-
-h3{
-
-  font-family: 'Courier New', Courier, monospace;
-  
-  font-size: 20px;
-  font-weight: 1;
-  color: rgb(0, 0, 0);
-
-}
-
-.oeuvre p{
-
- width: 50%; 
- margin-left:25% ;
-
- margin-top: 40px;
- margin-bottom: 40px;
- font-size: 20px;
- font-weight: 150;
- color: black;
-}
-
-.oeuvre a{
-
-  text-decoration: underline;
- }
-
-@media (max-width: 600px) {
-  .oeuvre p{
-
-    width: 65%; 
-    margin-left:15% ;
-   
-    margin-top: 40px;
-    font-size:18px;
-    font-weight: 150;
-    color: black;
-   }
-}
-
-
-
-
-.page-title {
-  opacity: .75 !important;
-  margin-bottom: 30px;
-  margin-left: 30%;
-  display: flex;
-  justify-content: center;
-  font-family: 'Updock',cursive;
-  text-transform : capitalize;
-  font-size: 35px;
-  width: 500px;
-}
-.page-title img{
-  width: 100px;
-}
-p{
-  font-family: 'Nunito', sans-serif;
-}
-.propos p{
-   color: black;
-   font-size: 15px;
-   font-family : 'Nunito', sans-serif;
-   text-align: left;
-   margin-top: 25px;
-}
-
-.propos{
-  display: flex;
-  flex-direction:row ;}
-
-.propos h2{
-  margin-top: 20%;
-  
-  /*font-family: 'Updock',cursive;*/
-  font-size: 1.3rem;
-  color: black;
-  text-transform: uppercase;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-}
-.titles2{
-  float: left;
-  width: 100px;
-  font-size: 20px;
-  margin-top: 40px;
-  margin-right: 60px;
-  color: black;
-  text-transform: uppercase;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-}
-@media (max-width: 1000px) {
-
-  .titles2{
-    float: left;
-    width: 100px;
-    font-size: 20px;
-    margin-top: 40px;
-    margin-right: 20px;
-    color: black;
-    text-transform: uppercase;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-  }
-
-
-}
-@media (max-width: 600px) {
-  .titles2{
-    float: left;
-    width: 50px;
-    font-size: 15px;
-    margin-top: 40px;
-    
-    color: black;
-    text-transform: uppercase;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-  }
-}
-
-.Témoignage p{
-  color: black;
-  font-size: 15px;
-  font-family : 'Nunito', sans-serif;
-  text-align: left;
-}
-
-.wrap2 p{
-  color: black;
-  font-size: 15px;
-  font-family : 'Nunito', sans-serif;
-  text-align: right;
-}
-
-
-.wrap a:hover{
-    color: white;
-    
-}
-.wrap a{
-  margin-right: 20px;
-}
-/*  menu _______________________________________________________________*/
-.card2{
-  
-  margin-bottom: 20px;
-  margin-left: 100px;
-  width: 100%;
- 
-}
-
-
-/* tout le menu*/
-.cards2{
-  
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: center;
-  /*margin-right:60% ;*/
-  position: sticky;
-  overflow: visible;
-  top: 10px;
-  z-index: 42;
-  width: 100%;
-  height: 0px;
-
- 
-  
-  
-
-}
-@media (max-width: 600px) {
-  .cards2{
-    position: sticky;
-    overflow: visible;
-    top: 0px;
-    z-index: 42;
-  }
-  .cards{
-  
-    display: flex;
-    width: 100%;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    
-    
-  
-  }
-  
-}
-
-
-
-
-.wrap3
-{
-  margin:5px auto 0 auto;
-  width:100%;
-  height: 100%;
-  display:flex;
-  
-  align-items:space-around;
-  max-width:1200px;
-  text-align: center;
- 
-}
-
-.tile3
-{
-  width:35px;
-  height: 37px;
-  margin:0px;
-  
-  /*#a79d9d*/
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  background-size:cover;
-  position: relative;
-  cursor:pointer;
-  transition: all 0.4s ease-out;
-  /*box-shadow: 0px 25px 77px -17px rgba(0,0,0,0.44);*/
-  /*border: solid 1.5px #000;*/
-
-  overflow:hidden;
-  color:white;
-  
-  
-}
-
-@media (min-width: 1000px) {
-
-  
-}
-
-.tile3 .text3
-{
-/*   z-index:99; */
-
-  padding:5px;
-  height:calc(100% - 60px);
-  display: flex;
-  flex-direction: column;
-}
-
-.text3:hover{
-
-  display: flex;
-  flex-direction: row;
-}
-
-.text3{
-  font-size: 11px; 
-  color: #fff;
-  
-}
-
-
-
-.text3 .a
-{  
-   font-size: 10px;
-   line-height: 5;
-   
-    
-}
-
-
-.tile3 h1
-{
- 
-  margin:0;
-  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-}
-.tile3 h2
-{
-
-  margin:10px 0 0 0;
-  font-style:italic;
-   transform: translateX(200px);
-}
-.tile3 p
-{
-  font-weight:200;
-  
-  line-height: 25px;
-/*   opacity:0; */
-  transform: translateX(-200px);
-  transition-delay: 0.2s;
-  color: #fff;
-}
-.animate-text
-{
-
-  opacity:0;
-  transition: all 0.6s ease-in-out;
-  font-size: 10px;
-
-}
-
-
-
-
-
-.tile3:hover 
-{
-  width:fit-content;
-  height:fit-content;
-  /*opacity: 0.5;*/
-  
-
-/*   background-color:#99aeff; */
-/*box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);*/
-  transform:scale(1.05);
-  
-}
-
-
-@media (max-width: 1000px) {
-
-  .tile3 .text{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .tile3:hover{
-    width: fit-content;
-    height: fit-content;
- }
-
- .card2{
-  
-  margin-bottom: 0px;
-  margin-left: 10px;
-  width: 100%;
-  overflow: visible;
-  }
-.Contact{
-  display: flex;
-  flex-direction: row ;
-  
-  
- 
-  
-}
-
-
-}
-
-@media (max-width: 600px) {
-
-
-}
-.tile3 img
-{
-  width: 30px;
-  box-shadow:2px 1px 2px black;
-  z-index: 40;
-  clip-path: circle(54% at 50% 50%);
-}
-
-
-.tile3:hover img
-{
-  /*opacity: 0.2;*/
-  display: none;
-}
-.tile2:hover .animate-text
-{
-  transform:translateX(0);
-  opacity:1;
-}
-
-
-.dots
-{
-  position:absolute;
-  bottom:20px;
-  right:30px;
-  margin: 0 auto;
-  width:30px;
-  height:30px;
-  color:currentColor;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:space-around;
-  
-}
-
-
-
-
-.dots span
-{
-    width: 5px;
-    height:5px;
-    background-color: currentColor;
-    border-radius: 50%;
-    display:block;
-  opacity:0;
-  transition: transform 0.4s ease-out, opacity 0.5s ease;
-  transform: translateY(30px);
- 
-}
-
-.tile3:hover span
-{
-  opacity:1;
-  transform:translateY(0px);
-}
-
-.dots span:nth-child(1)
-{
-   transition-delay: 0.05s;
-}
-.dots span:nth-child(2)
-{
-   transition-delay: 0.1s;
-}
-.dots span:nth-child(3)
-{
-   transition-delay: 0.15s;
-}
-/*  Box soutenir_______________________________________________________________*/
-.wrap2
-{
-  margin:50px auto 0 auto;
-  width:80%;
-  height: 100%;
-  display:flex;
-  align-items:space-around;
-  
-  text-align: center;
- 
-}
-
-
-.cart{
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  
-
-}
-
-
-
-.tile2
-{
-  width:100%;
-  height: 60px;
-  margin:0px;
-  /*background-color: #E6DFD8;*/
-  /*background-color:#464853;*/
-  background: rgb(223,230,216);
-background: linear-gradient(158deg, rgba(223,230,216,1) 4%, rgba(149,164,164,1) 15%, rgba(70,72,83,1) 92%);justify-content: center;
-  flex-wrap: wrap;
-  background-size:cover;
-  position: relative;
-  cursor:pointer;
-  transition: all 0.4s ease-out;
-  box-shadow: 0px 25px 77px -17px rgba(0,0,0,0.44);
-  border-radius: 40px;
-  overflow: hidden;
-  color:rgb(255, 255, 255);
-  
-}
-
-
-
-@media(max-width: 1000px){
-
-  .wrap2
-  {
-    margin:50px auto 0 auto;
-    width:80%;
-    height: 100%;
-  }
-
-  .title
-  {
-    width:100%;
-    height:fit-content;
-  }
-
-    .tile2:hover
-  {
-    width:100%;
-    height: fit-content;
-
-  /*   background-color:#99aeff; */
-    box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
-    transform:scale(1.05);
-  }
-  .tile2 p 
-  {
-    font-weight:100;
-    margin-top: 10%;
-    margin: 5%;
-    width: 60%;
-    line-height: 25px;
-    text-align : left;
-  /*   opacity:0; */
-    transform: translateX(-200px);
-    transition-delay: 0.2s;
-    color: rgb(255, 253, 253);
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-
-
-
-
-
-.tile2 .text2
-{
-  z-index:99; 
-  position:absolute;
-  padding:5%;
-  margin-top: 10%;
-  height:calc(100% - 60px);
-  opacity:0.8;
-  transition: all 0.6s ease-in-out;
-}
-.tile2 h1
-{
- 
-  margin:0;
-  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-}
-.tile2 h2
-{
-
-  margin:7px 0 0 0;
-  font-style:italic;
-   transform: translateX(200px);
-}
-.tile2 p 
-{
-  font-weight:300;
-  font-size: 15px;
-  margin-top: 10%;
-  width: 30%;
-  
-  margin: 0;
-  line-height: 25px;
-  text-align : left;
-/*   opacity:0; */
-  transform: translateX(-200px);
-  transition-delay: 0.2s;
-  color: rgb(248, 246, 246);
-  width: 100%;
-  
-  transition: all 0.6s ease-in-out;
-}
-
-.tile2 a{
-  font-weight:300;
-  transform: translateX(-200px);
-  transition-delay: 0.2s;
-  color: rgb(15, 13, 13);
-
-}
-.animate-text
-{
-  opacity:0;
-  transition: all 0.6s ease-in-out;
-}
-
-
-.tile2:hover
-{
-  width:100%;
-  height: 509px;;
-
-
-  box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
-  transform:scale(1.05);
-}
-
-.tile21:hover
-{
-  height: 459px;
-  
-}
-
-.tile22:hover
-{
-  height: 359px;
-  
-}
-
-.tile23:hover
-{
-  height: 359px;
-  
-}
-.tile24:hover
-{
-  height: 359px;
-  
-}
-.tile25:hover
-{
-  height: 359px;
-  
-}
-.tile2:hover img
-{
-  opacity: 0.2;
-}
-.tile2:hover .animate-text
-{
-  transform:translateX(0);
-  opacity:1;
-}
-@media(max-width: 600px){
-  .tile21:hover
-{
-  height: 509px;
-  
-}
-
-.tile22:hover
-{
-  height: 409px;
-  
-}
-
-.tile23:hover
-{
-  height: 409px;
-  
-}
-.tile24:hover
-{
-  height: 409px;
-  
-}
-.tile25:hover
-{
-  height: 309px;
-  
-}
-
-}
-
-@media(max-width: 400px){
-
-  .tile21:hover
-{
-  height: 609px;
-  
-}
-
-.tile22:hover
-{
-  height: 409px;
-  
-}
-
-.tile23:hover
-{
-  height: 459px;
-  
-}
-.tile24:hover
-{
-  height: 459px;
-  
-}
-.tile25:hover
-{
-  height: 359px;
-  
-}
-.tile2:hover img
-{
-  opacity: 0.2;
-}
-.tile2:hover .animate-text
-{
-  transform:translateX(0);
-  opacity:1;
-}
-}
-
-
-.dots
-{
-  position:absolute;
-  bottom:20px;
-  right:30px;
-  margin: 0 auto;
-  width:30px;
-  height:30px;
-  color:currentColor;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:space-around;
-  
-}
-
-.dots span
-{
-    width: 5px;
-    height:5px;
-    background-color: currentColor;
-    border-radius: 50%;
-    display:block;
-  opacity:0;
-  transition: transform 0.4s ease-out, opacity 0.5s ease;
-  transform: translateY(30px);
- 
-}
-
-.tile2:hover span
-{
-  opacity:1;
-  transform:translateY(0px);
-}
-
-.dots span:nth-child(1)
-{
-   transition-delay: 0.05s;
-}
-.dots span:nth-child(2)
-{
-   transition-delay: 0.1s;
-}
-.dots span:nth-child(3)
-{
-   transition-delay: 0.15s;
-}
-
-
-
-
-/*  Box Index_______________________________________________________________*/
-
-.WRAPS{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  height: fit-content;
-
-  
-}
-@media (max-width: 1000px) {
-
-
-  .WRAPS{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: fit-content;
-  }
-
-
-}
-
-
-.wrap
-{
-  
-
-  display:flex;
-  margin-bottom: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-  align-items:space-around;
-  height: fit-content;
-  text-align: center;
-}
-
-.tile
-{
-  width: 340px;
-  height:340px;
- 
-  background-color:#6977af;
-  display:inline-block;
-  flex-wrap: wrap;
-  background-size:cover;
-  position: relative;
-  z-index: 40;
-  cursor:pointer;
-  transition: all 0.4s ease-out;
-  box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.44);
-  overflow:hidden;
-  color:white;
-  font-family:'Roboto';
-  align-items: center;
-  
-}
-
-@media (max-width: 1000px) {
-
-
-  	.tile
-  {
-    width: 290px;
-    height:290px;
-    margin:0px;
-  }
-  
-
-}
-
-@media (max-width: 600px) {
-
-
-  .tile
-{
-  width: 270px;
-  height:270px;
-  margin:0px;
-}
-
-}
-
-@media (max-width: 400px) {
-
-
-  .tile
-{
-  width: 200px;
-  height:200px;
-  margin:0px;
-}
-
-
-}
-
-
-.tile img
-{
-  height:100%;
-  width:100%;
-  position:absolute;
-  top:0;
-  left:0;
-  z-index:0;
-  transition: all 0.4s ease-out;
-}
-.tile .text
-{
-/*   z-index:99; */
-  position:absolute;
-
-  height:calc(100% - 60px);
-  
-}
-
-.text a
-{
-  font-weight:100;
-  margin:60px 10px 0 0px;
-  line-height: 25px;
-/*   opacity:0; */
-  transform: translateX(-200px);
-  transition-delay: 0.2s;
-  font-size: 15px;
-}
-
-
-@media (max-width: 1000px) {
-  .tile .text
-  {
-    /*   z-index:99; */
-      position:absolute;
-      padding:0px;
-      height:calc(100% - 60px);
-      
-  }
-
-    .text a
-  {
-    font-weight:100;
-    margin:20px 10px 0 0;
-    line-height: 25px;
-  /*   opacity:0; */
-    transform: translateX(-200px);
-    transition-delay: 0.2s;
-    font-size: 15px;
-  }
-
-}
-
-.tile h1
-{
- 
-  margin:0;
-  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-}
-.tile h2
-{
-
-  margin:5px 0 0 0;
-  font-style:italic;
-   transform: translateX(200px);
-   font-size: 15px;
-}
-.tile p
-{
-  font-weight:100;
-  
-  line-height: 25px;
-/*   opacity:0; */
-  transform: translateX(-200px);
-  transition-delay: 0.2s;
-  font-size: 15px;
-  
-}
-@media (max-width: 600px) {
-
-
-.tile p
-{
-
-  
-  font-weight:100;
-  margin:5px 0 0 0;
-  line-height: 25px;
-/*   opacity:0; */
-  transform: translateX(-200px);
-  transition-delay: 0.2s;
-  font-size: 12px;
- 
-}
-
-
-}
-
-
-
-
-
-.animate-text
-{
-  opacity:0;
-  transition: all 0.6s ease-in-out;
-  
-}
-.tile:hover
-{
-/*   background-color:#99aeff; */
-box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
-  transform:scale(1.05);
-}
-.tile:hover img
-{
-  opacity: 0.2;
-}
-.tile:hover .animate-text
-{
-  transform:translateX(0);
-  opacity:1;
-}
-.dots
-{
-  position:absolute;
-  bottom:20px;
-  right:30px;
-  margin: 0 auto;
-  width:30px;
-  height:30px;
-  color:currentColor;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:space-around;
-  
-}
-
-.dots span
-{
-    width: 5px;
-    height:5px;
-    background-color: currentColor;
-    border-radius: 50%;
-    display:block;
-  opacity:0;
-  transition: transform 0.4s ease-out, opacity 0.5s ease;
-  transform: translateY(30px);
- 
-}
-
-.tile:hover span
-{
-  opacity:1;
-  transform:translateY(0px);
-}
-
-.dots span:nth-child(1)
-{
-   transition-delay: 0.05s;
-}
-.dots span:nth-child(2)
-{
-   transition-delay: 0.1s;
-}
-.dots span:nth-child(3)
-{
-   transition-delay: 0.15s;
-}
-@media (max-width: 600px) {
-
-  .dots
-{
-  display: none;
-}
-}
-
-
-
-
-
-/*smoke___________________________________________________________________________*/
-
-.container {
-  width:5px;
-  height:5px;
-  margin-left:auto;
-  margin-right:auto;
-  margin-top:100px;
-  overflow: hidden;
-}
-#loader {
-   background-image: rgba(235,235,235,1);
-    background-image: -webkit-linear-gradient(top, #525252 0%,#000000 100%);
-    background-image: -moz-linear-gradient(top, #525252 0%,#000000 100%);
-    background-image: -o-linear-gradient(top, #525252 0%,#000000 100%);
-    background-image: -ms-linear-gradient(top, #525252 0%,#000000 100%);
-    background-image: linear-gradient(top, #525252 0%,#000000 100%);
-    color: #fff;
-    border-radius: 4px;
-    padding: 4px;
-    padding-left:100px;
-  padding-right:100px;
-  padding-top:20px;
-  padding-bottom:20px;
-    display: inline-block;
-    -webkit-box-shadow: 0 0 5px red;
-    box-shadow: 0 0 5px red;
-    
-    -moz-animation-name: glow;
-    -moz-animation-duration: .8s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-    -moz-animation-direction: alternate;
-
-    -webkit-animation-name: glow;
-    -webkit-animation-duration: .8s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-direction: alternate;
-}
-
-@-moz-keyframes glow {
-    from { box-shadow: 0 0 35px red; }
-    to   { box-shadow: 0 0 60px yellow; }
-}
-@-webkit-keyframes glow {
-    from { -webkit-box-shadow: 0 0 35px red; }
-    to   { -webkit-box-shadow: 0 0 60px yellow; }
-}
-.strow {
-  position: absolute;
-  top: 18%;
-  left: 40%;
-  transform-style: preserve-3d;
-  transform: rotateX(74deg) rotate(40deg) skew(-30deg);
-  z-index:-1;
- 
-  
-  
-}
-
-.strow2 {
-  position: relative;
-  top: 18%;
-  left: 40%;
-  transform-style: preserve-3d;
-  transform: rotateX(74deg) rotate(40deg) skew(-30deg);
-  z-index:-1;
-  width: 60px;
-}
-
-.smoke:nth-child(1) {
-  width: 1px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 30px 30px 30px #fff, 30px 30px 30px red, 30px 30px 30px red;
-  position: absolute;
-  animation: smoke 2.5s ease-in-out infinite;
-  animation-delay: -0.1s;
-  margin-top: -10px;
-  margin-left: 5px;
-}
-
-.smoke:nth-child(2) {
-  width: 1px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 30px 30px 30px #fff, 30px 30px 30px red, 30px 30px 30px red;
-  position: absolute;
-  animation: smoke 2.5s ease-in-out infinite;
-  animation-delay: -0.2s;
-  margin-top: -20px;
-  margin-left: 10px;
-}
-
-.smoke:nth-child(3) {
-  width: 1px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 30px 30px 30px #fff, 30px 30px 30px red, 30px 30px 30px #fff;
-  position: absolute;
-  animation: smoke 2.5s ease-in-out infinite;
-  animation-delay: -0.3s;
-  margin-top: -30px;
-  margin-left: 15px;
-}
-
-.smoke:nth-child(4) {
-  width: 1px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 30px 30px 30px #fff, 30px 30px 30px red, 30px 30px 30px #fff;
-  position: absolute;
-  animation: smoke 2.5s ease-in-out infinite;
-  animation-delay: -0.4s;
-  margin-top: -40px;
-  margin-left: 20px;
-}
-
-.smoke:nth-child(5) {
-  width: 1px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 30px 30px 30px #fff, 30px 30px 30px red, 30px 30px 30px #fff;
-  position: absolute;
-  animation: smoke 2.5s ease-in-out infinite;
-  animation-delay: -0.5s;
-  margin-top: -50px;
-  margin-left: 25px;
-}
-
-.smoke:nth-child(6) {
-  width: 1px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 30px 30px 30px #fff, 30px 30px 30px red, 30px 30px 30px #fff;
-  position: absolute;
-  animation: smoke 2.5s ease-in-out infinite;
-  animation-delay: -0.6s;
-  margin-top: -60px;
-  margin-left: 30px;
-}
-
-.smoke:nth-child(7) {
-  width: 1px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 30px 30px 30px #fff, 30px 30px 30px red, 30px 30px 30px #fff;
-  position: absolute;
-  animation: smoke 2.5s ease-in-out infinite;
-  animation-delay: -0.7s;
-  margin-top: -70px;
-  margin-left: 35px;
-}
-
-.smoke:nth-child(8) {
-  width: 1px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 30px 30px 30px #fff, 30px 30px 30px red, 30px 30px 30px #fff;
-  position: absolute;
-  animation: smoke 2.5s ease-in-out infinite;
-  animation-delay: -0.8s;
-  margin-top: -80px;
-  margin-left: 40px;
-}
-
-.smoke:nth-child(9) {
-  width: 1px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 30px 30px 30px #fff, 30px 30px 30px red, 30px 30px 30px #fff;
-  position: absolute;
-  animation: smoke 2.5s ease-in-out infinite;
-  animation-delay: -0.9s;
-  margin-top: -90px;
-  margin-left: 45px;
-}
-
-.smoke:nth-child(10) {
-  width: 1px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 30px 30px 30px #fff, 30px 30px 30px red, 30px 30px 30px #fff;
-  position: absolute;
-  animation: smoke 2.5s ease-in-out infinite;
-  animation-delay: -1s;
-  margin-top: -100px;
-  margin-left: 50px;
-}
-
-.smoke:nth-child(11) {
-  width: 1px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 30px 30px 30px #fff, 30px 30px 30px red, 30px 30px 30px #fff;
-  position: absolute;
-  animation: smoke 2.5s ease-in-out infinite;
-  animation-delay: -1.1s;
-  margin-top: -110px;
-  margin-left: 55px;
-}
-
-.smoke:nth-child(12) {
-  width: 1px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 30px 30px 30px #fff, 30px 30px 30px red, 30px 30px 30px #fff;
-  position: absolute;
-  animation: smoke 2.5s ease-in-out infinite;
-  animation-delay: -1.2s;
-  margin-top: -120px;
-  margin-left: 60px;
-}
-
-.smoke:nth-child(13) {
-  width: 1px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 30px 30px 30px #fff, 30px 30px 30px  rgb(0, 47, 255), 30px 30px 30px #fff;
-  position: absolute;
-  animation: smoke 2.5s ease-in-out infinite;
-  animation-delay: -1.3s;
-  margin-top: -130px;
-  margin-left: 65px;
-}
-
-.smoke:nth-child(14) {
-  width: 1px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 30px 30px 30px #fff, 30px 30px 30px  rgb(0, 47, 255), 30px 30px 30px #fff;
-  position: absolute;
-  animation: smoke 2.5s ease-in-out infinite;
-  animation-delay: -1.4s;
-  margin-top: -140px;
-  margin-left: 70px;
-}
-
-.smoke:nth-child(15) {
-  width: 1px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 30px 30px 30px #fff, 30px 30px 30px  rgb(0, 47, 255), 30px 30px 30px #fff;
-  position: absolute;
-  animation: smoke 2.5s ease-in-out infinite;
-  animation-delay: -1.5s;
-  margin-top: -150px;
-  margin-left: 75px;
-}
-
-.smoke:nth-child(16) {
-  width: 1px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 30px 30px 30px #fff, 30px 30px 30px  rgb(0, 47, 255), 30px 30px 30px #fff;
-  position: absolute;
-  animation: smoke 2.5s ease-in-out infinite;
-  animation-delay: -1.6s;
-  margin-top: -160px;
-  margin-left: 80px;
-}
-
-.smoke:nth-child(17) {
-  width: 1px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 30px 30px 30px #fff, 30px 30px 30px rgb(0, 47, 255), 30px 30px 30px #fff;
-  position: absolute;
-  animation: smoke 2.5s ease-in-out infinite;
-  animation-delay: -1.7s;
-  margin-top: -170px;
-  margin-left: 85px;
-}
-
-.smoke:nth-child(18) {
-  width: 1px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 30px 30px 30px #fff, 30px 30px 30px rgb(0, 47, 255), 30px 30px 30px #fff;
-  position: absolute;
-  animation: smoke 2.5s ease-in-out infinite;
-  animation-delay: -1.8s;
-  margin-top: -180px;
-  margin-left: 90px;
-}
-
-.smoke:nth-child(19) {
-  width: 1px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 30px 30px 30px #fff, 30px 30px 30px rgb(25, 0, 255), 30px 30px 30px #fff;
-  position: absolute;
-  animation: smoke 2.5s ease-in-out infinite;
-  animation-delay: -1.9s;
-  margin-top: -190px;
-  margin-left: 95px;
-}
-
-.smoke:nth-child(20) {
-  width: 1px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 30px 30px 30px #fff, 30px 30px 30px rgb(0, 47, 255) #fff;
-  position: absolute;
-  animation: smoke 2.5s ease-in-out infinite;
-  animation-delay: -2s;
-  margin-top: -200px;
-  margin-left: 100px;
-}
-
-.smoke:nth-child(21) {
-  width: 1px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 30px 30px 30px #fff, 30px 30px 30px rgb(0, 47, 255) #fff;
-  position: absolute;
-  animation: smoke 2.5s ease-in-out infinite;
-  animation-delay: -2.1s;
-  margin-top: -210px;
-  margin-left: 105px;
-}
-
-.smoke:nth-child(22) {
-  width: 1px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 30px 30px 30px #fff, 30px 30px 30px rgb(0, 47, 255) #fff;
-  position: absolute;
-  animation: smoke 2.5s ease-in-out infinite;
-  animation-delay: -2.2s;
-  margin-top: -220px;
-  margin-left: 110px;
-}
-
-.smoke:nth-child(23) {
-  width: 1px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 30px 30px 30px #fff, 30px 30px 30px rgb(0, 47, 255) #fff;
-  position: absolute;
-  animation: smoke 2.5s ease-in-out infinite;
-  animation-delay: -2.3s;
-  margin-top: -230px;
-  margin-left: 115px;
-}
-
-.smoke:nth-child(24) {
-  width: 1px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 30px 30px 30px #fff, 30px 30px 30px rgb(0, 47, 255) #fff;
-  position: absolute;
-  animation: smoke 2.5s ease-in-out infinite;
-  animation-delay: -2.4s;
-  margin-top: -240px;
-  margin-left: 120px;
-}
-
-.smoke:nth-child(25) {
-  width: 1px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 30px 30px 30px #fff, 30px 30px 30px rgb(0, 47, 255) #fff;
-  position: absolute;
-  animation: smoke 2.5s ease-in-out infinite;
-  animation-delay: -2.5s;
-  margin-top: -250px;
-  margin-left: 125px;
-}
-
-.smoke:nth-child(26) {
-  width: 1px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 30px 30px 30px #fff, 30px 30px 30px rgb(0, 47, 255) #fff;
-  position: absolute;
-  animation: smoke 2.5s ease-in-out infinite;
-  animation-delay: -2.6s;
-  margin-top: -260px;
-  margin-left: 130px;
-}
-
-.smoke:nth-child(27) {
-  width: 1px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 30px 30px 30px #fff, 30px 30px 30px rgb(0, 47, 255) #fff;
-  position: absolute;
-  animation: smoke 2.5s ease-in-out infinite;
-  animation-delay: -2.7s;
-  margin-top: -270px;
-  margin-left: 135px;
-}
-
-.smoke:nth-child(28) {
-  width: 1px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 30px 30px 30px #fff, 30px 30px 30px rgb(0, 47, 255), 30px 30px 30px #fff;
-  position: absolute;
-  animation: smoke 2.5s ease-in-out infinite;
-  animation-delay: -2.8s;
-  margin-top: -280px;
-  margin-left: 140px;
-}
-
-.smoke:nth-child(29) {
-  width: 1px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 30px 30px 30px #fff, 30px 30px 30px red, 30px 30px 30px #fff;
-  position: absolute;
-  animation: smoke 2.5s ease-in-out infinite;
-  animation-delay: -2.9s;
-  margin-top: -290px;
-  margin-left: 145px;
-}
-
-.smoke:nth-child(30) {
-  width: 1px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 30px 30px 30px #fff, 30px 30px 30px red, 30px 30px 30px #fff;
-  position: absolute;
-  animation: smoke 2.5s ease-in-out infinite;
-  animation-delay: -3s;
-  margin-top: -300px;
-  margin-left: 150px;
-}
-
-@keyframes smoke {
-  50% {
-    transform: translateY(15px) translateX(-30px) translateZ(-30px) rotateX(15deg) rotate(15deg);
-    box-shadow: 30px 30px 30px red, 30px 30px 30px #fff, 30px 30px 30px red;
-  }
-}
-
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.mySlides {
-  margin-left: 40%;
-
-}
-.w3-button{
-  position: absolute;
-}
-
-
-/* pour les gsm*/
-
-@media (width: 1000px) {
-	* {
-		box-sizing: border-box;
-	}
-	
-
-	
-	/* fixer une largeur maximale de 100% aux éléments potentiellement problématiques 
-
-	img,
-	table,
-	td,
-	blockquote,
-	code,
-	pre,
-	textarea,
-	input,
-	iframe,
-	object,
-	embed,
-	video {
-		width: 100%;
-	}*/
-	
-	/* conserver le ratio des images */
-
-	img {
-		height: auto;
-	}
-	
-	/* gestion des mots longs */
-
-	textarea,
-	table,
-	td,
-	th,
-	code,
-	pre,
-	samp {
-		-webkit-hyphens: auto; /* césure propre */
-		-moz-hyphens: auto;
-		hyphens: auto;
-		word-wrap: break-word; /* passage à la ligne forcé */
-	}
-	
-	code,
-	pre,
-	samp {
-		white-space: pre-wrap; /* passage à la ligne spécifique pour les éléments à châsse fixe */
-	}
-	
-	/* Passer à une seule colonne (à appliquer aux éléments multi-colonnes) */
-
-	.element1,
-	.element2 {
-		float: none;
-		width: auto;
-	}
-	
-	/* masquer/afficher les éléments  */
-
-	.u-mobile {          display: block;          display: revert !important; /* affichage des éléments */        }        .u-no-mobile {          display: none !important; /* masquage des éléments */        }
-	
-	/* Un message personnalisé */
-
-	body:before {
-		content: "Version mobile du site";
-		display: block;
-		text-align: center;
-		font-style: italic;
-		color: 
-#777;
-	}
-}
-
-@media (max-device-width:768px) and (orientation: landscape) {
-  html {
-   -webkit-text-size-adjust: 100%;
-   -ms-text-size-adjust: 100%;
-  }
-
-
-
-
-/*****/
-
-.home-demo .item {
-  background: #ff3f4d;
-}
-.home-demo h2 {
-  color: #FFF;
-  text-align: center;
-  padding: 5rem 0;
-  margin: 0;
-  font-style: italic;
-  font-weight: 300;
-}
-
-
-/***/
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-
-/***/
-
-
-@import '../node_modules/normalize.css/normalize.css';
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
 
 
+
+        .carousel {
+            width: 100%;
+            margin: auto;
+            padding: 0 0px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+
+        @media (max-width: 600px) {
+            .wrapper2 {
+                width: 70%;
+            }
+
+            .carousel {
+                width: 100%;
+                margin: auto;
+                padding: 0 0px;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+            }
+
+
+        }
+
+        .carousel .img {
+            display: flex;
+            justify-content: center;
+            height: auto;
+            width: auto;
+        }
+
+        .carousel .card {
+            color: #fff;
+            text-align: center;
+            /*margin: 10px 0;*/
+            line-height: 25px;
+            font-size: 50px;
+            font-weight: 60;
+            border-radius: 5px;
+            /*box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);*/
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .carousel .card-1 {
+            background-color: white;
+
+
+        }
+
+        .carousel .card-2 {
+            /*background-color: rgba(255, 255, 255, 0.5);
+            opacity: 0.85;*/
+            background-color: rgb(238, 238, 238);
+        }
+
+        .carousel .card-3 {
+            /*background-color: rgba(255, 255, 255, 0.5);
+            opacity: 0.85;*/
+            background-color: rgb(238, 238, 238);
+        }
+
+        .carousel .card-4 {
+            /*background-color: rgba(255, 255, 255, 0.5);
+            opacity: 0.85;*/
+            background-color: rgb(238, 238, 238);
+        }
+
+        .carousel .card-5 {
+            /*background-color: rgba(255, 255, 255, 0.5);
+            opacity: 0.85;*/
+            background-color: rgb(238, 238, 238);
+        }
+
+        .carousel .card-6 {
+            /*background-color: rgba(255, 255, 255, 0.5);
+            opacity: 0.85;*/
+            background-color: rgb(238, 238, 238);
+        }
+
+        .carousel .card-7 {
+            /*background-color: rgba(255, 255, 255, 0.5);
+            opacity: 0.85;*/
+            background-color: rgb(238, 238, 238);
+        }
+
+        .carousel .card-8 {
+            /*background-color: rgba(255, 255, 255, 0.5);
+            opacity: 0.85;*/
+            background-color: rgb(238, 238, 238);
+        }
+
+        .carousel .card-9 {
+            /*background-color: rgba(255, 255, 255, 0.5);
+            opacity: 0.85;*/
+            background-color: rgb(238, 238, 238);
+        }
+
+        .carousel .card-10 {
+            /*background-color: rgba(255, 255, 255, 0.5);
+            opacity: 0.85;*/
+            background-color: rgb(238, 238, 238);
+        }
+
+        .carousel .card-11 {
+            /*background-color: rgba(255, 255, 255, 0.5);
+            opacity: 0.85;*/
+            background-color: rgb(238, 238, 238);
+        }
+
+        .carousel .card-12 {
+            /*background-color: rgba(255, 255, 255, 0.5);
+            opacity: 0.85;*/
+            background-color: rgb(238, 238, 238);
+        }
+
+        .carousel .card-13 {
+            /*background-color: rgba(255, 255, 255, 0.5);
+            opacity: 0.85;*/
+            background-color: rgb(238, 238, 238);
+        }
+
+        .carousel .card-14 {
+            /*background-color: rgba(255, 255, 255, 0.5);
+            opacity: 0.85;*/
+            background-color: rgb(238, 238, 238);
+        }
+
+
+
+        .owl-dots {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .owl-dot {
+            height: 10px;
+            width: 10px;
+            margin: 0 5px;
+            outline: none;
+            border-radius: 14px;
+            border: 2px solid #333b41 !important;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .owl-dot.active,
+        .owl-dot:hover {
+            background: #848e94 !important;
+        }
+
+        @media (max-width: 500px) {
+            .owl-dots {
+                display: none;
+            }
+        }
+
+        .Horiz-line {
+            border-top: 2px solid #000;
+            display: inline-block;
+            height: 30px;
+            margin: 0 20px;
+        }
+
+        nav {
+
+            /*box-shadow: 2px 1px 2px black;*/
+        }
+    </style>
+
+
+</head>
+
+
+
+<!---chargement de la page -->
+
+<body>
+    <div class="lapageChragement" id="lapageChragement">
+        <div class="charge" id="chargement">
+            <div class="loader">
+            </div>
+        </div>
+    </div>
+    <link href="stylecharge.css" rel="stylesheet" type="text/css">
+
+
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState === "loading") {
+
+
+
+                document.querySelector("#chargement").style.visibility = "visible";
+
+                document.querySelector("#bod").style.display = "none";
+
+            }
+            else {
+                document.querySelector("#chargement").style.display = "none";
+                document.querySelector("body").style.visibility = "visible";
+                document.querySelector("#bod").style.display = "block";
+            }
+        };
+
+
+        $(".carousel").owlCarousel({
+            margin: 20,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                600: {
+                    items: 1,
+                    nav: false
+                },
+                1000: {
+                    items: 2,
+                    nav: false
+                }
+            }
+        });
+    </script>
+
+    <div class="Body2" id="bod">
+
+        <!-- navbar-->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="page-title">
+                    <div class="container">
+                        <!--<div id="loader">Loading...</div>-->
+                    </div>
+
+
+                </div>
+
+
+                <ul class="nav navbar-nav">
+
+                    <div class="titrepage2">
+                        <div class='strow2' style="width: 50px;">
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                        </div>
+                        <!--<img src="logo.toutestaccompli.png">-->
+                        <h1 style="color:black;  font-family: 'Updock',cursive;text-transform: none;">
+                            Tout Est
+                            Accompli </h1>
+                        <h1 style="font-size: 20px; color: black;"> </h1>
+                    </div>
+
+
+                </ul>
+                <!-- -->
+
+
+                <!--<div class="droppo">
+                <button class="drop"><a class="hoverable">MENU</a></button>
+                <div class="menu">
+                    <a class="hoverable" href="#Le-Dévotionnel">Le Dévotionnel</a>
+                    <a class="hoverable" href="#A-propos">A PROPOS</a>
+                    <a class="hoverable" href="#temoignage">TEMOIGNAGES</a>
+                    <a class="hoverable" href="#resource">RESSOURCES</a>
+                    <a class="hoverable" href="#soutenir">comment soutenir L'oeuvre
+                    </a>
+                </div>-->
+
+
+
+            </div>
+
+        </nav>
+
+        <div class="cards2">
+            <div class="card2">
+                <div class="wrap3">
+                    <div class="tile3">
+
+                        <div class="text3">
+                            <img src="logo.menu.jpg">
+
+
+                            <div class="LeMenu">
+
+                                <a class="hoverable" href="#A-propos">À PROPOS <br><br> </a>
+                                <a class="hoverable" href="#Le-Dévotionnel">LES DÉVOTIONNELS <br><br></a>
+                                <a class="hoverable" href="#temoignage">TÉMOIGNAGES <br><br> </a>
+                                <a class="hoverable" href="#resource">RESSOURCES <br><br> </a>
+                                <a class="hoverable" href="#soutenir">COMMENT SOUTENIR L'ŒUVRE?<br><br></a>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class=" Contact">
+                        <div class="menu"><a id="len4" class="hoverable" href="mailto:tracysibomana@gmail.jpeg"><img
+                                    src="logo.mail.png"></a>
+                        </div>
+                        <div class="menu"><a id="len4" class="hoverable"
+                                href="https://www.instagram.com/sibom.s/?hl=fr"><img src="logo.instagram.jpeg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <!-- sections 2 -->
+        <div class="section2">
+            <div id="A-propos"></div>
+
+            <div class="Apropos">
+
+                <div class="titles">
+                    <img src="profile.jpeg" alt=" photo de Tracy">
+
+                </div>
+
+                <div class="propos">
+                    <h2>À propos</h2>
+                    <span class="vertical-line"></span>
+                    <div>
+
+                        <p>
+                            Je m'appelle Tracy Sibomana. <br> <br>
+
+                            Je suis une épouse et une maman mais avant tout, je suis fille de Dieu.<br>
+
+                            <br> En 2012, j'ai expérimenté la présence de Jésus de manière tellement forte et puissante,
+                            que j'ai décidé de faire de lui mon Seigneur et mon Sauveur.
+                            <br> Depuis, ma vie n'a plus été la même.<br>
+                            <br> Très vite, le Seigneur m'a mis à cœur d'encourager les femmes à expérimenter la grâce
+                            non
+                            seulement dans leur vie, mais également dans leur corps. <br>
+                            Car oui, le sacrifice de l'œuvre de la croix a un impact sur notre corps encore
+                            aujourd'hui.<br>
+                            C'est dans cette optique que le Seigneur m'a révélé le projet qu'il souhaite que je réalise:
+                            écrire
+                            des
+                            recueils de méditations concernant l'impact de l'œuvre de la croix sur notre corps, en tant
+                            que
+                            femme. <br>
+                            <br>Mon premier dévotionnel ("Tout est accompli: 28 jours pour comprendre l'impact de
+                            l'œuvre de
+                            la
+                            croix
+                            sur les menstruations") est ainsi sorti en janvier 2021. <br>
+                            <br> Cet ouvrage est le premier d'une série d'autres
+                            sur le même thème: l'impact de l'œuvre de la croix sur notre corps.
+
+                            <br>A travers ce site Internet et à travers les recueils, j'espère vous conduire à la
+                            révélation
+                            qui
+                            a
+                            bouleversé ma vie et qui m'aide chaque jour à proclamer la victoire de Christ à la croix sur
+                            mon
+                            être
+                            entier.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <aside style="background-color: rgb(230, 216, 216); top: 135PX;"> <span></span> </aside>
+
+
+
+        <!-- sections 1 -->
+        <div class="section1">
+            <div id="Le-Dévotionnel"></div>
+            <div class="accueil">
+
+                <div class="titles2">
+                    <H2>Les dévotionnels</H2>
+                </div>
+                <div class="accueil2">
+                    <div class="WRAPS">
+                        <div class="wrap">
+                            <div class="tile">
+                                <img src='couverture.png' />
+                                <div class="text">
+                                    <h1> </h1>
+                                    <h2 class="animate-text">Dévotionnel 1</h2>
+                                    <p class="animate-text">28 jours pour comprendre <br> l'impact de l'oeuvre de la
+                                        croix
+                                        sur
+                                        les
+                                        menstruations
+
+                                    </p>
+                                    <a style="text-decoration: underline; color: white;" class="hoverable animate-text"
+                                        href=" article.html">Découvrir</a>
+
+                                    <a style="text-decoration: underline; color: white;" class="hoverable animate-text"
+                                        target="_blank" href="DEVOTIONNEL - Tout est accompli.pdf"
+                                        value="Download!">Télécharger</a>
+
+                                    <a style="text-decoration: underline; color: white;" class="hoverable animate-text"
+                                        target="_blank" href="DEVOTIONNEL - Tout est accompli.pdf"
+                                        value="Download!">(Lien Amazon)</a>
+
+
+
+                                    <div class="dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="wrap">
+                            <div class="tile">
+                                <img src='couverture.png' />
+                                <div class="text">
+                                    <h1> </h1>
+                                    <h2 class="animate-text">Dévotionnel 2</h2>
+                                    <p class="animate-text">_________________________ descriptions Dévotionnel deux
+                                        ___________
+
+                                    </p>
+                                    <a style="text-decoration: underline; color: white;" class="hoverable animate-text"
+                                        href=" article.html">Découvrir</a>
+
+                                    <a style="text-decoration: underline; color: white;" class="hoverable animate-text"
+                                        target="_blank" href="DEVOTIONNEL - Tout est accompli.pdf"
+                                        value="Download!">Télécharger</a>
+
+                                    <a style="text-decoration: underline; color: white;" class="hoverable animate-text"
+                                        target="_blank" href="DEVOTIONNEL - Tout est accompli.pdf"
+                                        value="Download!">(Lien Amazon)</a>
+
+
+                                    <div class="dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <aside style="top: 130PX;"> <span></span> </aside>
+
+
+
+        <!-- sections 3 -->
+        <div id="temoignage"></div>
+        <div class="section3">
+
+
+            <div class="titles3">
+                <H2>TEMOIGNAGES</H2>
+            </div>
+            <div class="slider-container">
+                <div class="slider">
+
+                    <div class="slides">
+
+
+                        <div id="slides__1" class="slide ">
+
+                            <span class="slide__text">
+
+
+                                <div class=" slide1 ">Coucou Tracy, <br>
+                                    <br>
+                                    Il fallait que je t’envoie un message au sujet du devotionnel. <br>
+                                    <br> Je l’ai fait avec une amie pendant les 28 jours et je peux te dire que j’ai été
+                                    vraiment
+                                    bénie.
+                                    Redécouvrir des vérités bibliques sous un nouveau jour a été un « eye opener » pour
+                                    moi.
+                                    <br>
+                                    <br> Surtout que j’ai pas
+                                    mal eu de problèmes de règles irrégulières et quand je demandais à des amies de
+                                    prier
+                                    pour
+                                    moi
+                                    elles
+                                    me
+                                    disaient:mais c’est pas grave, ça arrive que ce soit irrégulier. Moi je prenais cela
+                                    très au
+                                    sérieux
+                                    et je n’étais
+                                    pas d’accord avec cela. <br>
+                                    <br> Et quand j’ai médité sur ton devotionnel et que tu en parlais ça été comme
+                                    une
+                                    confirmation que notre corps est le temple du St Esprit et par conséquent, il est
+                                    soumis
+                                    à
+                                    Dieu
+                                    et
+                                    on n’a pas à subir ce genre de choses!
+                                    <br>
+                                    <br> Enfin je pourrai encore écrire mais je voulais vraiment
+                                    envoyer ce
+                                    message pour dire que j’ai été bénie.
+
+                                </div>
+
+                            </span>
+
+                            <a class="slide__prev" href="#slides__4" title="Next"></a>
+                            <a class="slide__next" href="#slides__2" title="Next"></a>
+                        </div>
+
+
+
+                        <div id="slides__2" class="slide  ">
+
+                            <span class="slide__text ">
+                                <div class=" slide2 ">Bonjour,Je m'appelle Stéphanie. <br> <br>
+                                    Une amie m’a fait part de ton dévotionnel concernant les règles
+                                    douloureuses.
+                                    Et je souhaitais t’envoyer ce message pour te féliciter premièrement derrière tout
+                                    ce
+                                    beau travail et d’avoir été à l’écoute du Saint esprit. <br> <br>
+
+                                    J’ai eu plusieurs révélations en proclamant durant ces 30 jours une guérison
+                                    complète de
+                                    mes kystes et endométriose. J’ai reçu la guérison spirituelle depuis 1 an maintenant
+                                    mais pas encore la guérison physique. Donc Lorsque les douleurs venaient, je prenais
+                                    autorité sur mon corps, en ayant eu cette révélation de l’impact à La Croix sur mes
+                                    menstruations, en proclamant la vérité sur mon corps, de la fertilité sur mon corps,
+                                    sur
+                                    la puissance du nom de Jésus que je proclamais durant mon sommeil et en dehors,
+                                    lorsque
+                                    le malin essayait de m’oppresser physiquement et dans les pensées.<br> <br>
+
+                                    J’ai pris rdv chez gyneco pour faire le point juste après avoir fini le dévotionnel
+                                    car
+                                    j’étais convaincue de ma guérison et effectivement, le gyneco n’en revenait pas
+                                    qu’aucune douleur soit présente alors que j’ai des gros kystes. Une première pour
+                                    lui en
+                                    20 ans de carrière.<br> <br>
+
+                                    Je remercie Dieu de t’avoir utilisé pour bénir et fortifier toutes les femmes qui en
+                                    souffrent aujourd’hui. Dieu te garde et te guide pour l’appel qu’il a sur ta
+                                    vie🙏🏼.<br> <br>
+
+                                    Je le dis par la foi, que je te recontacterai pour t’annoncer cette fois la guérison
+                                    physique et disparition totale des kystes.
+
+                                    Sois bénie et à bientôt </div>
+                            </span>
+
+                            <a class="slide__prev" href="#slides__1" title="Prev"></a>
+                            <a class="slide__next" href="#slides__3" title="Next"></a>
+                        </div>
+                        <div id="slides__3" class="slide slide3">
+                            <span class="slide__text"> Honnêtement, ce dévotionnel bouleverse tellement de choses en
+                                moi. Je suis tellement reconnaissante de l'avoir. Une révélation tellement puissante qui
+                                change la façon de voir les choses.</span>
+                            <a class="slide__prev" href="#slides__2" title="Prev"></a>
+                            <a class="slide__next" href="#slides__4" title="Next"></a>
+                        </div>
+                        <div id="slides__4" class="slide slide4">
+                            <span class="slide__text">4.</span>
+                            <a class="slide__prev" href="#slides__3" title="Prev"></a>
+                            <a class="slide__next" href="#slides__1" title="Prev"></a>
+                        </div>
+                    </div>
+                    <div class="slider__nav">
+                        <a class="slider__navlink" href="#slides__1"></a>
+                        <a class="slider__navlink" href="#slides__2"></a>
+                        <a class="slider__navlink" href="#slides__3"></a>
+                        <a class="slider__navlink" href="#slides__4"></a>
+                        <!--<img style="width: 100px; position: relative;" src="logo.toutestaccompli.blanc.png" alt="">-->
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="resource"></div>
+        </div>
+
+
+        <aside style="background-color:  #9c9292; top: 140px;"> <span></span> </aside>
+
+
+        <!-- sections 5 -->
+
+
+        <div class="resources ">
+
+            <div class="titles4">
+                <H2>RESSOURCES</H2>
+            </div>
+            <p>Vous trouverez ici différentes vidéos
+                <!--  <a href="ressource.video.html"> vidéos </a> -->, témoignages et ouvrages
+                qui
+                vous permettront de mieux comprendre
+                certains éléments importants.
+            </p>
+            <div class="wrapper2">
+                <div class="carousel owl-carousel">
+
+
+                    <div class="card card-2">
+                        <h3> Qui est Jésus?</h3>
+                        <span class="Horiz-line"></span>
+                        <a href="https://www.youtube.com/embed/EieI6qcWsck"> <img src="image_video2.png" alt=""></a>
+                        <!--<div class="video">
+                            <iframe src="https://www.youtube.com/embed/EieI6qcWsck" width="400" height="300"></iframe>
+
+                        </div>-->
+
+                    </div>
+
+                    <div class="card card-3">
+                        <h3><br><br></h3>
+
+                        <a href="https://www.youtube.com/embed/Gw6mZDcphbE"><img src="image_video4.png" alt=""></a>
+                        <!--<div class="video">
+                            <iframe src="https://www.youtube.com/embed/Gw6mZDcphbE" width="400" height="300"></iframe>
+
+                        </div>-->
+                    </div>
+
+                    <!--<div class=" card card-1">
+                        <h3><br><br></h3>
+                        <a href="https://www.youtube.com/embed/ZNANpKzngXc"> <img src="image_video12.png" alt=""></a>
+                        <div class="video">
+                            <iframe src="https://www.youtube.com/embed/ZNANpKzngXc" width="400" height="300"></iframe>
+                        </div>
+                    </div>-->
+
+
+
+
+
+                    <div class="card card-4">
+                        <h3>L'œuvre de la croix</h3>
+                        <span class="Horiz-line"></span>
+                        <a href="https://www.youtube.com/embed/EAHwHOfAXFU"><img src="image_video13.png" alt=""></a>
+                        <!--<div class="video">
+                            <iframe src="https://www.youtube.com/embed/EAHwHOfAXFU" width="400" height="300"></iframe>
+
+                        </div>-->
+                    </div>
+                    <div class="card card-5">
+                        <h3> <br><br></h3>
+
+                        <a href="https://www.youtube.com/embed/0_daOWmHjJc"><img src="image_video6.png" alt=""></a>
+                        <!--<div class="video">
+                            <iframe src="https://www.youtube.com/embed/0_daOWmHjJc" width="400" height="300"></iframe>
+
+                        </div>-->
+                    </div>
+
+
+
+                    <div class="card card-6">
+                        <h3><br><br></h3>
+
+                        <a href="https://www.youtube.com/embed/qo1IhFYLLvU"><img src="image_video1.png" alt=""></a>
+                        <!--<div class="video">
+                            <iframe src="https://www.youtube.com/embed/qo1IhFYLLvU" width="400" height="300"></iframe>
+
+                        </div>-->
+
+                    </div>
+                    <div class="card card-9">
+                        <h3><br><br></h3>
+
+                        <a href="https://www.youtube.com/embed/6ctn3GlEM_8"><img src="image_video14.png" alt=""></a>
+                        <!--<div class="video">
+                            <iframe src="https://www.youtube.com/embed/6ctn3GlEM_8" width="400" height="300"></iframe>
+
+                        </div>-->
+
+                    </div>
+
+                    <div class="card card-10">
+                        <h3><br><br></h3>
+
+                        <a href="https://www.youtube.com/embed/RZW7eTbT1Mk"><img src="image_video15.png" alt=""></a>
+                        <!--<div class="video">
+                            <iframe src="https://www.youtube.com/embed/RZW7eTbT1Mk" width="400" height="300"></iframe>
+
+                        </div>-->
+
+                    </div>
+
+
+
+
+
+
+                    <div class="card card-8">
+                        <h3>La croix et les menstruations</h3>
+                        <span class="Horiz-line"></span>
+                        <a href="https://www.youtube.com/embed/kdJuuQMiXME"><img src="image_video5.png" alt=""></a>
+                        <!--<div class="video">
+                            <iframe src="https://www.youtube.com/embed/kdJuuQMiXME" width="400" height="300"></iframe>
+
+                        </div>-->
+
+                    </div>
+
+
+
+
+
+
+                    <div class="card card-10">
+                        <h3>La croix et la stérilité</h3>
+                        <span class="Horiz-line"></span>
+                        <a href="https://www.youtube.com/embed/0uYYMa7_1eE"><img src="image_video7.png" alt=""></a>
+                        <!--<div class="video">
+                            <iframe src="https://www.youtube.com/embed/0uYYMa7_1eE" width="400" height="300"></iframe>
+
+                        </div>-->
+
+                    </div>
+
+                    <div class="card card-7">
+                        <h3><br><br></h3>
+
+                        <a href="https://www.youtube.com/embed/ShvJsve3u50"><img src="image_video3.png" alt=""></a>
+                        <!--<div class="video">
+                            <iframe src="https://www.youtube.com/embed/ShvJsve3u50" width="400" height="300"></iframe>
+
+                        </div>-->
+
+                    </div>
+                    <div class="card card-11">
+                        <h3><br><br></h3>
+
+                        <a href="https://www.youtube.com/embed/zyoSsFZ5FqM"><img src="image_video8.png" alt=""></a>
+                        <!--<div class="video">
+                            <iframe src="https://www.youtube.com/embed/zyoSsFZ5FqM" width="400" height="300"></iframe>
+
+                        </div>-->
+
+                    </div>
+
+                    <div class="card card-12">
+                        <h3><br><br></h3>
+
+                        <a href="https://www.youtube.com/embed/Tee8LkkfSSI"><img src="image_video11.png" alt=""></a>
+                        <!--<div class="video">
+                            <iframe src="https://www.youtube.com/embed/Tee8LkkfSSI" width="400" height="300"></iframe>
+
+                        </div>-->
+
+                    </div>
+                    <div class="card card-13">
+                        <h3><br><br></h3>
+
+                        <a href="https://www.youtube.com/embed/dbFE9776pEI"><img src="image_video10.png" alt=""></a>
+                        <!--<div class="video">
+                            <iframe src="https://www.youtube.com/embed/dbFE9776pEI" width="400" height="300"></iframe>
+
+                        </div>-->
+
+                    </div>
+                    <div class="card card-14">
+                        <h3><br><br></h3>
+
+                        <a href="https://www.youtube.com/embed/V_EFSLz4HOA"><img src="image_video.png" alt=""></a>
+                        <!--<div class="video">
+                            <iframe src="https://www.youtube.com/embed/V_EFSLz4HOA" width="400" height="300"></iframe>
+
+
+                        </div>-->
+
+                    </div>
+
+                </div>
+
+                <div class=" LeBouton"> <a href="ressource.video.html"> <button class="button-30" role="button"> VOIR
+                            PLUS</button></a>
+                </div>
+
+
+            </div>
+
+
+            <script>
+                $(".carousel").owlCarousel({
+                    margin: 20,
+                    loop: true,
+                    autoplay: true,
+                    autoplayTimeout: 2000,
+                    autoplayHoverPause: true,
+                    responsive: {
+                        0: {
+                            items: 1,
+                            nav: false
+                        },
+                        600: {
+                            items: 2,
+                            nav: false
+                        },
+                        1800: {
+                            items: 2,
+                            nav: false
+                        }
+                    }
+                });
+            </script>
+
+            <div class="livre">
+                <img src="live2 jackie-mize-naissance-surnaturelle.png" alt="">
+                <img src="livre1 Nerida walker.png" alt="">
+
+
+            </div>
+            <div id="soutenir"></div>
+
+
+        </div>
+        <aside style=" background-color: rgb(230, 216, 216); top: 145px;"> <span></span> </aside>
+
+        <!-- sections 5 -- sections 3 dans style  -->
+
+
+
+        <div class="soutenir">
+
+            <div class="titles5">
+                <H2>COMMENT SOUTENIR L'ŒUVRE?</H2>
+            </div>
+
+
+
+            <div class="cards">
+
+                <div class="cart">
+                    <div class="wrap2">
+                        <div class="tile2 tile21">
+
+                            <h3 style="color: rgb(246, 246, 246);"> La Prière</h3>
+
+                            <div class="text2">
+                                <h1> </h1>
+                                <h2 class="animate-text"> </h2>
+                                <p class="animate-text">Répondre à l'appel de Dieu est quelque chose de merveilleux
+                                    mais
+                                    non
+                                    sans embûches. <br>
+                                    C'est pourquoi, vos prières pour le ministère que le Seigneur m'a confié sont
+                                    plus que les bienvenues.
+                                    <br>
+                                    <br>
+                                    Je serai infiniment reconnaissante si vous pouviez prier pour les sujets suivant
+                                    (et
+                                    pour ceux que vous avez à coeur): <br>
+
+
+                                    -|- Que je reste constamment accrochée au Seigneur malgré les moments de
+                                    découragement (Josué1:9)
+                                    <br>
+
+                                    -|- Que Jésus soit glorifié à travers les ouvrages (Psaumes
+                                    115:1)
+                                    <br>
+
+                                    -|- Que je reste sans cesse à l'écoute du Saint-Esprit (Esaïe
+                                    11:2)
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+
+                                </p>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+                <div class="cart">
+                    <div class="wrap2">
+                        <div class="tile2 tile22">
+
+                            <h3 style="color: rgb(255, 255, 255);"> Le Partage</h3>
+
+                            <div class="text2">
+                                <h1> </h1>
+                                <h2 class="animate-text"> </h2>
+                                <p class="animate-text">
+                                    En partageant le site Internet et/ou les dévotionnels autour de
+                                    vous.
+                                    <br>
+                                    <br>
+                                    Ma prière est que toutes les femmes reçoivent la révélation de la puissance et
+                                    de
+                                    l'impact de l'œuvre de la croix sur nos corps et le partage est un excellent
+                                    moyen
+                                    pour qu'un maximum de sœurs puissent également voir leur vie transformée
+                                    par cette
+                                    révélation.<br>
+
+                                </p>
+                                <!--<div class="dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>-->
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+                <div class="cart">
+                    <div class="wrap2">
+                        <div class="tile2 tile23">
+
+                            <h3 style="color: rgb(246, 246, 246);"> En Partageant Vos
+                                Témoignages
+                            </h3>
+
+                            <div class="text2">
+                                <h1> </h1>
+                                <h2 class="animate-text"> </h2>
+                                <p class="animate-text">
+                                    Je crois réellement que les dévotionnels que vous
+                                    trouverez sur ce site
+                                    Internet révolutionneront votre vie.
+                                    <br> Vos témoignages seront non seulement une manière de
+                                    glorifier le Seigneur mais également, un encouragement.
+                                    <br>
+                                    <br> N'hésitez pas à m'envoyer vos témoignages à l'adresse
+                                    email
+                                    suivante:
+                                    <br>tracysibomana@gmail.com
+                                    Je me ferai une joie de les lire!<br>
+
+                                </p>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+                <div class="cart">
+                    <div class="wrap2">
+                        <div class="tile2 tile24">
+
+                            <h3 style=" color: rgb(250, 250, 250);"> Par vos dons et vos talents
+                            </h3>
+
+                            <div class="text2">
+                                <h1> </h1>
+                                <h2 class="animate-text"> </h2>
+                                <p class="animate-text">
+                                    Je crois que le Seigneur a placé en chacun.e de nous divers
+                                    dons et talents que nous pouvons utiliser pour le servir.
+                                    <br>
+                                    <br>
+                                    Si vous avez des talents (artistiques ou autres) et que vous
+                                    désirez les mettre au service du projet "Tout est accompli",
+                                    <br>
+                                    <br> n'hésitez pas à me contacter
+                                    (par e-mail ou
+                                    via les
+                                    réseaux
+                                    sociaux).<br>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--<div class="card">
+
+                    <div class="wrap2">
+                        <div class="tile2 tile25">
+
+                            <h3 style="color: #fff;"> Par Vos Dons Financiers</h3>
+
+                            <div class="text2">
+                                <h1> </h1>
+                                <h2 class="animate-text"> </h2>
+                                <p class="animate-text">
+                                    Les dévotionnels sont accessibles
+                                    gratuitement.
+                                    <br> Toutefois, le design et la mise en page ont un coût.
+                                    <br> Si vous avez à cœur de soutenir financièrement la création
+                                    des
+                                    ouvrages,
+                                    <br>
+                                    <br> n'hésitez pas à me contacter (e-mail ou réseaux sociaux).
+                                </p>
+                                <!--<div class="dots"><span></span> <span></span><span></span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>-->
+
+
+                <div class="oeuvre">
+
+                    <p>
+                        Peu importe le(s) moyen(s) par lesquels vous désirez soutenir l'œuvre que le
+                        Seigneur
+                        m'a confié, je
+                        prie
+                        que
+                        notre Dieu vous bénisse abondamment et vous le rende au centuple (Proverbes
+                        11:25;
+                        Philippiens 4:19;
+                        3
+                        Jean:1-2)
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="under" style="background-color: #a79d9d;">
+            <div class="copyright" style="color:black;"> <a href="Mentions.legales.html"
+                    style="font-size: 15px;">Mention
+                    légale</a>
+                <p> - ©ToutEstAccompli.com 2022.- Tous droits
+                    réservés.</p>
+            </div>
+        </div>
+
+
+        <script type="text/javascript" src="https://cookieconsent.popupsmart.com/src/js/popper.js"></script>
+        <script> window.start.init({ Palette: "palette4", Mode: "banner bottom", Theme: "edgeless", ButtonText: "Alow it", Time: "10", })</script>
+
+    </div>
+</body>
+
+<script src="main.js"></script>
+
+</html>
