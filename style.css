@@ -776,7 +776,7 @@ aside{
   content: attr(data-hover);
   visibility: hidden;
   opacity: 0;
-  width: 300px;
+  width: 250px;
   background-color: black;
   color: #fff;
   text-align: center;
