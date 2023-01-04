@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>LE DEVOTIONNEL-Tout Est Accompli © </title>
+    <link rel="icon" type="image/png" sizes="16x16" href="logo.toutestaccompli.blanc1.png">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        main {
+            margin-left: 0%;
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+        }
+
+        body {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+
+        }
+
+        .LeMenu2 {
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+        .LeMenu a {
+            text-align: left;
+
+        }
+
+        .menu img {
+            width: 30px;
+            margin-right: 5px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .containers {
+            width: 50%;
+            height: 60%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+            /*  box-shadow is from materialize css's website */
+            box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
+                0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar {
+            display: none;
+        }
+
+        @media (max-width: 1000px) {
+            .containers {
+                width: 90%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 10px;
+                /*  box-shadow is from materialize css's website */
+                box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
+                    0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+            }
+
+            .navbar {
+                display: none;
+            }
+
+
+
+
+
+        }
+
+
+
+        .containers img {
+            width: 100%;
+            z-index: -2;
+
+        }
+
+        .em {
+            text-decoration: underline;
+        }
+
+        button {
+            height: 5%;
+            border: none;
+            outline: none;
+            background: rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            padding: 0.5em;
+            display: flex;
+            text-align: left;
+        }
+
+        button .arrow {
+            border: solid #fff;
+            border-width: 0 4px 4px 0;
+            display: inline-block;
+            padding: 5px;
+            transition: transform 0.3s ease-out;
+            outline: none;
+        }
+
+        #right-btn {
+            margin: auto 0 auto -2em;
+        }
+
+        #right-btn .arrow {
+            transform: rotate(-45deg);
+        }
+
+        #left-btn {
+            z-index: 0;
+            margin: auto -2em auto 0;
+        }
+
+        #left-btn .arrow {
+            transform: rotate(135deg);
+        }
+
+
+        .copyright {
+            float: right;
+            margin-right: 10%;
+            margin-bottom: 100px;
+        }
+
+        .under {
+            border-top: solid black;
+            border-top-width: thin;
+
+            width: 60%;
+            margin-left: 20%;
+
+            text-align: center;
+
+        }
+
+
+
+
+        /*  menu _______________________________________________________________*/
+        .card3 {
+
+            margin-bottom: 20px;
+            margin-left: 100px;
+            width: 100%;
+            height: 100px;
+            overflow: visible;
+        }
+
+
+        /* tout le menu*/
+        .cards3 {
+
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: center;
+            /*margin-right:60% ;*/
+            position: sticky;
+            overflow: visible;
+            top: 90px;
+            z-index: 42;
+            width: 100%;
+            height: 100%;
+
+
+
+        }
+
+        @media (max-width: 600px) {
+            .cards3 {
+
+                overflow: visible;
+                top: 0px;
+                z-index: 42;
+            }
+        }
+
+
+
+
+        .wrap4 {
+            margin: 0px auto 0 auto;
+            width: 100%;
+            max-height: 100%;
+            display: flex;
+
+            align-items: space-around;
+            max-width: 1200px;
+
+
+        }
+
+        .LeMenu::-webkit-scrollbar {
+
+            width: 5px;
+            color: rgb(8, 7, 7);
+        }
+
+        .LeMenu::-webkit-scrollbar-track {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .LeMenu::-webkit-scrollbar-thumb {
+            box-shadow: inset 0px 0px 1700px rgba(7, 6, 6, 0.3);
+
+        }
+
+        .LeMenu2 {
+            margin-left: 15px;
+            margin: 40px;
+            border-radius: 20px;
+            justify-content: center;
+            /*background-color: #c7b9b9;*/
+            overflow-y: scroll;
+            /*opacity: 0.9;*/
+
+            background: rgb(230, 216, 216);
+            background: radial-gradient(circle, rgba(230, 216, 216, 1) 0%, rgba(199, 185, 185, 1) 84%)
+        }
+
+        .tile4 {
+
+            height: 30px;
+            width: 30px;
+            margin: 0px;
+            /*background-color: #a79d9d #9c9292;*/
+            /*#a79d9d*/
+
+
+            flex-direction: row;
+            flex-wrap: nowrap;
+            background-size: cover;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.4s ease-out;
+            /*box-shadow: 0px 25px 77px -17px rgba(0,0,0,0.44);*/
+            /*border: solid 1.5px #000;*/
+            text-align: center;
+            overflow: hidden;
+            color: white;
+
+
+        }
+
+        .tile4 .text4 {
+            /*   z-index:99; */
+
+            /*padding: 5px;*/
+            height: calc(100% - 60px);
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .text4 {
+            font-size: 8px;
+            color: rgb(19, 17, 17);
+
+
+
+
+        }
+
+
+
+
+
+        .text4 .a {
+            font-size: 10px;
+            line-height: 5;
+
+        }
+
+        .text4 img {
+            width: 30px;
+
+            clip-path: circle(54% at 50% 50%);
+        }
+
+
+
+        .tile4 h1 {
+
+            margin: 0;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .tile4 h2 {
+
+            margin: 5px 0 0 0;
+            font-style: italic;
+            transform: translateX(200px);
+        }
+
+        .tile4 p {
+            font-weight: 200;
+
+            line-height: 6;
+            /*   opacity:0; */
+            transform: translateX(-200px);
+            transition-delay: 0.2s;
+            color: #fff;
+        }
+
+        .animate-text1 {
+
+            opacity: 0;
+            transition: all 0.6s ease-in-out;
+            font-size: 8px;
+
+        }
+
+
+
+        .tile4:hover {
+            width: 310px;
+            height: 500px;
+            margin-left: 20px;
+
+
+            /*opacity: 0.5;*/
+
+
+            /*   background-color:#99aeff; */
+            /*box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);*/
+            transform: scale(1.00);
+        }
+
+        .LeMenu2 a {
+            font-size: 15px;
+        }
+
+
+
+
+        @media (max-width: 1000px) {
+            .tile4 h1 {
+                font-size: 20px;
+                margin: none;
+                padding: 0px;
+                text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+                text-align: left;
+
+            }
+
+            .LeMenu2 a {
+                font-size: 15px;
+            }
+
+
+            .tile4 .text {
+                display: flex;
+                flex-direction: column;
+                word-wrap: break-word;
+                font-size: 6px;
+            }
+
+            .tile4:hover {
+                width: 310px;
+                height: 500px;
+                margin-left: 20px;
+
+
+                /*opacity: 0.5;*/
+
+
+                /*   background-color:#99aeff; */
+                /*box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);*/
+                transform: scale(1.00);
+            }
+
+
+
+
+
+            .card3 {
+
+                margin-bottom: 0px;
+                margin-left: 0px;
+                width: 80%;
+                overflow: visible;
+            }
+
+            .Contact {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-left: 5px;
+
+            }
+
+            .wrap4 {
+                margin: 10px auto 0 auto;
+                width: 100%;
+                max-height: 100%;
+                display: flex;
+
+                align-items: space-around;
+                max-width: 1500px;
+
+
+            }
+
+            .LeMenu2::-webkit-scrollbar {
+
+                width: 5px;
+                color: rgb(8, 7, 7);
+            }
+
+            .LeMenu2::-webkit-scrollbar-track {
+                background-color: rgb(255, 255, 255);
+            }
+
+            .LeMenu2::-webkit-scrollbar-thumb {
+                box-shadow: inset 0px 0px 1700px rgba(7, 6, 6, 0.3);
+
+            }
+
+            .LeMenu2 {
+
+                margin-left: 10px;
+                margin-top: 50px;
+
+                justify-content: center;
+                background-color: #c7b9b9;
+                text-align: center;
+                overflow-y: auto;
+
+                /*opacity: 0.9;*/
+
+            }
+
+            .tile4 {
+                width: 30px;
+                height: 30px;
+
+                margin: 0px;
+
+                background-color: #a79d9d #9c9292;
+                /*#a79d9d*/
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                background-size: cover;
+
+                cursor: pointer;
+                transition: all 0.4s ease-out;
+                /*box-shadow: 0px 25px 77px -17px rgba(0,0,0,0.44);*/
+                /*border: solid 1.5px #000;*/
+                text-align: center;
+                overflow: hidden;
+                color: white;
+
+
+            }
+
+
+
+        }
+
+
+        /*.tile4:hover img {
+            /*opacity: 0.2;
+        }*/
+
+        .tile4:hover .animate-text {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        .dot {
+            height: 5px;
+            width: 5px;
+            margin-left: 15px;
+            margin-right: 15px;
+            background-color: rgb(17, 16, 16);
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+
+        .dots {
+            position: absolute;
+            bottom: 20px;
+            right: 30px;
+            margin: 0 auto;
+            width: 30px;
+            height: 30px;
+            color: currentColor;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+
+        .dots span {
+            width: 5px;
+            height: 5px;
+            background-color: currentColor;
+            border-radius: 50%;
+            display: block;
+            opacity: 0;
+            transition: transform 0.4s ease-out, opacity 0.5s ease;
+            transform: translateY(30px);
+
+        }
+
+        .tile4:hover span {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+
+        .dots span:nth-child(1) {
+            transition-delay: 0.05s;
+        }
+
+        .dots span:nth-child(2) {
+            transition-delay: 0.1s;
+        }
+
+        .dots span:nth-child(3) {
+            transition-delay: 0.15s;
+        }
+
+        /*// Images are from unsplash
+            let pictures = ['DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-1.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-2.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-3.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-4.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-5.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-6.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-7.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-8.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-9.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-10.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-11.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-12.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-13.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-14.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-15.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-16.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-17.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-18.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-19.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-20.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-21.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-22.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-23.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-24.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-25.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-26.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-27.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-28.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-29.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-30.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-31.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-32.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-33.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-34.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-35.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-36.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-37.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-38.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-39.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-40.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-41.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-42.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-43.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-44.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-45.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-46.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-47.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-48.png'];*/
+    </style>
+</head>
+
+<body>
+    <div class="lapageChragement" id="lapageChragement">
+        <div class="charge" id="chargement">
+            <div class="loader">
+            </div>
+        </div>
+    </div>
+    <link href="stylecharge.css" rel="stylesheet" type="text/css">
+
+
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState === "loading") {
+
+
+
+                document.querySelector("#chargement").style.visibility = "visible";
+
+                document.querySelector("#bod").style.display = "none";
+
+            }
+            else {
+                document.querySelector("#chargement").style.display = "none";
+                document.querySelector("body").style.visibility = "visible";
+                document.querySelector("#bod").style.display = "block";
+            }
+        };
+
+
+        $(".carousel").owlCarousel({
+            margin: 20,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                600: {
+                    items: 1,
+                    nav: false
+                },
+                1000: {
+                    items: 2,
+                    nav: false
+                }
+            }
+        });
+    </script>
+    <div class="Body2" id="bod">
+        <!-- navbar-->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="page-title">
+                    <div class="container">
+                        <!--<div id="loader">Loading...</div>-->
+                    </div>
+
+
+                </div>
+
+
+                <ul class="nav navbar-nav">
+
+                    <div class="titrepage2">
+                        <div class='strow2' style="width: 50px;">
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                            <div class='smoke'></div>
+                        </div>
+                        <!--<img src="logo.toutestaccompli.png">-->
+                        <h1 style="color:black; font-family: 'Updock',cursive;text-transform: none">Tout Est
+                            Accompli </h1>
+                        <h1 style="font-size: 20px; color: black;"> </h1>
+                    </div>
+
+
+                </ul>
+
+
+
+
+            </div>
+
+        </nav>
+        <div class="cards2">
+            <div class="card2">
+                <div class="wrap3">
+                    <div class="tile3">
+
+                        <div class="text3">
+                            <img src="logo.menu.jpg">
+
+
+                            <div class="LeMenu">
+                                <a class="hoverable" href="index.html#A-propos">À PROPOS <br><br> </a>
+                                <a class="hoverable" href="index.html#Le-Dévotionnel">LES DÉVOTIONNELS <br><br></a>
+                                <a class="hoverable" href="index.html#temoignage">TÉMOIGNAGES <br><br> </a>
+                                <a class="hoverable" href="index.html#resource">RESSOURCES <br><br> </a>
+                                <a class="hoverable" href="index.html#soutenir">COMMENT SOUTENIR L'ŒUVRE?<br><br></a>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class=" Contact">
+                        <div class="menu"><a id="len4" class="hoverable" href="mailto:tracysibomana@gmail.jpeg"><img
+                                    src="logo.mail.png"></a>
+                        </div>
+                        <div class="menu"><a id="len4" class="hoverable"
+                                href="https://www.instagram.com/sibom.s/?hl=fr"><img src="logo.instagram.jpeg"></a>
+                        </div>
+                        <div class="menu"><a id="len4" class="hoverable" href="DEVOTIONNEL - Tout est accompli.pdf"><img
+                                    src="logo.download.png"></a>
+                        </div>
+
+
+                        <div class="tile4">
+
+
+
+
+                            <div class="text4">
+                                <!--<h1>Les Chapitres</h1>
+                            <h2 class="animate-text1">MENU</h2>-->
+                                <img src="logo.chapitres.png">
+                                <!--<h1>Les Chapitres</h1>-->
+
+                                <div class="LeMenu LeMenu2 " style="font-size: 8px;">
+
+
+                                    <a class="hoverable "><span class="dot"></span><u>PRÉFACE</u>
+                                        <br><br>
+                                    </a>
+
+                                    <a class="hoverable"><span class="dot"></span><u>PRÉSENTATION</u><br>
+                                        <br><br> </a>
+                                    <a class="hoverable "><span class="dot"></span><u>INTRODUCTION</u><br><br></a>
+
+                                    <a class="hoverable "><span class="dot"></span><u>PARTIE
+                                            1:</u><br>
+                                        QUI EST DIEU
+                                        <br><br></a>
+
+                                    <a class="hoverable "><span class="dot"></span><u>PARTIE 2:
+                                        </u><br>QUE DIT LA PAROLE DE DIEU
+                                        <br><br></a>
+
+                                    <a class="hoverable hoverableM"><span class="dot"></span><u>PARTIE
+                                            3:</u><br> LE
+                                        PÉCHÉ
+                                        ORIGINEL, SES CONSÉQUENCES ET
+                                        L’ANNONCE DE NOTRE SAUVEUR <br><br></a>
+
+
+                                    <a class="hoverable"><span class="dot"></span><u>PRÉSENTATION</u><br>
+                                        <br><br> </a>
+                                    <a class="hoverable "><span class="dot"></span><u>INTRODUCTION</u><br><br></a>
+
+                                    <a class="hoverable " span class="dot"></span><u>PARTIE
+                                            1:</u><br>
+                                        DIEU
+                                        ET SA PAROLE
+                                        <br><br></a>
+                                    <a class="hoverable"><span class="dot"></span><u>PRÉSENTATION</u><br>
+                                        <br><br> </a>
+                                    <a class="hoverable "><span class="dot"></span><u>INTRODUCTION</u><br><br></a>
+
+                                    <a class="hoverable "><span class="dot"></span><u>PARTIE
+                                            1:</u><br>
+
+                                        <br><br></a>
+                                    <a class="hoverable " style="font-size: 12px;" id="x1"><span
+                                            class="dot"></span><u>PRÉSENTATION</u>
+                                        <br><br>
+                                    </a>
+
+                                    <a class="hoverable" id="x2"><span class="dot"></span><u>INTRODUCTION</u><br>
+                                        <br><br> </a>
+                                    <a class="hoverable " id="x3"><span class="dot"></span><u>PARTIE
+                                            1:</u><br>
+                                        QUI EST DIEU ?<br><br></a>
+
+                                    <a class="hoverable " id="x4"><span class="dot"></span><u>PARTIE
+                                            2:</u><br>
+                                        QUE DIT LA BIBLE SUR LA STERILITE/L'INFERTILITE ?
+                                        <br><br></a>
+
+
+                                    <a class="hoverable " id="x5"><span class="dot"></span><u>PARTIE 3:
+                                        </u><br>TE SENS-TU OUBLIEE ? (PSAUMES 119:81-83)
+                                        <br><br></a>
+
+                                    <a class="hoverable hoverableM" id="x6"><span class="dot"></span><u>PARTIE
+                                            4:</u><br> LE JARDIN D'EDEN/DE LA BENEDICTION A LA MALEDICTION <br><br></a>
+                                    <a class="hoverable hoverableM" id="x7"><span class="dot"></span><u>PARTIE
+                                            5:</u><br>
+                                        A LA CROIX? JESUS S'EST FAIT MALEDICTION POUR QUE TU SOIS GUERIE <br><br></a>
+                                    <a class="hoverable hoverableM" id="x8"><span class="dot"></span><u>PARTIE
+                                            6:</u><br>
+                                        LA FOI EN JESUS ET SES CONSEQUENCES <br><br></a>
+                                    <a class="hoverable hoverableM" id="x9"><span class="dot"></span><u>PARTIE 7:
+                                        </u><br>APPELLE LES CHOSES QUI NE SONT PAS COMME SI ELLES ETAIENT<br><br></a>
+                                    <a class="hoverable hoverableM" id="x10"><span class="dot"></span><u>PARTIE
+                                            8:</u><br>
+                                        REJOUIS TOI
+                                        <br><br></a>
+                                    <a class="hoverable hoverableM" id="x11"><span class="dot"></span><u>« MIEUX VAUT LA
+                                            FIN
+                                            D’UNE
+                                            CHOSE QUE SON
+                                            COMMENCEMENT»</u><br>(Ecclésiastes 7:8)<br><br></a>
+
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <main>
+            <h1></h1>
+            <div class="containers">
+                <button id="left-btn"><i class="arrow"></i></button>
+                <img id="carousel" src="" alt="">
+                <button id="right-btn"><i class="arrow"></i></button>
+            </div>
+        </main>
+
+        <div class="under" style="background-color: #a79d9d;">
+            <div class="copyright" style="color:black;"> <a href="Mentions.legales.html"
+                    style="font-size: 15px;">Mention
+                    légale</a>
+                <p> - ©ToutEstAccompli.com 2022.- Tous droits
+                    réservés.</p>
+            </div>
+        </div>
+
+        <script>
+
+            const img = document.getElementById('carousel');
+            const rightBtn = document.getElementById('right-btn');
+            const leftBtn = document.getElementById('left-btn');
+
+            // Images are from unsplash
+            let pictures = [
+                'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-01.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-02.png',
+                'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-03.png',
+                'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-04.png',
+                'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-05.png',
+                'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-06.png',
+                'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-07.png',
+                'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-08.png',
+                'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-09.png',
+                'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-10.png',
+                'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-11.png',
+                'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-12.png',
+                'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-13.png',
+                'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-14.png',
+                'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-15.png',
+                'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-16.png',
+                'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-17.png',
+                'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-18.png',
+                'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-19.png',
+                'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-20.png',
+                'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-21.png',
+                'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-22.png',
+                'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-23.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-24.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-25.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-26.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-27.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-28.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-29.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-30.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-31.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-32.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-33.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-34.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-35.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-36.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-37.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-38.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-39.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-40.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-41.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-42.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-43.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-44.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-45.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-46.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-47.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-48.png',
+                'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-49.png',
+                'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-50.png',
+                'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-51.png',
+                'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-52.png',
+                'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-53.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-54.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-55.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-56.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-57.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-58.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-59.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-60.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-61.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-62.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-63.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-64.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-65.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-66.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-67.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-69.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-70.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-71.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-72.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-73.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-74.png',
+                'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-75.png', 'DEVOTIONNEL2 - Tout est accompli/DEVOTIONNEL2 - Tout est accompli_compressed (1)-76.png',
+            ];
+
+
+            img.src = pictures[0];
+            let position = 0;
+
+
+
+            const moveRight = () => {
+                if (position >= pictures.length - 1) {
+                    position = 0
+                    img.src = pictures[position];
+                    return;
+                }
+                img.src = pictures[position + 1];
+                position++;
+            }
+
+            const moveLeft = () => {
+                if (position < 1) {
+                    position = pictures.length - 1;
+                    img.src = pictures[position];
+                    return;
+                }
+                img.src = pictures[position - 1];
+                position--;
+            }
+            /****  SOMMAIRE  _____________________________________________________________________*****/
+            /****PRESENTATION *****/
+            const x1 = document.getElementById('x1');
+
+            x1.addEventListener("click", function () {
+                img.src = pictures[6];;
+            });
+
+            /****  INTRODUCTION *****/
+
+            const x2 = document.getElementById('x2');
+
+            x2.addEventListener("click", function () {
+                img.src = pictures[8];;
+            });
+            /****  PARTIE1  *****/
+
+            const x3 = document.getElementById('x3');
+
+            x3.addEventListener("click", function () {
+                img.src = pictures[12];;
+            });
+            /****  PARTIE2 *****/
+            const x4 = document.getElementById('x4');
+
+            x4.addEventListener("click", function () {
+                img.src = pictures[20];;
+            });
+            /****  PARTIE3  *****/
+
+            const x5 = document.getElementById('x5');
+
+            x5.addEventListener("click", function () {
+                img.src = pictures[31];;
+            });
+            /****  PARTIE4  *****/
+
+            const x6 = document.getElementById('x6');
+
+            x6.addEventListener("click", function () {
+                img.src = pictures[40];;
+            });
+            /****  PARTIE5  *****/
+
+            const x7 = document.getElementById('x7');
+
+            x7.addEventListener("click", function () {
+                img.src = pictures[47];;
+            });
+
+            /****  PARTIE6  *****/
+
+            const x8 = document.getElementById('x8');
+
+            x8.addEventListener("click", function () {
+                img.src = pictures[56];;
+            });
+
+            /****  PARTIE7  *****/
+
+            const x9 = document.getElementById('x9');
+
+            x9.addEventListener("click", function () {
+                img.src = pictures[63];;
+            });
+
+            /****  PARTIE8  *****/
+
+            const x10 = document.getElementById('x10');
+
+            x10.addEventListener("click", function () {
+                img.src = pictures[69];;
+            });
+
+            /****  PARTIE9  *****/
+
+            const x11 = document.getElementById('x11');
+
+            x11.addEventListener("click", function () {
+                img.src = pictures[74];;
+            });
+
+
+
+
+            ;
+
+
+
+
+            rightBtn.addEventListener("click", moveRight);
+            leftBtn.addEventListener("click", moveLeft);
+
+
+            if (window.location.Le - Dévotionnel) {
+                var hash = window.location.Le - Dévotionnel;
+
+                if ($(hash).length) {
+
+                    $('html,body').animate({ scrollTop: $(hash).offset().top }, 900, 'swing');
+                }
+
+
+
+            }
+
+
+
+        </script>
+
+    </div>
+</body>
+
+</html>
