@@ -1562,6 +1562,7 @@ h3{
   margin-top: 10px;
   font-size: 20px;
   font-weight: 1;
+  line-height: 22px;
   color: rgb(0, 0, 0);
 
 }
@@ -2073,7 +2074,7 @@ flex-wrap: wrap;
     margin-top: 10%;
     margin: 5%;
     width: 60%;
-    line-height: 25px;
+    line-height: 20px;
     text-align : left;
   /*   opacity:0; */
     transform: translateX(-200px);
@@ -2205,36 +2206,7 @@ background: linear-gradient(158deg, rgba(244,242,245,1) 20%, rgba(230,216,216,1)
   opacity:1;
 }
 
-@media(max-width: 1880px){
-  .tile21:hover
-{
-  height: 659px;
-  
-}
 
-.tile22:hover
-{
-  height: 359px;
-  
-}
-
-.tile23:hover
-{
-  height: 409px;
-  
-}
-.tile24:hover
-{
-  height: 409px;
-  
-}
-.tile25:hover
-{
-  height: 309px;
-  
-}
-
-}
 
 
 
@@ -2311,7 +2283,10 @@ background: linear-gradient(158deg, rgba(244,242,245,1) 20%, rgba(230,216,216,1)
   opacity:1;
 }
 }
-@media(min-width:;)
+
+
+
+
 
 
 .dots
