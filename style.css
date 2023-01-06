@@ -774,8 +774,8 @@ aside{
   visibility: hidden;
   opacity: 0;
   width: 250px;
-  background-color: black;
-  color: #fff;
+  background-color: rgb(247, 247, 247);
+  color: rgb(26, 24, 24);
   text-align: center;
   border-radius: 5px;
   padding: 5px 0;
@@ -1558,7 +1558,8 @@ margin-top: 40px;
 h3{
 
   font-family: 'Courier New', Courier, monospace;
-  
+  align-items: center;
+  margin-top: 10px;
   font-size: 20px;
   font-weight: 1;
   color: rgb(0, 0, 0);
@@ -2013,9 +2014,22 @@ p{
   margin:0px;
   /*background-color: #E6DFD8;*/
   /*background-color:#464853;*/
-  background: rgb(223,230,216);
-  background: linear-gradient(158deg, rgba(223,230,216,1) 4%, rgba(149,164,164,1) 15%, rgba(70,72,83,1) 92%);justify-content: center;
-  flex-wrap: wrap;
+  /*background: rgb(223,230,216);
+  background: linear-gradient(158deg, rgba(223,230,216,1) 4%, rgba(149,164,164,1) 15%, rgba(70,72,83,1) 92%);justify-content: center;*/
+  /*background: rgb(244,242,245);
+  background: linear-gradient(158deg, rgba(244,242,245,1) 8%, rgba(231,209,210,1) 82%, rgba(70,72,83,1) 100%);
+*/
+
+/*background: rgb(244,242,245);
+background: linear-gradient(158deg, rgba(244,242,245,1) 8%, rgba(231,209,210,1) 82%, rgba(196,198,226,1) 100%);
+  */
+
+  /*background: rgb(244,242,245);
+background: linear-gradient(158deg, rgba(244,242,245,1) 8%, rgba(231,209,210,1) 39%, rgba(196,198,226,1) 100%);
+*/
+
+
+flex-wrap: wrap;
   background-size:cover;
   position: relative;
   cursor:pointer;
@@ -2023,7 +2037,7 @@ p{
   box-shadow: 0px 25px 77px -17px rgba(0,0,0,0.44);
   border-radius: 40px;
   overflow: hidden;
-  color:rgb(255, 255, 255);
+  color:rgb(17, 10, 10);
   
 }
 
@@ -2064,7 +2078,7 @@ p{
   /*   opacity:0; */
     transform: translateX(-200px);
     transition-delay: 0.2s;
-    color: rgb(255, 253, 253);
+    color: rgb(15, 13, 13);
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -2112,7 +2126,7 @@ p{
 /*   opacity:0; */
   transform: translateX(-200px);
   transition-delay: 0.2s;
-  color: rgb(248, 246, 246);
+  color: rgb(19, 15, 15);
   width: 100%;
   
   transition: all 0.6s ease-in-out;
@@ -2145,23 +2159,35 @@ p{
 .tile21:hover
 {
   height: 559px;
+  background: rgb(244,242,245);
+background: linear-gradient(158deg, rgba(244,242,245,1) 8%, rgba(238,220,220,1) 46%, rgba(196,180,170,1) 100%);
+
   
 }
+
 
 .tile22:hover
 {
   height: 359px;
+  background: rgb(244,242,245);
+background: linear-gradient(158deg, rgba(244,242,245,1) 8%, rgba(231,209,210,1) 39%, rgba(196,198,226,1) 100%);
+
   
 }
 
 .tile23:hover
 {
   height: 359px;
+  background: rgb(244,242,245);
+background: linear-gradient(135deg, rgba(244,242,245,1) 20%, rgba(233,217,217,1) 48%, rgba(161,132,132,1) 100%);
   
 }
 .tile24:hover
 {
   height: 359px;
+  
+background: rgb(244,242,245);
+background: linear-gradient(158deg, rgba(244,242,245,1) 20%, rgba(230,216,216,1) 46%, rgba(170,194,196,1) 100%);
   
 }
 .tile25:hover
@@ -2182,7 +2208,7 @@ p{
 @media(max-width: 1880px){
   .tile21:hover
 {
-  height: 609px;
+  height: 659px;
   
 }
 
