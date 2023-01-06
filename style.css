@@ -2207,6 +2207,36 @@ background: linear-gradient(158deg, rgba(244,242,245,1) 20%, rgba(230,216,216,1)
 }
 
 
+@media(max-width: 1880px){
+  .tile21:hover
+{
+  height: 659px;
+  
+}
+
+.tile22:hover
+{
+  height: 359px;
+  
+}
+
+.tile23:hover
+{
+  height: 409px;
+  
+}
+.tile24:hover
+{
+  height: 409px;
+  
+}
+.tile25:hover
+{
+  height: 309px;
+  
+}
+
+}
 
 
 
