@@ -1231,7 +1231,7 @@ a.slide__next,
     width: 100%;
     
     overflow: hidden;
-    margin-top: 100px;
+  
     display: flex;
     flex-direction: row;
     justify-content: center;
